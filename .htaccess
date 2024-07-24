@@ -1,0 +1,5 @@
+#For live server hosting
+#php_value auto_prepend_file "/home/u624290640/domains/alefba.fr/public_html/prepend.php"
+
+#For local server like xampp
+php_value auto_prepend_file "C:\xampp\htdocs\alefba\prepend.php"
