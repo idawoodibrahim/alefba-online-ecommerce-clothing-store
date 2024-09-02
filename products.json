@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Modern Black T-Shirt",
+    "category": "T-Shirt, Women",
+    "currentPrice": "€50",
+    "oldPrice": "€70",
+    "imagePrimary": "assets/img/product/product1.png",
+    "imageSecondary": "assets/img/product/product2.png",
+    "badge": "Sale",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Boxy Denim Jacket",
+    "category": "Jacket, Women",
+    "currentPrice": "€115",
+    "oldPrice": "€130",
+    "imagePrimary": "assets/img/product/product3.png",
+    "imageSecondary": "assets/img/product/product4.png",
+    "badge": "New",
+    "rating": 4
+  }
+]

@@ -7,22 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title><?php echo isset($titlePrefix) ? $titlePrefix . ' - ' : ''; ?>Alefba Online Store</title>
+    <title><?php echo isset($pageTitlePrefix) ? $pageTitlePrefix . ' - ' : ''; ?>Alefba Online Store</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/siteicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo HOST; ?>/assets//img/site-icon.ico">
 
     <!-- ======= All CSS Plugins here ======== -->
-    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/glightbox.min.css">
+    <link rel="stylesheet" href="<?php echo HOST; ?>/assets//css/plugins/swiper-bundle.min.css">
+    <link rel="stylesheet" href="<?php echo HOST; ?>/assets//css/plugins/glightbox.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
     <!-- Plugin css -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo HOST; ?>/assets//css/vendor/bootstrap.min.css">
 
     <!-- Custom Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo HOST; ?>/assets//css/style.css">
 
 </head>
 

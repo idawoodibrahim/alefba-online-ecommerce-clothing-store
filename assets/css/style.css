@@ -6898,6 +6898,7 @@ input[type="number"]::-webkit-outer-spin-button {
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
   .footer__widget--width {
     width: 31.5%;
+  
   }
 }
 
@@ -6931,7 +6932,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .footer__widget {
-  margin-right: 3rem;
+  margin-right: 4rem;
+
 }
 
 @media only screen and (max-width: 1365px) {

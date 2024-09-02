@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d93ed32f-adba-42a0-8aa1-d671ee8f26e1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/assets/img/alefba-icon.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/siteicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/siteicon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/blog-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/blog-details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/blog-left-sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/blog-left-sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/blog-right-sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/blog-right-sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/checkout-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/checkout-2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/checkout-3.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/checkout-3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/checkout-4.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/checkout-4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/compare.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/compare.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/faq.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/faq.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/index-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index-2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/index-3.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index-3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/my-account-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/my-account-2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/my-account.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/my-account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/portfolio.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/portfolio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/privacy-policy.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/privacy-policy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/product-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/product-details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/product-gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/product-gallery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/product-left-sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/product-left-sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/product-video.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/product-video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/shop-grid-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/shop-grid-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/shop-grid.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/shop-grid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/shop-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/shop-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/shop-right-sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/shop-right-sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/shop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/wishlist.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/wishlist.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2jiwxOVZpfn9mHBLihygHXQy35H" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d93ed32f-adba-42a0-8aa1-d671ee8f26e1" name="Changes" comment="" />
+      <created>1721883463409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721883463409</updated>
+      <workItem from="1721883467128" duration="169000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

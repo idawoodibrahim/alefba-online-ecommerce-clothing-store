@@ -7,24 +7,24 @@
                     <ul class="header__shipping--wrapper d-flex">
                         <li class="header__shipping--text text-white">FREE RETURNS & EXCHANGES</li>
                         <li class="header__shipping--text text-white d-sm-2-none"><img
-                                class="header__shipping--text__icon" src="assets/img/icon/bus.png" alt="bus-icon">
-                            FREE SHIPPING ON ORDERS OVER €60</li>
+                                class="header__shipping--text__icon" src="<?php echo HOST; ?>/assets/img/icon/bus.png"
+                                alt="bus-icon">
+                            FREE SHIPPING ON ORDERS OVER €99</li>
                         <li class="header__shipping--text text-white d-sm-2-none"><img
-                                class="header__shipping--text__icon" src="assets/img/icon/email.png" alt="email-icon">
-                            <a class="header__shipping--text__link" href="mailto:info@alefba.fr">info@alefba.fr</a></li>
+                                class="header__shipping--text__icon" src="<?php echo HOST; ?>/assets/img/icon/email.png"
+                                alt="email-icon">
+                            <a class="header__shipping--text__link" href="mailto:info@alefba.fr">info@alefba.fr</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="language__currency d-none d-lg-block">
+                <!-- <div class="language__currency d-none d-lg-block">
                     <ul class="d-flex align-items-center">
                         <li class="language__currency--list">
                             <a class="language__switcher text-white" href="#">
-                                <img class="language__switcher--icon__img" src="assets/img/icon/language-icon.png"
-                                    alt="currency">
+                                <img class="language__switcher--icon__img" src="<?php echo HOST; ?>/assets/img/icon/language-icon.png" alt="currency">
                                 <span>English</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05"
-                                    viewBox="0 0 9.797 6.05">
-                                    <path d="M14.646,8.59,10.9,12.329,7.151,8.59,6,9.741l4.9,4.9,4.9-4.9Z"
-                                        transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05" viewBox="0 0 9.797 6.05">
+                                    <path d="M14.646,8.59,10.9,12.329,7.151,8.59,6,9.741l4.9,4.9,4.9-4.9Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
                                 </svg>
                             </a>
                             <div class="dropdown__language">
@@ -37,12 +37,10 @@
                         </li>
                         <li class="language__currency--list">
                             <a class="account__currency--link text-white" href="#">
-                                <img src="assets/img/icon/usd-icon.png" alt="currency">
+                                <img src="<?php echo HOST; ?>/assets/img/icon/usd-icon.png" alt="currency">
                                 <span>$ US Dollar</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05"
-                                    viewBox="0 0 9.797 6.05">
-                                    <path d="M14.646,8.59,10.9,12.329,7.151,8.59,6,9.741l4.9,4.9,4.9-4.9Z"
-                                        transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05" viewBox="0 0 9.797 6.05">
+                                    <path d="M14.646,8.59,10.9,12.329,7.151,8.59,6,9.741l4.9,4.9,4.9-4.9Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
                                 </svg>
                             </a>
                             <div class="dropdown__currency">
@@ -55,7 +53,7 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -73,20 +71,23 @@
                     </a>
                 </div>
                 <div class="main__logo">
-                    <h1 class="main__logo--title"><a class="main__logo--link" href="index.php"><img
-                                class="main__logo--img" src="assets/img/logo/nav-log.png" alt="logo-img"></a></h1>
+                    <h1 class="main__logo--title"><a class="main__logo--link" href="<?php echo HOST; ?>/index.php"><img
+                                class="main__logo--img" src="<?php echo HOST; ?>/assets/img/logo/nav-log.png"
+                                alt="logo-img"></a></h1>
                 </div>
-                <div class="header__search--widget header__sticky--none d-none d-lg-block">
+
+                <!-- SEARCH BOX  -->
+                <!-- <div class="header__search--widget header__sticky--none d-none d-lg-block">
                     <form class="d-flex header__search--form" action="#">
                         <div class="header__select--categories select">
                             <select class="header__select--inner">
                                 <option selected value="1">All Categories</option>
-                                <option value="2">Accessories</option>
-                                <option value="3">Accessories & More</option>
-                                <option value="4">Camera & Video </option>
-                                <option value="5">Butters & Eggs </option>
+                                <option value="2">Men</option>
+                                <option value="3">Women</option>
+                                <option value="4">Outlet</option>
                             </select>
                         </div>
+
                         <div class="header__search--box">
                             <label>
                                 <input class="header__search--input" placeholder="Keyword here..." type="text">
@@ -104,11 +105,11 @@
                             </button>
                         </div>
                     </form>
-                </div>
+                </div> -->
                 <div class="header__account header__sticky--none">
                     <ul class="d-flex">
                         <li class="header__account--items">
-                            <a class="header__account--btn" href="my-account.php">
+                            <a class="header__account--btn" href="<?php echo HOST; ?>/view/my-account.php">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="26.51" height="23.443"
                                     viewBox="0 0 512 512">
                                     <path
@@ -123,7 +124,7 @@
                             </a>
                         </li>
                         <li class="header__account--items d-none d-lg-block">
-                            <a class="header__account--btn" href="wishlist.php">
+                            <a class="header__account--btn" href="<?php echo HOST; ?>/view/wishlist.php">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28.51" height="23.443"
                                     viewBox="0 0 512 512">
                                     <path
@@ -132,7 +133,7 @@
                                         stroke-width="32"></path>
                                 </svg>
                                 <span class="header__account--btn__text"> Wish List</span>
-                                <span class="items__count wishlist">02</span>
+                                <!-- <span class="items__count wishlist">02</span> -->
                             </a>
                         </li>
                         <li class="header__account--items">
@@ -155,7 +156,7 @@
                                     </g>
                                 </svg>
                                 <span class="header__account--btn__text"> My cart</span>
-                                <span class="items__count">02</span>
+                                <!-- <span class="items__count">02</span> -->
                             </a>
                         </li>
                     </ul>
@@ -164,172 +165,133 @@
                     <nav class="header__menu--navigation">
                         <ul class="d-flex">
                             <li class="header__menu--items style2">
-                                <a class="header__menu--link" href="index.php">Home
-                                    <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
-                                        height="7.41" viewBox="0 0 12 7.41">
-                                        <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z"
-                                            transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
-                                    </svg>
+                                <a class="header__menu--link" href="<?php echo HOST; ?>">Home
+                                    <!-- <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12" height="7.41" viewBox="0 0 12 7.41">
+                                        <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
+                                    </svg>-->
                                 </a>
-                                <ul class="header__sub--menu">
-                                    <li class="header__sub--menu__items"><a href="index.php"
-                                            class="header__sub--menu__link">Home One</a></li>
-                                    <li class="header__sub--menu__items"><a href="index-2.php"
-                                            class="header__sub--menu__link">Home Two</a></li>
-                                    <li class="header__sub--menu__items"><a href="index-3.php"
-                                            class="header__sub--menu__link">Home Three</a></li>
-                                </ul>
+                                <!--<ul class="header__sub--menu">
+                                    <li class="header__sub--menu__items"><a href="<?php echo HOST; ?>" class="header__sub--menu__link">Home One</a></li>
+                                    <li class="header__sub--menu__items"><a href="index-2.php" class="header__sub--menu__link">Home Two</a></li>
+                                    <li class="header__sub--menu__items"><a href="index-3.php" class="header__sub--menu__link">Home Three</a></li>
+                                </ul>-->
                             </li>
                             <li class="header__menu--items mega__menu--items style2">
-                                <a class="header__menu--link" href="shop.php">Shop
-                                    <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
-                                        height="7.41" viewBox="0 0 12 7.41">
-                                        <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z"
-                                            transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
-                                    </svg>
+                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/shop.php">Shop
+                                    <!-- <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12" height="7.41" viewBox="0 0 12 7.41">
+                                        <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
+                                    </svg>-->
                                 </a>
-                                <ul class="header__mega--menu d-flex">
+                                <!-- <ul class="header__mega--menu d-flex">
                                     <li class="header__mega--menu__li">
                                         <span class="header__mega--subtitle">Column One</span>
                                         <ul class="header__mega--sub__menu">
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="shop.php">Shop Left
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/shop.php">Shop Left
                                                     Sidebar</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="shop-right-sidebar.php">Shop Right Sidebar</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="shop-grid.php">Shop
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/shop-right-sidebar.php">Shop Right
+                                                    Sidebar</a></li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/shop-grid.php">Shop
                                                     Grid</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="shop-grid-list.php">Shop Grid List</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="shop-list.php">Shop
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-grid-list.php">Shop Grid List</a></li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-list.php">Shop
                                                     List</a></li>
                                         </ul>
                                     </li>
                                     <li class="header__mega--menu__li">
                                         <span class="header__mega--subtitle">Column Two</span>
                                         <ul class="header__mega--sub__menu">
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="product-details.php">Product Details</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="product-video.php">Video Product</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="product-details.php">Variable Product</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="product-left-sidebar.php">Product Left Sidebar</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="product-gallery.php">Product Gallery</a></li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/product-details.php">Product
+                                                    Details</a></li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/product-video.php">Video Product</a>
+                                            </li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/product-details.php">Variable
+                                                    Product</a></li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/product-left-sidebar.php">Product
+                                                    Left Sidebar</a></li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-gallery.php">Product Gallery</a></li>
                                         </ul>
                                     </li>
                                     <li class="header__mega--menu__li">
                                         <span class="header__mega--subtitle">Column Three</span>
                                         <ul class="header__mega--sub__menu">
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="my-account.php">My
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/my-account.php">My
                                                     Account</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="my-account-2.php">My
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/my-account-2.php">My
                                                     Account 2</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="404.php">404
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/404.php">404
                                                     Page</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="login.php">Login
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/login.php">Login
                                                     Page</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="faq.php">Faq
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/faq.php">Faq
                                                     Page</a></li>
                                         </ul>
                                     </li>
                                     <li class="header__mega--menu__li">
                                         <span class="header__mega--subtitle">Column Four</span>
                                         <ul class="header__mega--sub__menu">
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="compare.php">Compare
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="compare.php">Compare
                                                     Pages</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="checkout.php">Checkout
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/checkout.php">Checkout
                                                     page</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="checkout-2.php">Checkout Style 2</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="checkout-3.php">Checkout Style 3</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="checkout-4.php">Checkout Style 4</a></li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/checkout-2.php">Checkout Style 2</a>
+                                            </li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/checkout-3.php">Checkout Style 3</a>
+                                            </li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/checkout-4.php">Checkout Style 4</a>
+                                            </li>
                                         </ul>
                                     </li>
-                                </ul>
+                                </ul>-->
                             </li>
-                            <li class="header__menu--items style2">
-                                <a class="header__menu--link" href="about.php">About US </a>
-                            </li>
-                            <li class="header__menu--items style2">
-                                <a class="header__menu--link" href="blog.php">Blog
-                                    <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
+                            <!-- <li class="header__menu--items style2">
+                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/about.php">About Us </a>
+                            </li> -->
+                            <!-- <li class="header__menu--items style2"> -->
+                            <!-- <a class="header__menu--link" href="blog.php">Novelty</a> -->
+                            <!--<ul class="header__sub--menu">
+                                        <li class="header__sub--menu__items"><a href="blog.php" class="header__sub--menu__link">Blog Grid</a></li>
+                                        <li class="header__sub--menu__items"><a href="blog-details.php" class="header__sub--menu__link">Blog Details</a></li>
+                                        <li class="header__sub--menu__items"><a href="blog-left-sidebar.php" class="header__sub--menu__link">Blog Left Sidebar</a></li>
+                                        <li class="header__sub--menu__items"><a href="blog-right-sidebar.php" class="header__sub--menu__link">Blog Right Sidebar</a></li>
+                                    </ul>-->
+                            <!-- </li> -->
+                            <!-- <li class="header__menu--items style2 d-none d-xl-block">
+                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/shop.php">Categories <svg
+                                        class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
                                         height="7.41" viewBox="0 0 12 7.41">
                                         <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z"
                                             transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
                                     </svg>
                                 </a>
                                 <ul class="header__sub--menu">
-                                    <li class="header__sub--menu__items"><a href="blog.php"
-                                            class="header__sub--menu__link">Blog Grid</a></li>
+                                    <li class="header__sub--menu__items"><a href="shop-right-sidebar.php"
+                                            class="header__sub--menu__link">Men</a></li>
                                     <li class="header__sub--menu__items"><a href="blog-details.php"
-                                            class="header__sub--menu__link">Blog Details</a></li>
+                                            class="header__sub--menu__link">Women</a></li>
                                     <li class="header__sub--menu__items"><a href="blog-left-sidebar.php"
-                                            class="header__sub--menu__link">Blog Left Sidebar</a></li>
-                                    <li class="header__sub--menu__items"><a href="blog-right-sidebar.php"
-                                            class="header__sub--menu__link">Blog Right Sidebar</a></li>
+                                            class="header__sub--menu__link">Outlet</a></li>
                                 </ul>
                             </li>
-                            <li class="header__menu--items style2 d-none d-xl-block">
-                                <a class="header__menu--link" href="shop.php">Categories </a>
+                            <li class="header__menu--items style2">
+                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/faq.php">Collaboration </a>
                             </li>
                             <li class="header__menu--items style2">
-                                <a class="header__menu--link" href="#">Pages
-                                    <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
-                                        height="7.41" viewBox="0 0 12 7.41">
-                                        <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z"
-                                            transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
-                                    </svg>
+                                <a class="header__menu--link " href="<?php echo HOST; ?>/view/wishlist.php">Favorites
                                 </a>
-                                <ul class="header__sub--menu">
-                                    <li class="header__sub--menu__items"><a href="about.php"
-                                            class="header__sub--menu__link">About Us</a></li>
-                                    <li class="header__sub--menu__items"><a href="contact.php"
-                                            class="header__sub--menu__link">Contact Us</a></li>
-                                    <li class="header__sub--menu__items"><a href="cart.php"
-                                            class="header__sub--menu__link">Cart Page</a></li>
-                                    <li class="header__sub--menu__items"><a href="portfolio.php"
-                                            class="header__sub--menu__link">Portfolio Page</a></li>
-                                    <li class="header__sub--menu__items"><a href="wishlist.php"
-                                            class="header__sub--menu__link">Wishlist Page</a></li>
-                                    <li class="header__sub--menu__items"><a href="login.php"
-                                            class="header__sub--menu__link">Login Page</a></li>
-                                    <li class="header__sub--menu__items"><a href="404.php"
-                                            class="header__sub--menu__link">Error Page</a></li>
-                                </ul>
+                            </li> -->
+                            <li class="header__menu--items style2">
+                                <a class="header__menu--link " href="<?php echo HOST; ?>/view/bout.php">About </a>
                             </li>
                             <li class="header__menu--items style2">
-                                <a class="header__menu--link " href="contact.php">Contact </a>
+                                <a class="header__menu--link " href="<?php echo HOST; ?>/view/contact.php">Contact </a>
                             </li>
+
                         </ul>
                     </nav>
                 </div>
                 <div class="header__account header__account2 header__sticky--block">
                     <ul class="d-flex">
-                        <li
+                        <!-- <li
                             class="header__account--items header__account2--items  header__account--search__items d-none d-lg-block">
                             <a class="header__account--btn search__open--btn" href="javascript:void(0)" data-offcanvas>
                                 <svg class="header__search--button__svg" xmlns="http://www.w3.org/2000/svg"
@@ -341,9 +303,9 @@
                                 </svg>
                                 <span class="visually-hidden">Search</span>
                             </a>
-                        </li>
+                        </li> -->
                         <li class="header__account--items header__account2--items">
-                            <a class="header__account--btn" href="my-account.php">
+                            <a class="header__account--btn" href="<?php echo HOST; ?>/view/my-account.php">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="26.51" height="23.443"
                                     viewBox="0 0 512 512">
                                     <path
@@ -358,7 +320,7 @@
                             </a>
                         </li>
                         <li class="header__account--items header__account2--items d-none d-lg-block">
-                            <a class="header__account--btn" href="wishlist.php">
+                            <a class="header__account--btn" href="<?php echo HOST; ?>/view/wishlist.php">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28.51" height="23.443"
                                     viewBox="0 0 512 512">
                                     <path
@@ -366,7 +328,7 @@
                                         fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="32"></path>
                                 </svg>
-                                <span class="items__count  wishlist style2">02</span>
+                                <!-- <span class="items__count  wishlist style2">02</span> -->
                             </a>
                         </li>
                         <li class="header__account--items header__account2--items">
@@ -388,7 +350,7 @@
                                         </g>
                                     </g>
                                 </svg>
-                                <span class="items__count style2">02</span>
+                                <!-- <span class="items__count style2">02</span> -->
                             </a>
                         </li>
                     </ul>
@@ -404,171 +366,122 @@
                     <nav class="header__menu--navigation">
                         <ul class="d-flex">
                             <li class="header__menu--items">
-                                <a class="header__menu--link" href="index.php">Home
-                                    <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
-                                        height="7.41" viewBox="0 0 12 7.41">
-                                        <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z"
-                                            transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
-                                    </svg>
+                                <a class="header__menu--link" href="<?php echo HOST; ?>">Home
+                                    <!--<svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12" height="7.41" viewBox="0 0 12 7.41">
+                                        <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
+                                    </svg>-->
                                 </a>
-                                <ul class="header__sub--menu">
-                                    <li class="header__sub--menu__items"><a href="index.php"
-                                            class="header__sub--menu__link">Home One</a></li>
-                                    <li class="header__sub--menu__items"><a href="index-2.php"
-                                            class="header__sub--menu__link">Home Two</a></li>
-                                    <li class="header__sub--menu__items"><a href="index-3.php"
-                                            class="header__sub--menu__link">Home Three</a></li>
-                                </ul>
+                                <!--<ul class="header__sub--menu">
+                                    <li class="header__sub--menu__items"><a href="<?php echo HOST; ?>" class="header__sub--menu__link">Home One</a></li>
+                                    <li class="header__sub--menu__items"><a href="index-2.php" class="header__sub--menu__link">Home Two</a></li>
+                                    <li class="header__sub--menu__items"><a href="index-3.php" class="header__sub--menu__link">Home Three</a></li>
+                                </ul>-->
                             </li>
                             <li class="header__menu--items mega__menu--items">
-                                <a class="header__menu--link" href="shop.php">Shop
-                                    <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
-                                        height="7.41" viewBox="0 0 12 7.41">
-                                        <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z"
-                                            transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
-                                    </svg>
+                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/shop.php">Shop
+                                    <!--<svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12" height="7.41" viewBox="0 0 12 7.41">
+                                        <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
+                                    </svg>-->
                                 </a>
-                                <ul class="header__mega--menu d-flex">
+                                <!--<ul class="header__mega--menu d-flex">
                                     <li class="header__mega--menu__li">
                                         <span class="header__mega--subtitle">Column One</span>
                                         <ul class="header__mega--sub__menu">
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="shop.php">Shop Left
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/shop.php">Shop Left
                                                     Sidebar</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="shop-right-sidebar.php">Shop Right Sidebar</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="shop-grid.php">Shop
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/shop-right-sidebar.php">Shop Right
+                                                    Sidebar</a></li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/shop-grid.php">Shop
                                                     Grid</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="shop-grid-list.php">Shop Grid List</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="shop-list.php">Shop
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-grid-list.php">Shop Grid List</a></li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-list.php">Shop
                                                     List</a></li>
                                         </ul>
                                     </li>
                                     <li class="header__mega--menu__li">
                                         <span class="header__mega--subtitle">Column Two</span>
                                         <ul class="header__mega--sub__menu">
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="product-details.php">Product Details</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="product-video.php">Video Product</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="product-details.php">Variable Product</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="product-left-sidebar.php">Product Left Sidebar</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="product-gallery.php">Product Gallery</a></li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/product-details.php">Product
+                                                    Details</a></li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/product-video.php">Video Product</a>
+                                            </li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/product-details.php">Variable
+                                                    Product</a></li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/product-left-sidebar.php">Product
+                                                    Left Sidebar</a></li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-gallery.php">Product Gallery</a></li>
                                         </ul>
                                     </li>
                                     <li class="header__mega--menu__li">
                                         <span class="header__mega--subtitle">Column Three</span>
                                         <ul class="header__mega--sub__menu">
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="my-account.php">My
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/my-account.php">My
                                                     Account</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="my-account-2.php">My
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/my-account-2.php">My
                                                     Account 2</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="404.php">404
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/404.php">404
                                                     Page</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="login.php">Login
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/login.php">Login
                                                     Page</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="faq.php">Faq
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/faq.php">Faq
                                                     Page</a></li>
                                         </ul>
                                     </li>
                                     <li class="header__mega--menu__li">
                                         <span class="header__mega--subtitle">Column Four</span>
                                         <ul class="header__mega--sub__menu">
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="compare.php">Compare
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="compare.php">Compare
                                                     Pages</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="checkout.php">Checkout
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/checkout.php">Checkout
                                                     page</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="checkout-2.php">Checkout Style 2</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="checkout-3.php">Checkout Style 3</a></li>
-                                            <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title"
-                                                    href="checkout-4.php">Checkout Style 4</a></li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/checkout-2.php">Checkout Style 2</a>
+                                            </li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/checkout-3.php">Checkout Style 3</a>
+                                            </li>
+                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="<?php echo HOST; ?>/view/checkout-4.php">Checkout Style 4</a>
+                                            </li>
                                         </ul>
                                     </li>
-                                </ul>
+                                </ul>-->
                             </li>
-                            <li class="header__menu--items">
-                                <a class="header__menu--link" href="about.php">About US </a>
-                            </li>
-                            <li class="header__menu--items">
-                                <a class="header__menu--link" href="blog.php">Blog
-                                    <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
-                                        height="7.41" viewBox="0 0 12 7.41">
-                                        <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z"
-                                            transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
-                                    </svg>
-                                </a>
-                                <ul class="header__sub--menu">
-                                    <li class="header__sub--menu__items"><a href="blog.php"
-                                            class="header__sub--menu__link">Blog Grid</a></li>
-                                    <li class="header__sub--menu__items"><a href="blog-details.php"
-                                            class="header__sub--menu__link">Blog Details</a></li>
-                                    <li class="header__sub--menu__items"><a href="blog-left-sidebar.php"
-                                            class="header__sub--menu__link">Blog Left Sidebar</a></li>
-                                    <li class="header__sub--menu__items"><a href="blog-right-sidebar.php"
-                                            class="header__sub--menu__link">Blog Right Sidebar</a></li>
-                                </ul>
+                            <!-- <li class="header__menu--items">
+                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/about.php">About Us </a>
+                            </li> -->
+                            <!-- <li class="header__menu--items">
+                                <a class="header__menu--link" href="blog.php">Novelty</a>
                             </li>
                             <li class="header__menu--items d-none d-xl-block">
-                                <a class="header__menu--link" href="shop.php">Categories </a>
-                            </li>
-                            <li class="header__menu--items">
-                                <a class="header__menu--link" href="#">Pages
-                                    <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
+                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/shop.php">Categories <svg
+                                        class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
                                         height="7.41" viewBox="0 0 12 7.41">
                                         <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z"
                                             transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
                                     </svg>
                                 </a>
                                 <ul class="header__sub--menu">
-                                    <li class="header__sub--menu__items"><a href="about.php"
-                                            class="header__sub--menu__link">About Us</a></li>
-                                    <li class="header__sub--menu__items"><a href="contact.php"
-                                            class="header__sub--menu__link">Contact Us</a></li>
-                                    <li class="header__sub--menu__items"><a href="cart.php"
-                                            class="header__sub--menu__link">Cart Page</a></li>
-                                    <li class="header__sub--menu__items"><a href="portfolio.php"
-                                            class="header__sub--menu__link">Portfolio Page</a></li>
-                                    <li class="header__sub--menu__items"><a href="wishlist.php"
-                                            class="header__sub--menu__link">Wishlist Page</a></li>
-                                    <li class="header__sub--menu__items"><a href="login.php"
-                                            class="header__sub--menu__link">Login Page</a></li>
-                                    <li class="header__sub--menu__items"><a href="404.php"
-                                            class="header__sub--menu__link">Error Page</a></li>
+                                    <li class="header__sub--menu__items"><a href="shop-right-sidebar.php"
+                                            class="header__sub--menu__link">Men</a></li>
+                                    <li class="header__sub--menu__items"><a href="blog-details.php"
+                                            class="header__sub--menu__link">Women</a></li>
+                                    <li class="header__sub--menu__items"><a href="blog-left-sidebar.php"
+                                            class="header__sub--menu__link">Outlet</a></li>
                                 </ul>
                             </li>
                             <li class="header__menu--items">
-                                <a class="header__menu--link" href="contact.php">Contact </a>
+                                <a class="header__menu--link" href="faq.php">Collaboration</a>
+                            </li> -->
+                            <li class="header__menu--items">
+                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/about.php">About </a>
+                            </li>
+                            <li class="header__menu--items">
+                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/contact.php">Contact </a>
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <p class="header__discount--text"><img class="header__discount--icon__img"
-                        src="assets/img/icon/lamp.png" alt="lamp-img"> Special up to 60% Off all item</p>
+                        src="<?php echo HOST; ?>/assets/img/icon/lamp.png" alt="lamp-img"> Special up to 40% Off all
+                    item</p>
             </div>
         </div>
     </div>
@@ -577,127 +490,29 @@
     <div class="offcanvas__header">
         <div class="offcanvas__inner">
             <div class="offcanvas__logo">
-                <a class="offcanvas__logo_link" href="index.php">
-                    <img src="assets/img/logo/nav-log.png" alt="Grocee Logo" width="158" height="36">
+                <a class="offcanvas__logo_link" href="<?php echo HOST; ?>">
+                    <img src="<?php echo HOST; ?>/assets/img/logo/nav-log.png" alt="Grocee Logo" width="158"
+                        height="36">
                 </a>
                 <button class="offcanvas__close--btn" data-offcanvas>close</button>
             </div>
             <nav class="offcanvas__menu">
                 <ul class="offcanvas__menu_ul">
                     <li class="offcanvas__menu_li">
-                        <a class="offcanvas__menu_item" href="index.php">Home</a>
-                        <ul class="offcanvas__sub_menu">
-                            <li class="offcanvas__sub_menu_li"><a href="index.php" class="offcanvas__sub_menu_item">Home
-                                    One</a></li>
-                            <li class="offcanvas__sub_menu_li"><a href="index-2.php"
-                                    class="offcanvas__sub_menu_item">Home Two</a></li>
-                            <li class="offcanvas__sub_menu_li"><a href="index-3.php"
-                                    class="offcanvas__sub_menu_item">Home Three</a></li>
-                        </ul>
+                        <a class="offcanvas__menu_item" href="<?php echo HOST; ?>">Home</a>
                     </li>
                     <li class="offcanvas__menu_li">
-                        <a class="offcanvas__menu_item" href="#">Shop</a>
-                        <ul class="offcanvas__sub_menu">
-                            <li class="offcanvas__sub_menu_li">
-                                <a href="#" class="offcanvas__sub_menu_item">Column One</a>
-                                <ul class="offcanvas__sub_menu">
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="shop.php">Shop Left Sidebar</a></li>
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="shop-right-sidebar.php">Shop Right Sidebar</a></li>
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="shop-grid.php">Shop Grid</a></li>
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="shop-grid-list.php">Shop Grid List</a></li>
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="shop-list.php">Shop List</a></li>
-                                </ul>
-                            </li>
-                            <li class="offcanvas__sub_menu_li">
-                                <a href="#" class="offcanvas__sub_menu_item">Column Two</a>
-                                <ul class="offcanvas__sub_menu">
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="product-details.php">Product Details</a></li>
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="product-video.php">Video Product</a></li>
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="product-details.php">Variable Product</a></li>
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="product-left-sidebar.php">Product Left Sidebar</a></li>
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="product-gallery.php">Product Gallery</a></li>
-                                </ul>
-                            </li>
-                            <li class="offcanvas__sub_menu_li">
-                                <a href="#" class="offcanvas__sub_menu_item">Column Three</a>
-                                <ul class="offcanvas__sub_menu">
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="my-account.php">My Account</a></li>
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="my-account-2.php">My Account 2</a></li>
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="404.php">404 Page</a></li>
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="login.php">Login Page</a></li>
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="faq.php">Faq Page</a></li>
-                                </ul>
-                            </li>
-                            <li class="offcanvas__sub_menu_li">
-                                <a href="#" class="offcanvas__sub_menu_item">Column Three</a>
-                                <ul class="offcanvas__sub_menu">
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="compare.php">Compare Pages</a></li>
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="checkout.php">Checkout page</a></li>
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="checkout-2.php">Checkout Style 2</a></li>
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="checkout-3.php">Checkout Style 3</a></li>
-                                    <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item"
-                                            href="checkout-4.php">Checkout Style 4</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <a class="offcanvas__menu_item" href="<?php echo HOST; ?>/view/shop.php">Shop</a>
                     </li>
-                    <li class="offcanvas__menu_li">
-                        <a class="offcanvas__menu_item" href="#">Blog</a>
-                        <ul class="offcanvas__sub_menu">
-                            <li class="offcanvas__sub_menu_li"><a href="blog.php" class="offcanvas__sub_menu_item">Blog
-                                    Grid</a></li>
-                            <li class="offcanvas__sub_menu_li"><a href="blog-details.php"
-                                    class="offcanvas__sub_menu_item">Blog Details</a></li>
-                            <li class="offcanvas__sub_menu_li"><a href="blog-left-sidebar.php"
-                                    class="offcanvas__sub_menu_item">Blog Left Sidebar</a></li>
-                            <li class="offcanvas__sub_menu_li"><a href="blog-right-sidebar.php"
-                                    class="offcanvas__sub_menu_item">Blog Right Sidebar</a></li>
-                        </ul>
-                    </li>
-                    <li class="offcanvas__menu_li">
-                        <a class="offcanvas__menu_item" href="#">Pages</a>
-                        <ul class="offcanvas__sub_menu">
-                            <li class="offcanvas__sub_menu_li"><a href="about.php"
-                                    class="offcanvas__sub_menu_item">About Us</a></li>
-                            <li class="offcanvas__sub_menu_li"><a href="contact.php"
-                                    class="offcanvas__sub_menu_item">Contact Us</a></li>
-                            <li class="offcanvas__sub_menu_li"><a href="cart.php" class="offcanvas__sub_menu_item">Cart
-                                    Page</a></li>
-                            <li class="offcanvas__sub_menu_li"><a href="portfolio.php"
-                                    class="offcanvas__sub_menu_item">Portfolio Page</a></li>
-                            <li class="offcanvas__sub_menu_li"><a href="wishlist.php"
-                                    class="offcanvas__sub_menu_item">Wishlist Page</a></li>
-                            <li class="offcanvas__sub_menu_li"><a href="login.php"
-                                    class="offcanvas__sub_menu_item">Login Page</a></li>
-                            <li class="offcanvas__sub_menu_li"><a href="404.php" class="offcanvas__sub_menu_item">Error
-                                    Page</a></li>
-                        </ul>
-                    </li>
-                    <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="about.php">About</a></li>
-                    <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="contact.php">Contact</a>
+                    <li class="offcanvas__menu_li"><a class="offcanvas__menu_item"
+                            href="<?php echo HOST; ?>/view/about.php">About</a></li>
+                    <li class="offcanvas__menu_li"><a class="offcanvas__menu_item"
+                            href="<?php echo HOST; ?>/view/contact.php">Contact</a>
                     </li>
                 </ul>
                 <div class="offcanvas__account--items">
-                    <a class="offcanvas__account--items__btn d-flex align-items-center" href="login.php">
+                    <a class="offcanvas__account--items__btn d-flex align-items-center"
+                        href="<?php echo HOST; ?>/view/login.php">
                         <span class="offcanvas__account--items__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20.51" height="19.443" viewBox="0 0 512 512">
                                 <path
@@ -712,12 +527,12 @@
                         <span class="offcanvas__account--items__label">Login / Register</span>
                     </a>
                 </div>
-                <div class="language__currency">
+                <!-- <div class="language__currency">
                     <ul class="d-flex align-items-center">
                         <li class="language__currency--list">
                             <a class="offcanvas__language--switcher" href="#">
-                                <img class="language__switcher--icon__img" src="assets/img/icon/language-icon.png"
-                                    alt="currency">
+                                <img class="language__switcher--icon__img"
+                                    src="<?php echo HOST; ?>/assets/img/icon/language-icon.png" alt="currency">
                                 <span>English</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05"
                                     viewBox="0 0 9.797 6.05">
@@ -735,7 +550,7 @@
                         </li>
                         <li class="language__currency--list">
                             <a class="offcanvas__account--currency__menu" href="#">
-                                <img src="assets/img/icon/usd-icon.png" alt="currency">
+                                <img src="<?php echo HOST; ?>/assets/img/icon/usd-icon.png" alt="currency">
                                 <span>$ US Dollar</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05"
                                     viewBox="0 0 9.797 6.05">
@@ -753,7 +568,7 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </nav>
         </div>
     </div>
@@ -763,7 +578,7 @@
     <div class="offcanvas__stikcy--toolbar">
         <ul class="d-flex justify-content-between">
             <li class="offcanvas__stikcy--toolbar__list">
-                <a class="offcanvas__stikcy--toolbar__btn" href="index.php">
+                <a class="offcanvas__stikcy--toolbar__btn" href="<?php echo HOST; ?>">
                     <span class="offcanvas__stikcy--toolbar__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="21.51" height="21.443"
                             viewBox="0 0 22 17">
@@ -776,7 +591,7 @@
                 </a>
             </li>
             <li class="offcanvas__stikcy--toolbar__list">
-                <a class="offcanvas__stikcy--toolbar__btn" href="shop.php">
+                <a class="offcanvas__stikcy--toolbar__btn" href="<?php echo HOST; ?>/view/shop.php">
                     <span class="offcanvas__stikcy--toolbar__icon">
                         <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="18.51" height="17.443"
                             viewBox="0 0 448 512">
@@ -788,7 +603,7 @@
                     <span class="offcanvas__stikcy--toolbar__label">Shop</span>
                 </a>
             </li>
-            <li class="offcanvas__stikcy--toolbar__list ">
+            <!-- <li class="offcanvas__stikcy--toolbar__list ">
                 <a class="offcanvas__stikcy--toolbar__btn search__open--btn" href="javascript:void(0)" data-offcanvas>
                     <span class="offcanvas__stikcy--toolbar__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 512 512">
@@ -800,7 +615,7 @@
                     </span>
                     <span class="offcanvas__stikcy--toolbar__label">Search</span>
                 </a>
-            </li>
+            </li> -->
             <li class="offcanvas__stikcy--toolbar__list">
                 <a class="offcanvas__stikcy--toolbar__btn minicart__open--btn" href="javascript:void(0)" data-offcanvas>
                     <span class="offcanvas__stikcy--toolbar__icon">
@@ -812,11 +627,11 @@
                         </svg>
                     </span>
                     <span class="offcanvas__stikcy--toolbar__label">Cart</span>
-                    <span class="items__count">3</span>
+                    <!-- <span class="items__count">3</span> -->
                 </a>
             </li>
             <li class="offcanvas__stikcy--toolbar__list">
-                <a class="offcanvas__stikcy--toolbar__btn" href="wishlist.php">
+                <a class="offcanvas__stikcy--toolbar__btn" href="<?php echo HOST; ?>/view/wishlist.php">
                     <span class="offcanvas__stikcy--toolbar__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18.541" height="15.557"
                             viewBox="0 0 18.541 15.557">
@@ -826,7 +641,7 @@
                         </svg>
                     </span>
                     <span class="offcanvas__stikcy--toolbar__label">Wishlist</span>
-                    <span class="items__count">3</span>
+                    <!-- <span class="items__count">3</span> -->
                 </a>
             </li>
         </ul>
@@ -850,14 +665,16 @@
         <div class="minicart__product">
             <div class="minicart__product--items d-flex">
                 <div class="minicart__thumb">
-                    <a href="product-details.php"><img src="assets/img/product/product1.png" alt="prduct-img"></a>
+                    <a href="<?php echo HOST; ?>/view/product-details.php"><img
+                            src="<?php echo HOST; ?>/assets/img/product/product1.png" alt="prduct-img"></a>
                 </div>
                 <div class="minicart__text">
-                    <h3 class="minicart__subtitle h4"><a href="product-details.php">Oversize Cotton Dress</a></h3>
+                    <h3 class="minicart__subtitle h4"><a href="<?php echo HOST; ?>/view/product-details.php">Oversize
+                            Cotton Dress</a></h3>
                     <span class="color__variant"><b>Color:</b> Beige</span>
                     <div class="minicart__price">
-                        <span class="current__price">$125.00</span>
-                        <span class="old__price">$140.00</span>
+                        <span class="current__price">€125.00</span>
+                        <span class="old__price">€140.00</span>
                     </div>
                     <div class="minicart__text--footer d-flex align-items-center">
                         <div class="quantity__box minicart__quantity">
@@ -874,14 +691,16 @@
             </div>
             <div class="minicart__product--items d-flex">
                 <div class="minicart__thumb">
-                    <a href="product-details.php"><img src="assets/img/product/product2.png" alt="prduct-img"></a>
+                    <a href="<?php echo HOST; ?>/view/product-details.php"><img
+                            src="<?php echo HOST; ?>/assets/img/product/product2.png" alt="prduct-img"></a>
                 </div>
                 <div class="minicart__text">
-                    <h3 class="minicart__subtitle h4"><a href="product-details.php">Boxy Denim Jacket</a></h3>
+                    <h3 class="minicart__subtitle h4"><a href="<?php echo HOST; ?>/view/product-details.php">Boxy Denim
+                            Jacket</a></h3>
                     <span class="color__variant"><b>Color:</b> Green</span>
                     <div class="minicart__price">
-                        <span class="current__price">$115.00</span>
-                        <span class="old__price">$130.00</span>
+                        <span class="current__price">€115.00</span>
+                        <span class="old__price">€130.00</span>
                     </div>
                     <div class="minicart__text--footer d-flex align-items-center">
                         <div class="quantity__box minicart__quantity">
@@ -901,11 +720,11 @@
         <div class="minicart__amount">
             <div class="minicart__amount_list d-flex justify-content-between">
                 <span>Sub Total:</span>
-                <span><b>$240.00</b></span>
+                <span><b>€240.00</b></span>
             </div>
             <div class="minicart__amount_list d-flex justify-content-between">
                 <span>Total:</span>
-                <span><b>$240.00</b></span>
+                <span><b>€240.00</b></span>
             </div>
         </div>
         <div class="minicart__conditions text-center">
@@ -915,7 +734,7 @@
         </div>
         <div class="minicart__button d-flex justify-content-center">
             <a class="primary__btn minicart__button--link" href="cart.php">View cart</a>
-            <a class="primary__btn minicart__button--link" href="checkout.php">Checkout</a>
+            <a class="primary__btn minicart__button--link" href="<?php echo HOST; ?>/view/checkout.php">Checkout</a>
         </div>
     </div>
     <!-- End offCanvas minicart -->
