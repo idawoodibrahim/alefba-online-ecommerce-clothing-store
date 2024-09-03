@@ -60,7 +60,8 @@
 
                         </li>
                         <li class="social__shear--list">
-                            <a class="social__shear--list__icon" target="_blank" href="https://www.pinterest.com">
+                            <a class="social__shear--list__icon" target="_blank"
+                                href="https://www.pinterest.com/alefba_fr">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16.489" height="13.384"
                                     viewBox="0 0 24 24">
                                     <path
@@ -71,9 +72,8 @@
                             </a>
 
                         </li>
-                        <li class="social__shear--list">
-                            <a class="social__shear--list__icon" target="_blank"
-                                href="https://www.pinterest.com/alefba_fr">
+                        <!-- <li class="social__shear--list">
+                            <a class="social__shear--list__icon" target="_blank" href="https://www.instagram.com/">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16.497" height="16.492"
                                     viewBox="0 0 19.497 19.492">
                                     <path data-name="Icon awesome-instagram"
@@ -82,7 +82,7 @@
                                 </svg>
                                 <span class="visually-hidden">Instagram</span>
                             </a>
-                        </li>
+                        </li> -->
                         <li class="social__shear--list">
                             <a class="social__shear--list__icon" target="_blank"
                                 href="https://www.youtube.com/@ale-fba">
@@ -127,7 +127,7 @@
                 </div> -->
 
                 <div class="footer__widget">
-                    <h2 class="footer__widget--title text-ofwhite h3">Contact
+                    <h2 class="footer__widget--title text-ofwhite h3">Links
                         <button class="footer__widget--button" aria-label="footer widget button">
                             <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
                                 width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
@@ -137,24 +137,23 @@
                         </button>
                     </h2>
                     <ul class="footer__widget--menu footer__widget--inner">
-                        <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                href="<?php echo HOST; ?>/view/my-account.php">Contact us
-                            </a></li>
-                        <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                href="cart.php">Help</a></li>
-                        <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                href="<?php echo HOST; ?>/view/login.php">See Order</a></li>
-                        <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                href="<?php echo HOST; ?>/view/login.php">Delivery</a></li>
-                        <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                href="<?php echo HOST; ?>/view/checkout.php">Order status</a></li>
-                        <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                href="<?php echo HOST; ?>/view/wishlist.php">Find an ALEFBA store</a></li>
+                        <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text"
+                                href="<?php echo HOST; ?>">Home</a>
+                        </li>
+                        <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text"
+                                href="<?php echo HOST; ?>/view/about.php">About Us</a>
+                        </li>
+                        <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text"
+                                href="<?php echo HOST; ?>/view/shop.php">Shop</a>
+                        </li>
+                        <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text"
+                                href="<?php echo HOST; ?>/view/contact.php">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="footer__widget">
-                    <h2 class="footer__widget--title text-ofwhite h3">Business
+                    <h2 class="footer__widget--title text-ofwhite h3">Locations
                         <button class="footer__widget--button" aria-label="footer widget button">
                             <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
                                 width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
@@ -165,21 +164,16 @@
                     </h2>
                     <ul class="footer__widget--menu footer__widget--inner">
                         <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                href="<?php echo HOST; ?>/view/about.php">Recruitment</a></li>
+                                href="https://maps.app.goo.gl/mq1gJTracysEbkCt8"><strong>Depot address</strong> <br>
+                                📍 50 Bd la Fontaine, 67200 Strasbourg</a></li>
                         <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                href="<?php echo HOST; ?>/view/contact.php">Promo Codes</a></li>
-                        <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                href="portfolio.php">Notice</a></li>
-                        <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                href="privacy-policy.php">About ALEFBA</a></li>
-                        <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                href="compare.php">Investors</a></li>
-
+                                href="https://maps.app.goo.gl/2erRCeLzHxgWqdno6"><strong>Office address</strong> <br>
+                                📍 14 Rue de la Ganzau, 67100 Strasbourg</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer__widget footer__widget--width">
-                <h2 class="footer__widget--title text-ofwhite h3">Sale
+                <h2 class="footer__widget--title text-ofwhite h3">Contact Info
                     <button class="footer__widget--button" aria-label="footer widget button">
                         <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
                             width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
@@ -190,22 +184,12 @@
                 </h2>
                 <ul class="footer__widget--menu footer__widget--inner">
                     <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                            href="<?php echo HOST; ?>/view/about.php">Open a shop</a></li>
+                            href="mailto:abdullahkhanzahin@gmail.com">📩 abdullahkhanzahin@gmail.com</a></li>
                     <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                            href="<?php echo HOST; ?>/view/contact.php">Sales aid</a></li>
-                    <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                            href="portfolio.php">Back</a></li>
-                    <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                            href="privacy-policy.php">Become an Affiliate Partner</a></li>
-                    <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                            href="<?php echo HOST; ?>/view/faq.php">payment methods</a></li>
-                    <!-- <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                href="compare.php">Investors</a></li>
-                        <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                href="<?php echo HOST; ?>/view/faq.php">payment methods</a></li> <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                href="<?php echo HOST; ?>/view/faq.php">Our Initiatives</a></li>
-                                 <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                href="<?php echo HOST; ?>/view/faq.php">Development Fund</a></li> -->
+                            href="mailto:fahimkhanrefah@gmail.com">📩 fahimkhanrefah@gmail.com</a></li>
+                    <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="tel:">
+                            📞 +44 1231 2345</a></li>
+
                 </ul>
             </div>
 

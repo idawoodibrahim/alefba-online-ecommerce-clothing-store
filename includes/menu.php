@@ -280,7 +280,7 @@
                                 </a>
                             </li> -->
                             <li class="header__menu--items style2">
-                                <a class="header__menu--link " href="<?php echo HOST; ?>/view/bout.php">About </a>
+                                <a class="header__menu--link " href="<?php echo HOST; ?>/view/about.php">About </a>
                             </li>
                             <li class="header__menu--items style2">
                                 <a class="header__menu--link " href="<?php echo HOST; ?>/view/contact.php">Contact </a>

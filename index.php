@@ -1,4 +1,5 @@
 <?php
+include ROOT . '/db/conn.php';
 
 $pageTitlePrefix = null;
 
@@ -223,7 +224,7 @@ include ROOT . '/includes/menu.php';
     <section class="product__section section--padding pt-5 mt-5">
         <div class="container-fluid">
             <div class="section__heading text-center mb-35">
-                <h2 class="section__heading--maintitle">New Products</h2>
+                <h2 class="section__heading--maintitle">Our Products</h2>
             </div>
             <ul class="product__tab--one product__tab--primary__btn d-flex justify-content-center mb-50">
                 <li class="product__tab--primary__btn__list active" data-toggle="tab" data-target="#featured">
@@ -237,33 +238,45 @@ include ROOT . '/includes/menu.php';
                 <div id="featured" class="tab_pane active show">
                     <div class="product__section--inner">
                         <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 mb--n30">
+                            <?php 
+                                // Fetch products from the database
+                                $query = "SELECT * FROM products";
+                                $result = $conn->query($query);
+
+                                while($row = $result->fetch_assoc()): 
+                            ?>
                             <div class="col mb-30">
                                 <div class="product__items ">
                                     <div class="product__items--thumbnail">
                                         <a class="product__items--link"
                                             href="<?php echo HOST; ?>/view/product-details.php">
                                             <img class="product__items--img product__primary--img"
-                                                src="<?php echo HOST; ?>/assets/img/product/product1.png"
+                                                src="<?php echo HOST . $row['product_primary_img']; ?>"
                                                 alt="product-img">
                                             <img class="product__items--img product__secondary--img"
-                                                src="<?php echo HOST; ?>/assets/img/product/product2.png"
+                                                src="<?php echo HOST . $row['product_secondary_img']; ?>"
                                                 alt="product-img">
                                         </a>
                                         <div class="product__badge">
-                                            <span class="product__badge--items sale">Sale</span>
+                                            <span class="product__badge--items sale"><?php echo $row['badge']; ?></span>
                                         </div>
                                     </div>
                                     <div class="product__items--content">
-                                        <span class="product__items--content__subtitle">Jacket, Women</span>
+                                        <span
+                                            class="product__items--content__subtitle"><?php echo $row['tags']; ?></span>
                                         <h3 class="product__items--content__title h4"><a
-                                                href="<?php echo HOST; ?>/view/product-details.php">Oversize Cotton
-                                                Dress</a></h3>
+                                                href="<?php echo HOST; ?>/view/product-details.php"><?php echo $row['name']; ?></a>
+                                        </h3>
                                         <div class="product__items--price">
-                                            <span class="current__price">€110</span>
+                                            <span class="current__price">€<?php echo $row['sale_price']; ?></span>
                                             <span class="price__divided"></span>
-                                            <span class="old__price">€78</span>
+                                            <span class="old__price">€<?php echo $row['original_price']; ?></span>
                                         </div>
                                         <ul class="rating product__rating d-flex">
+                                            <?php
+                                                $total_stars = 5; // Set the number of stars you want to display
+                                                for ($i = 0; $i < $total_stars; $i++) {
+                                            ?>
                                             <li class="rating__list">
                                                 <span class="rating__list--icon">
                                                     <svg class="rating__list--icon__svg"
@@ -276,56 +289,11 @@ include ROOT . '/includes/menu.php';
                                                     </svg>
                                                 </span>
                                             </li>
-                                            <li class="rating__list">
-                                                <span class="rating__list--icon">
-                                                    <svg class="rating__list--icon__svg"
-                                                        xmlns="http://www.w3.org/2000/svg" width="14.105"
-                                                        height="14.732" viewBox="0 0 10.105 9.732">
-                                                        <path data-name="star - Copy"
-                                                            d="M9.837,3.5,6.73,3.039,5.338.179a.335.335,0,0,0-.571,0L3.375,3.039.268,3.5a.3.3,0,0,0-.178.514L2.347,6.242,1.813,9.4a.314.314,0,0,0,.464.316L5.052,8.232,7.827,9.712A.314.314,0,0,0,8.292,9.4L7.758,6.242l2.257-2.231A.3.3,0,0,0,9.837,3.5Z"
-                                                            transform="translate(0 -0.018)" fill="currentColor">
-                                                        </path>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li class="rating__list">
-                                                <span class="rating__list--icon">
-                                                    <svg class="rating__list--icon__svg"
-                                                        xmlns="http://www.w3.org/2000/svg" width="14.105"
-                                                        height="14.732" viewBox="0 0 10.105 9.732">
-                                                        <path data-name="star - Copy"
-                                                            d="M9.837,3.5,6.73,3.039,5.338.179a.335.335,0,0,0-.571,0L3.375,3.039.268,3.5a.3.3,0,0,0-.178.514L2.347,6.242,1.813,9.4a.314.314,0,0,0,.464.316L5.052,8.232,7.827,9.712A.314.314,0,0,0,8.292,9.4L7.758,6.242l2.257-2.231A.3.3,0,0,0,9.837,3.5Z"
-                                                            transform="translate(0 -0.018)" fill="currentColor">
-                                                        </path>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li class="rating__list">
-                                                <span class="rating__list--icon">
-                                                    <svg class="rating__list--icon__svg"
-                                                        xmlns="http://www.w3.org/2000/svg" width="14.105"
-                                                        height="14.732" viewBox="0 0 10.105 9.732">
-                                                        <path data-name="star - Copy"
-                                                            d="M9.837,3.5,6.73,3.039,5.338.179a.335.335,0,0,0-.571,0L3.375,3.039.268,3.5a.3.3,0,0,0-.178.514L2.347,6.242,1.813,9.4a.314.314,0,0,0,.464.316L5.052,8.232,7.827,9.712A.314.314,0,0,0,8.292,9.4L7.758,6.242l2.257-2.231A.3.3,0,0,0,9.837,3.5Z"
-                                                            transform="translate(0 -0.018)" fill="currentColor">
-                                                        </path>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li class="rating__list">
-                                                <span class="rating__list--icon">
-                                                    <svg class="rating__list--icon__svg"
-                                                        xmlns="http://www.w3.org/2000/svg" width="14.105"
-                                                        height="14.732" viewBox="0 0 10.105 9.732">
-                                                        <path data-name="star - Copy"
-                                                            d="M9.837,3.5,6.73,3.039,5.338.179a.335.335,0,0,0-.571,0L3.375,3.039.268,3.5a.3.3,0,0,0-.178.514L2.347,6.242,1.813,9.4a.314.314,0,0,0,.464.316L5.052,8.232,7.827,9.712A.314.314,0,0,0,8.292,9.4L7.758,6.242l2.257-2.231A.3.3,0,0,0,9.837,3.5Z"
-                                                            transform="translate(0 -0.018)" fill="currentColor">
-                                                        </path>
-                                                    </svg>
-                                                </span>
-                                            </li>
-
+                                            <?php
+                                            }
+                                            ?>
                                         </ul>
+
                                         <ul class="product__items--action d-flex">
                                             <li class="product__items--action__list">
                                                 <a class="product__items--action__btn add__to--cart" href="cart.php">
@@ -366,7 +334,7 @@ include ROOT . '/includes/menu.php';
                                                     <span class="visually-hidden">Wishlist</span>
                                                 </a>
                                             </li>
-                                            <li class="product__items--action__list">
+                                            <!-- <li class="product__items--action__list">
                                                 <a class="product__items--action__btn" data-open="modal1"
                                                     href="javascript:void(0)">
                                                     <svg class="product__items--action__btn--svg"
@@ -382,13 +350,15 @@ include ROOT . '/includes/menu.php';
                                                     </svg>
                                                     <span class="visually-hidden">Quick View</span>
                                                 </a>
-                                            </li>
+                                            </li> -->
 
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-30">
+                            <?php endwhile; ?>
+
+                            <!-- <div class="col mb-30">
                                 <div class="product__items ">
                                     <div class="product__items--thumbnail">
                                         <a class="product__items--link"
@@ -401,18 +371,18 @@ include ROOT . '/includes/menu.php';
                                                 alt="product-img">
                                         </a>
                                         <div class="product__badge">
-                                            <span class="product__badge--items sale">Sale</span>
+                                            <span class="product__badge--items sale">40% </span>
                                         </div>
                                     </div>
                                     <div class="product__items--content">
-                                        <span class="product__items--content__subtitle">Jacket, Women</span>
+                                        <span class="product__items--content__subtitle">Dress, Women</span>
                                         <h3 class="product__items--content__title h4"><a
-                                                href="<?php echo HOST; ?>/view/product-details.php">Boxy
-                                                Denim Jacket</a></h3>
+                                                href="<?php echo HOST; ?>/view/product-details.php">Strapless Dress</a>
+                                        </h3>
                                         <div class="product__items--price">
-                                            <span class="current__price">€120</span>
+                                            <span class="current__price">€18</span>
                                             <span class="price__divided"></span>
-                                            <span class="old__price">€88</span>
+                                            <span class="old__price">€26</span>
                                         </div>
                                         <ul class="rating product__rating d-flex">
                                             <li class="rating__list">
@@ -517,23 +487,7 @@ include ROOT . '/includes/menu.php';
                                                     <span class="visually-hidden">Wishlist</span>
                                                 </a>
                                             </li>
-                                            <li class="product__items--action__list">
-                                                <a class="product__items--action__btn" data-open="modal1"
-                                                    href="javascript:void(0)">
-                                                    <svg class="product__items--action__btn--svg"
-                                                        xmlns="http://www.w3.org/2000/svg" width="25.51" height="23.443"
-                                                        viewBox="0 0 512 512">
-                                                        <path
-                                                            d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z"
-                                                            fill="none" stroke="currentColor" stroke-linecap="round"
-                                                            stroke-linejoin="round" stroke-width="32" />
-                                                        <circle cx="256" cy="256" r="80" fill="none"
-                                                            stroke="currentColor" stroke-miterlimit="10"
-                                                            stroke-width="32" />
-                                                    </svg>
-                                                    <span class="visually-hidden">Quick View</span>
-                                                </a>
-                                            </li>
+
 
                                         </ul>
                                     </div>
@@ -548,22 +502,23 @@ include ROOT . '/includes/menu.php';
                                                 src="<?php echo HOST; ?>/assets/img/product/product5.png"
                                                 alt="product-img">
                                             <img class="product__items--img product__secondary--img"
-                                                src="<?php echo HOST; ?>/assets/img/product/product11.png"
+                                                src="<?php echo HOST; ?>/assets/img/product/product5.png"
                                                 alt="product-img">
                                         </a>
                                         <div class="product__badge">
-                                            <span class="product__badge--items sale">Sale</span>
+                                            <span class="product__badge--items sale">30%</span>
                                         </div>
                                     </div>
                                     <div class="product__items--content">
-                                        <span class="product__items--content__subtitle">Jacket, Women</span>
+                                        <span class="product__items--content__subtitle">Jacket, Men</span>
                                         <h4 class="product__items--content__title"><a
-                                                href="<?php echo HOST; ?>/view/product-details.php">Quilted
-                                                Shoulder Bag</a></h4>
+                                                href="<?php echo HOST; ?>/view/product-details.php">Red
+                                                Denim Jacket
+                                            </a></h4>
                                         <div class="product__items--price">
-                                            <span class="current__price">€115</span>
+                                            <span class="current__price">€15</span>
                                             <span class="price__divided"></span>
-                                            <span class="old__price">€75</span>
+                                            <span class="old__price">€19</span>
                                         </div>
                                         <ul class="rating product__rating d-flex">
                                             <li class="rating__list">
@@ -668,23 +623,7 @@ include ROOT . '/includes/menu.php';
                                                     <span class="visually-hidden">Wishlist</span>
                                                 </a>
                                             </li>
-                                            <li class="product__items--action__list">
-                                                <a class="product__items--action__btn" data-open="modal1"
-                                                    href="javascript:void(0)">
-                                                    <svg class="product__items--action__btn--svg"
-                                                        xmlns="http://www.w3.org/2000/svg" width="25.51" height="23.443"
-                                                        viewBox="0 0 512 512">
-                                                        <path
-                                                            d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z"
-                                                            fill="none" stroke="currentColor" stroke-linecap="round"
-                                                            stroke-linejoin="round" stroke-width="32" />
-                                                        <circle cx="256" cy="256" r="80" fill="none"
-                                                            stroke="currentColor" stroke-miterlimit="10"
-                                                            stroke-width="32" />
-                                                    </svg>
-                                                    <span class="visually-hidden">Quick View</span>
-                                                </a>
-                                            </li>
+
 
                                         </ul>
                                     </div>
@@ -703,18 +642,19 @@ include ROOT . '/includes/menu.php';
                                                 alt="product-img">
                                         </a>
                                         <div class="product__badge">
-                                            <span class="product__badge--items sale">Sale</span>
+                                            <span class="product__badge--items sale">25%</span>
                                         </div>
                                     </div>
                                     <div class="product__items--content">
                                         <span class="product__items--content__subtitle">Jacket, Women</span>
                                         <h4 class="product__items--content__title"><a
-                                                href="<?php echo HOST; ?>/view/product-details.php">High
-                                                Ankle Jeans</a></h4>
+                                                href="<?php echo HOST; ?>/view/product-details.php">Burgundy Bliss
+                                                Jacket
+                                            </a></h4>
                                         <div class="product__items--price">
-                                            <span class="current__price">€125</span>
+                                            <span class="current__price">€17</span>
                                             <span class="price__divided"></span>
-                                            <span class="old__price">€85</span>
+                                            <span class="old__price">€21</span>
                                         </div>
                                         <ul class="rating product__rating d-flex">
                                             <li class="rating__list">
@@ -819,23 +759,7 @@ include ROOT . '/includes/menu.php';
                                                     <span class="visually-hidden">Wishlist</span>
                                                 </a>
                                             </li>
-                                            <li class="product__items--action__list">
-                                                <a class="product__items--action__btn" data-open="modal1"
-                                                    href="javascript:void(0)">
-                                                    <svg class="product__items--action__btn--svg"
-                                                        xmlns="http://www.w3.org/2000/svg" width="25.51" height="23.443"
-                                                        viewBox="0 0 512 512">
-                                                        <path
-                                                            d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z"
-                                                            fill="none" stroke="currentColor" stroke-linecap="round"
-                                                            stroke-linejoin="round" stroke-width="32" />
-                                                        <circle cx="256" cy="256" r="80" fill="none"
-                                                            stroke="currentColor" stroke-miterlimit="10"
-                                                            stroke-width="32" />
-                                                    </svg>
-                                                    <span class="visually-hidden">Quick View</span>
-                                                </a>
-                                            </li>
+
 
                                         </ul>
                                     </div>
@@ -847,25 +771,26 @@ include ROOT . '/includes/menu.php';
                                         <a class="product__items--link"
                                             href="<?php echo HOST; ?>/view/product-details.php">
                                             <img class="product__items--img product__primary--img"
-                                                src="<?php echo HOST; ?>/assets/img/product/product8.png"
+                                                src="<?php echo HOST; ?>/assets/img/product/product15.png"
                                                 alt="product-img">
                                             <img class="product__items--img product__secondary--img"
                                                 src="<?php echo HOST; ?>/assets/img/product/product15.png"
                                                 alt="product-img">
                                         </a>
                                         <div class="product__badge">
-                                            <span class="product__badge--items sale">Sale</span>
+                                            <span class="product__badge--items sale">35%</span>
                                         </div>
                                     </div>
                                     <div class="product__items--content">
-                                        <span class="product__items--content__subtitle">Jacket, Women</span>
+                                        <span class="product__items--content__subtitle">T-shirt, Men</span>
                                         <h4 class="product__items--content__title"><a
-                                                href="<?php echo HOST; ?>/view/product-details.php">Square
-                                                Shoulder Bag</a></h4>
+                                                href="<?php echo HOST; ?>/view/product-details.php">Slate
+                                                Classic Tee
+                                            </a></h4>
                                         <div class="product__items--price">
-                                            <span class="current__price">€117</span>
+                                            <span class="current__price">€19</span>
                                             <span class="price__divided"></span>
-                                            <span class="old__price">€80</span>
+                                            <span class="old__price">€25</span>
                                         </div>
                                         <ul class="rating product__rating d-flex">
                                             <li class="rating__list">
@@ -970,23 +895,7 @@ include ROOT . '/includes/menu.php';
                                                     <span class="visually-hidden">Wishlist</span>
                                                 </a>
                                             </li>
-                                            <li class="product__items--action__list">
-                                                <a class="product__items--action__btn" data-open="modal1"
-                                                    href="javascript:void(0)">
-                                                    <svg class="product__items--action__btn--svg"
-                                                        xmlns="http://www.w3.org/2000/svg" width="25.51" height="23.443"
-                                                        viewBox="0 0 512 512">
-                                                        <path
-                                                            d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z"
-                                                            fill="none" stroke="currentColor" stroke-linecap="round"
-                                                            stroke-linejoin="round" stroke-width="32" />
-                                                        <circle cx="256" cy="256" r="80" fill="none"
-                                                            stroke="currentColor" stroke-miterlimit="10"
-                                                            stroke-width="32" />
-                                                    </svg>
-                                                    <span class="visually-hidden">Quick View</span>
-                                                </a>
-                                            </li>
+
 
                                         </ul>
                                     </div>
@@ -1005,18 +914,19 @@ include ROOT . '/includes/menu.php';
                                                 alt="product-img">
                                         </a>
                                         <div class="product__badge">
-                                            <span class="product__badge--items sale">Sale</span>
+                                            <span class="product__badge--items sale">40%</span>
                                         </div>
                                     </div>
                                     <div class="product__items--content">
-                                        <span class="product__items--content__subtitle">Jacket, Women</span>
+                                        <span class="product__items--content__subtitle">Dress, Women</span>
                                         <h4 class="product__items--content__title"><a
-                                                href="<?php echo HOST; ?>/view/product-details.php">Light
-                                                Denim Jacket</a></h4>
+                                                href="<?php echo HOST; ?>/view/product-details.php">Eclipse Radiance
+                                                Dress
+                                            </a></h4>
                                         <div class="product__items--price">
-                                            <span class="current__price">€130</span>
+                                            <span class="current__price">€20</span>
                                             <span class="price__divided"></span>
-                                            <span class="old__price">$66</span>
+                                            <span class="old__price">$28</span>
                                         </div>
                                         <ul class="rating product__rating d-flex">
                                             <li class="rating__list">
@@ -1121,23 +1031,7 @@ include ROOT . '/includes/menu.php';
                                                     <span class="visually-hidden">Wishlist</span>
                                                 </a>
                                             </li>
-                                            <li class="product__items--action__list">
-                                                <a class="product__items--action__btn" data-open="modal1"
-                                                    href="javascript:void(0)">
-                                                    <svg class="product__items--action__btn--svg"
-                                                        xmlns="http://www.w3.org/2000/svg" width="25.51" height="23.443"
-                                                        viewBox="0 0 512 512">
-                                                        <path
-                                                            d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z"
-                                                            fill="none" stroke="currentColor" stroke-linecap="round"
-                                                            stroke-linejoin="round" stroke-width="32" />
-                                                        <circle cx="256" cy="256" r="80" fill="none"
-                                                            stroke="currentColor" stroke-miterlimit="10"
-                                                            stroke-width="32" />
-                                                    </svg>
-                                                    <span class="visually-hidden">Quick View</span>
-                                                </a>
-                                            </li>
+
 
                                         </ul>
                                     </div>
@@ -1156,18 +1050,19 @@ include ROOT . '/includes/menu.php';
                                                 alt="product-img">
                                         </a>
                                         <div class="product__badge">
-                                            <span class="product__badge--items sale">Sale</span>
+                                            <span class="product__badge--items sale">40%</span>
                                         </div>
                                     </div>
                                     <div class="product__items--content">
-                                        <span class="product__items--content__subtitle">Jacket, Women</span>
+                                        <span class="product__items--content__subtitle">Dress, Women</span>
                                         <h4 class="product__items--content__title"><a
-                                                href="<?php echo HOST; ?>/view/product-details.php">Wool-blend
-                                                Jacket</a></h4>
+                                                href="<?php echo HOST; ?>/view/product-details.php">Skyline Chic
+                                                Ensemble
+                                            </a></h4>
                                         <div class="product__items--price">
-                                            <span class="current__price">€144</span>
+                                            <span class="current__price">€20</span>
                                             <span class="price__divided"></span>
-                                            <span class="old__price">€78</span>
+                                            <span class="old__price">€29</span>
                                         </div>
                                         <ul class="rating product__rating d-flex">
                                             <li class="rating__list">
@@ -1272,23 +1167,7 @@ include ROOT . '/includes/menu.php';
                                                     <span class="visually-hidden">Wishlist</span>
                                                 </a>
                                             </li>
-                                            <li class="product__items--action__list">
-                                                <a class="product__items--action__btn" data-open="modal1"
-                                                    href="javascript:void(0)">
-                                                    <svg class="product__items--action__btn--svg"
-                                                        xmlns="http://www.w3.org/2000/svg" width="25.51" height="23.443"
-                                                        viewBox="0 0 512 512">
-                                                        <path
-                                                            d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z"
-                                                            fill="none" stroke="currentColor" stroke-linecap="round"
-                                                            stroke-linejoin="round" stroke-width="32" />
-                                                        <circle cx="256" cy="256" r="80" fill="none"
-                                                            stroke="currentColor" stroke-miterlimit="10"
-                                                            stroke-width="32" />
-                                                    </svg>
-                                                    <span class="visually-hidden">Quick View</span>
-                                                </a>
-                                            </li>
+
 
                                         </ul>
                                     </div>
@@ -1307,14 +1186,14 @@ include ROOT . '/includes/menu.php';
                                                 alt="product-img">
                                         </a>
                                         <div class="product__badge">
-                                            <span class="product__badge--items sale">Sale</span>
+                                            <span class="product__badge--items sale">10%</span>
                                         </div>
                                     </div>
                                     <div class="product__items--content">
-                                        <span class="product__items--content__subtitle">Jacket, Women</span>
+                                        <span class="product__items--content__subtitle">T-Shirt, Men</span>
                                         <h4 class="product__items--content__title"><a
-                                                href="<?php echo HOST; ?>/view/product-details.php">Aware
-                                                organic cotton</a></h4>
+                                                href="<?php echo HOST; ?>/view/product-details.php">
+                                            </a></h4>
                                         <div class="product__items--price">
                                             <span class="current__price">€135</span>
                                             <span class="price__divided"></span>
@@ -1746,7 +1625,7 @@ include ROOT . '/includes/menu.php';
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -1857,11 +1736,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -2008,11 +1889,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -2159,11 +2042,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -2310,11 +2195,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -2461,11 +2348,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -2612,11 +2501,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -2763,11 +2654,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -2914,11 +2807,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -3065,11 +2960,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -3216,11 +3113,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -3373,11 +3272,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -3524,11 +3425,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -3675,11 +3578,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -3826,11 +3731,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -3977,11 +3884,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -4128,11 +4037,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -4279,11 +4190,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -4430,11 +4343,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -4581,11 +4496,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -4732,11 +4649,13 @@ include ROOT . '/includes/menu.php';
                                                                 <path data-name="Path 16788"
                                                                     d="M5.5,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,5.5,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,6.793,478.352Z"
                                                                     transform="translate(-1.191 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                                 <path data-name="Path 16789"
                                                                     d="M13.273,478.8a1.294,1.294,0,1,0,1.293-1.353A1.325,1.325,0,0,0,13.273,478.8Zm1.293-.451a.452.452,0,1,1-.431.451A.442.442,0,0,1,14.566,478.352Z"
                                                                     transform="translate(-2.875 -466.622)"
-                                                                    fill="currentColor"></path>
+                                                                    fill="currentColor">
+                                                                </path>
                                                             </g>
                                                         </g>
                                                     </svg>
@@ -4853,8 +4772,8 @@ include ROOT . '/includes/menu.php';
     </section>
     <!-- End deals banner section -->
 
-    <!-- Start product section -->
-    <section class="product__section section--padding pt-0">
+    <!-- Start slider product section -->
+    <!-- <section class="product__section section--padding pt-0">
         <div class="container-fluid">
             <div class="section__heading text-center mb-50">
                 <h2 class="section__heading--maintitle">Our Best Seller</h2>
@@ -5819,8 +5738,8 @@ include ROOT . '/includes/menu.php';
                 <div class="swiper__nav--btn swiper-button-prev"></div>
             </div>
         </div>
-    </section>
-    <!-- End product section -->
+    </section> -->
+    <!-- End slider product section -->
 
     <!-- Start banner section -->
     <section class="banner__section section--padding pt-0">
@@ -6160,7 +6079,7 @@ include ROOT . '/includes/menu.php';
                                 class="banner__items--thumbnail__img banner__img--height__md display-block"
                                 src="<?php echo HOST; ?>/assets/img/banner/banner-bg2.png" alt="banner-img">
                             <div class="banner__content--style2">
-                                <h2 class="banner__content--style2__title text-white">Winter is Coming! </h2>
+                                <er class="banner__content--style2__title text-white">This Summer is Special!</er>
                                 <p class="banner__content--style2__desc">Check out our luxury collections.</p>
                                 <span class="primary__btn">Shop Now
                                     <svg class="primary__btn--arrow__icon" xmlns="http://www.w3.org/2000/svg"
@@ -6740,7 +6659,10 @@ include ROOT . '/includes/menu.php';
 
 
 <!-- Include Footer -->
-<?php include ROOT . '/includes/footer.php'; ?>
+<?php
+mysqli_close($conn);
+include ROOT . '/includes/footer.php';
+?>
 
 <script>
 
