@@ -1,6 +1,10 @@
 <?php
 include ROOT . '/db/conn.php';
 
+// Fetch products from the database
+$sql = "SELECT * FROM product LIMIT 10";
+$result = $conn->query($sql);
+
 $pageTitlePrefix = null;
 
 include ROOT . '/includes/header.php';
@@ -19,19 +23,18 @@ include ROOT . '/includes/menu.php';
                             <div class="hero__slider--items__inner">
                                 <div class="row row-cols-1">
                                     <div class="col">
-                                        <div class="slider__content">
+                                        <div class="slider__content text-center">
                                             <p class="slider__content--desc desc1 mb-15"><img
                                                     class="slider__text--shape__icon"
                                                     src="<?php echo HOST; ?>/assets/img/icon/text-shape-icon.png"
                                                     alt="text-shape-icon">
-                                                New Collection</p>
-                                            <h2 class="slider__content--maintitle h1">The Great Fashion <br>
-                                                Collection 2024</h2>
-                                            <p class="slider__content--desc desc2 d-sm-2-none mb-40">Up To 40% Off
-                                                Final Sale Items. <br>
-                                                Caught in the Moment!</p>
+                                                Awesome Benefits</p>
+                                            <h2 class="slider__content--maintitle h1">FREE SHIPPING ON ORDERS
+                                                <br>
+                                                OVER €90
+                                            </h2>
                                             <a class="slider__btn primary__btn"
-                                                href="<?php echo HOST; ?>/view/shop.php">Show Collection
+                                                href="<?php echo HOST; ?>/view/shop">Shop Now
                                                 <svg class="primary__btn--arrow__icon"
                                                     xmlns="http://www.w3.org/2000/svg" width="20.2" height="12.2"
                                                     viewBox="0 0 6.2 6.2">
@@ -53,19 +56,16 @@ include ROOT . '/includes/menu.php';
                             <div class="row">
                                 <div class="col">
                                     <div class="hero__slider--items__inner">
-                                        <div class="slider__content">
+                                        <div class="slider__content text-center">
                                             <p class="slider__content--desc desc1 mb-15"><img
                                                     class="slider__text--shape__icon"
                                                     src="<?php echo HOST; ?>/assets/img/icon/text-shape-icon.png"
                                                     alt="text-shape-icon">
-                                                New Collection</p>
-                                            <h2 class="slider__content--maintitle h1">The Great Fashion <br>
-                                                Collection 2024</h2>
-                                            <p class="slider__content--desc desc2 d-sm-2-none mb-40 ">Up To 40% Off
-                                                Final Sale Items. <br>
-                                                Caught in the Moment!</p>
+                                                Awesome Benefits</p>
+                                            <h2 class="slider__content--maintitle h1">FREE RETURNS AND <br>
+                                                EXCHANGES</h2>
                                             <a class="primary__btn slider__btn"
-                                                href="<?php echo HOST; ?>/view/shop.php">Show Collection
+                                                href="<?php echo HOST; ?>/view/shop">Shop Now
                                                 <svg class="slider__btn--arrow__icon" xmlns="http://www.w3.org/2000/svg"
                                                     width="20.2" height="12.2" viewBox="0 0 6.2 6.2">
                                                     <path
@@ -84,7 +84,7 @@ include ROOT . '/includes/menu.php';
                     <div class="hero__slider--items home1__slider--bg three">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-lg-6 offset-lg-6">
+                                <div class="col-lg-12">
                                     <div class="hero__slider--items__inner">
                                         <div class="slider__content text-center">
                                             <p class="slider__content--desc desc1 mb-15"><img
@@ -98,7 +98,7 @@ include ROOT . '/includes/menu.php';
                                                 Final Sale Items. <br>
                                                 Caught in the Moment!</p>
                                             <a class="primary__btn slider__btn"
-                                                href="<?php echo HOST; ?>/view/shop.php">Show Collection
+                                                href="<?php echo HOST; ?>/view/shop">Show Collection
                                                 <svg class="slider__btn--arrow__icon" xmlns="http://www.w3.org/2000/svg"
                                                     width="20.2" height="12.2" viewBox="0 0 6.2 6.2">
                                                     <path
@@ -128,7 +128,7 @@ include ROOT . '/includes/menu.php';
                 <div class="col-lg-5 col-md-order mb-28">
                     <div class="banner__items">
                         <a class="banner__items--thumbnail position__relative"
-                            href="<?php echo HOST; ?>/view/shop.php"><img class="banner__items--thumbnail__img"
+                            href="<?php echo HOST; ?>/view/shop"><img class="banner__items--thumbnail__img"
                                 src="<?php echo HOST; ?>/assets/img/banner/banner1.png" alt="banner-img">
                             <div class="banner__items--content">
                                 <span class="banner__items--content__subtitle">17% Discount</span>
@@ -151,7 +151,7 @@ include ROOT . '/includes/menu.php';
                         <div class="col mb-28">
                             <div class="banner__items">
                                 <a class="banner__items--thumbnail position__relative"
-                                    href="<?php echo HOST; ?>/view/shop.php"><img class="banner__items--thumbnail__img"
+                                    href="<?php echo HOST; ?>/view/shop"><img class="banner__items--thumbnail__img"
                                         src="<?php echo HOST; ?>/assets/img/banner/banner2.png" alt="banner-img">
                                     <div class="banner__items--content">
                                         <span class="banner__items--content__subtitle text__secondary">Shop
@@ -174,7 +174,7 @@ include ROOT . '/includes/menu.php';
                         <div class="col mb-28">
                             <div class="banner__items">
                                 <a class="banner__items--thumbnail position__relative"
-                                    href="<?php echo HOST; ?>/view/shop.php"><img class="banner__items--thumbnail__img"
+                                    href="<?php echo HOST; ?>/view/shop"><img class="banner__items--thumbnail__img"
                                         src="<?php echo HOST; ?>/assets/img/banner/banner3.png" alt="banner-img">
                                     <div class="banner__items--content">
                                         <span class="banner__items--content__subtitle">Shop Women</span>
@@ -196,7 +196,7 @@ include ROOT . '/includes/menu.php';
                     </div>
                     <div class="banner__items">
                         <a class="banner__items--thumbnail position__relative"
-                            href="<?php echo HOST; ?>/view/shop.php"><img
+                            href="<?php echo HOST; ?>/view/shop"><img
                                 class="banner__items--thumbnail__img banner__img--max__height"
                                 src="<?php echo HOST; ?>/assets/img/banner/banner4.png" alt="banner-img">
                             <div class="banner__items--content">
@@ -239,10 +239,6 @@ include ROOT . '/includes/menu.php';
                     <div class="product__section--inner">
                         <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 mb--n30">
                             <?php 
-                                // Fetch products from the database
-                                $query = "SELECT * FROM products";
-                                $result = $conn->query($query);
-
                                 while($row = $result->fetch_assoc()): 
                             ?>
                             <div class="col mb-30">
@@ -4720,7 +4716,7 @@ include ROOT . '/includes/menu.php';
                                 our limited exclusive deals.</p>
                                 <div class="deals__banner--countdown d-flex" data-countdown="Nov 15, 2024 00:00:00">
                                 </div>
-                                <a class="primary__btn" href="<?php echo HOST; ?>/view/shop.php">Show Collection
+                                <a class="primary__btn" href="<?php echo HOST; ?>/view/shop">Show Collection
                                     <svg class="primary__btn--arrow__icon" xmlns="http://www.w3.org/2000/svg"
                                         width="20.2" height="12.2" viewBox="0 0 6.2 6.2">
                                         <path
@@ -5747,7 +5743,7 @@ include ROOT . '/includes/menu.php';
             <div class="row row-cols-md-2 row-cols-1 mb--n28">
                 <div class="col mb-28">
                     <div class="banner__items position__relative">
-                        <a class="banner__items--thumbnail " href="<?php echo HOST; ?>/view/shop.php"><img
+                        <a class="banner__items--thumbnail " href="<?php echo HOST; ?>/view/shop"><img
                                 class="banner__items--thumbnail__img banner__img--max__height"
                                 src="<?php echo HOST; ?>/assets/img/banner/banner5.png" alt="banner-img">
                             <div class="banner__items--content">
@@ -5761,7 +5757,7 @@ include ROOT . '/includes/menu.php';
                 </div>
                 <div class="col mb-28">
                     <div class="banner__items position__relative">
-                        <a class="banner__items--thumbnail " href="<?php echo HOST; ?>/view/shop.php"><img
+                        <a class="banner__items--thumbnail " href="<?php echo HOST; ?>/view/shop"><img
                                 class="banner__items--thumbnail__img banner__img--max__height"
                                 src="<?php echo HOST; ?>/assets/img/banner/banner6.png" alt="banner-img">
                             <div class="banner__items--content">
@@ -6075,7 +6071,7 @@ include ROOT . '/includes/menu.php';
             <div class="row row-cols-1">
                 <div class="col">
                     <div class="banner__section--inner position__relative">
-                        <a class="banner__items--thumbnail display-block" href="<?php echo HOST; ?>/view/shop.php"><img
+                        <a class="banner__items--thumbnail display-block" href="<?php echo HOST; ?>/view/shop"><img
                                 class="banner__items--thumbnail__img banner__img--height__md display-block"
                                 src="<?php echo HOST; ?>/assets/img/banner/banner-bg2.png" alt="banner-img">
                             <div class="banner__content--style2">

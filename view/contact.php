@@ -86,40 +86,41 @@ include ROOT . '/includes/menu.php';
                 <div class="contact__info border-radius-5">
                     <div class="contact__info--items">
                         <h3 class="contact__info--content__title text-white mb-15">Contact Us</h3>
-                        <div class="contact__info--items__inner d-flex">
-                            <div class="contact__info--icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="31.568" height="31.128"
-                                    viewBox="0 0 31.568 31.128">
-                                    <path id="ic_phone_forwarded_24px"
-                                        d="M26.676,16.564l7.892-7.782L26.676,1V5.669H20.362v6.226h6.314Zm3.157,7a18.162,18.162,0,0,1-5.635-.887,1.627,1.627,0,0,0-1.61.374l-3.472,3.424a23.585,23.585,0,0,1-10.4-10.257l3.472-3.44a1.48,1.48,0,0,0,.395-1.556,17.457,17.457,0,0,1-.9-5.556A1.572,1.572,0,0,0,10.1,4.113H4.578A1.572,1.572,0,0,0,3,5.669,26.645,26.645,0,0,0,29.832,32.128a1.572,1.572,0,0,0,1.578-1.556V25.124A1.572,1.572,0,0,0,29.832,23.568Z"
-                                        transform="translate(-3 -1)" fill="currentColor" />
-                                </svg>
+                        <a href="tel:+33753946004">
+                            <div class="contact__info--items__inner d-flex">
+                                <div class="contact__info--icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31.568" height="31.128"
+                                        viewBox="0 0 31.568 31.128">
+                                        <path id="ic_phone_forwarded_24px"
+                                            d="M26.676,16.564l7.892-7.782L26.676,1V5.669H20.362v6.226h6.314Zm3.157,7a18.162,18.162,0,0,1-5.635-.887,1.627,1.627,0,0,0-1.61.374l-3.472,3.424a23.585,23.585,0,0,1-10.4-10.257l3.472-3.44a1.48,1.48,0,0,0,.395-1.556,17.457,17.457,0,0,1-.9-5.556A1.572,1.572,0,0,0,10.1,4.113H4.578A1.572,1.572,0,0,0,3,5.669,26.645,26.645,0,0,0,29.832,32.128a1.572,1.572,0,0,0,1.578-1.556V25.124A1.572,1.572,0,0,0,29.832,23.568Z"
+                                            transform="translate(-3 -1)" fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="contact__info--content">
+                                    <p class="contact__info--content__desc text-white">Call us now <br> +33 753 946 004
+                                    </p>
+                                </div>
                             </div>
-                            <div class="contact__info--content">
-                                <p class="contact__info--content__desc text-white">Call us now <br> <a
-                                        href="tel:+01234-567890">+01234-567890</a> <a
-                                        href="tel:++01234-5688765">+01234-5688765</a> </p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="contact__info--items">
                         <h3 class="contact__info--content__title text-white mb-15">Email Address</h3>
-                        <div class="contact__info--items__inner d-flex">
-                            <div class="contact__info--icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="31.57" height="31.13"
-                                    viewBox="0 0 31.57 31.13">
-                                    <path id="ic_email_24px"
-                                        d="M30.413,4H5.157C3.421,4,2.016,5.751,2.016,7.891L2,31.239c0,2.14,1.421,3.891,3.157,3.891H30.413c1.736,0,3.157-1.751,3.157-3.891V7.891C33.57,5.751,32.149,4,30.413,4Zm0,7.783L17.785,21.511,5.157,11.783V7.891l12.628,9.728L30.413,7.891Z"
-                                        transform="translate(-2 -4)" fill="currentColor" />
-                                </svg>
+                        <a href="mailto:info@alefba.fr">
+                            <div class="contact__info--items__inner d-flex">
+                                <div class="contact__info--icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31.57" height="31.13"
+                                        viewBox="0 0 31.57 31.13">
+                                        <path id="ic_email_24px"
+                                            d="M30.413,4H5.157C3.421,4,2.016,5.751,2.016,7.891L2,31.239c0,2.14,1.421,3.891,3.157,3.891H30.413c1.736,0,3.157-1.751,3.157-3.891V7.891C33.57,5.751,32.149,4,30.413,4Zm0,7.783L17.785,21.511,5.157,11.783V7.891l12.628,9.728L30.413,7.891Z"
+                                            transform="translate(-2 -4)" fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="contact__info--content">
+                                    <p class="contact__info--content__desc text-white">Write to us <br> info@alefba.fr
+                                    </p>
+                                </div>
                             </div>
-                            <div class="contact__info--content">
-                                <p class="contact__info--content__desc text-white"> <a
-                                        href="mailto:abdullahkhanzahin@gmail.com">abdullahkhanzahin@gmail.com</a> <br>
-                                    <a href="mailto:fahimkhanrefah@gmail.com">fahimkhanrefah@gmail.com</a>
-                                </p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="contact__info--items">
                         <h3 class="contact__info--content__title text-white mb-15">Office Location</h3>
@@ -154,7 +155,8 @@ include ROOT . '/includes/menu.php';
                                 </a>
                             </li>
                             <li class="contact__info--social__list">
-                                <a class="contact__info--social__icon" target="_blank" href="https://twitter.com">
+                                <a class="contact__info--social__icon" target="_blank"
+                                    href="https://www.x.com/alefba_com">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16.489" height="13.384"
                                         viewBox="0 0 16.489 13.384">
                                         <path data-name="Path 303"
@@ -165,7 +167,8 @@ include ROOT . '/includes/menu.php';
                                 </a>
                             </li>
                             <li class="contact__info--social__list">
-                                <a class="contact__info--social__icon" target="_blank" href="https://www.instagram.com">
+                                <a class="contact__info--social__icon" target="_blank"
+                                    href="https://www.instagram.com/alefba.fr">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16.497" height="16.492"
                                         viewBox="0 0 19.497 19.492">
                                         <path data-name="Icon awesome-instagram"
@@ -177,7 +180,7 @@ include ROOT . '/includes/menu.php';
                             </li>
                             <li class="contact__info--social__list">
                                 <a class="contact__info--social__icon" target="_blank"
-                                    href="https://www.youtube.com/ale-fba">
+                                    href="https://www.youtube.com/@ale-fba">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16.49" height="11.582"
                                         viewBox="0 0 16.49 11.582">
                                         <path data-name="Path 321"
@@ -196,82 +199,17 @@ include ROOT . '/includes/menu.php';
     <!-- End contact section -->
 
     <!-- Start contact map area -->
-    <div class="contact__map--area section--padding pt-0">
+    <!-- <div class="contact__map--area section--padding pt-0">
         <iframe class="contact__map--iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15931.243214005555!2d7.760748699399689!3d48.53798259566908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c9636f97461b%3A0x56d1f22c429eb15d!2s14%20Rue%20de%20la%20Ganzau%2C%2067100%20Strasbourg%2C%20France!5e1!3m2!1sen!2s!4v1725280809417&zoom=15!5m2!1sen!2s"
             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    </div>
+    </div> -->
     <!-- End contact map area -->
 
-    <!-- Start brand logo section -->
-    <div class="brand__logo--section bg__secondary section--padding pt-5 pb-2">
-        <div class="container-fluid">
-            <div class="row row-cols-1">
-                <div class="col">
-                    <div class="d-flex justify-content-center align-items-center mb-5">
-                        <h2 class="text-white text-center bg-dark border-radius-5 mt-5 p-3">OUR PARTNERS</h2>
-                    </div>
-                    <div class="brand__logo--section__inner d-flex justify-content-center align-items-center">
-                        <div class="brand__logo--items">
-                            <img class="brand__logo--items__thumbnail--img display-block p-0"
-                                src="<?php echo HOST; ?>/assets/img/logo/cenlion-logo.png" alt="brand logo">
-                        </div>
-                        <!-- <div class="brand__logo--items">
-                            <img class="brand__logo--items__thumbnail--img display-block"
-                                src="<?php echo HOST; ?>/assets/img/logo/brand-logo2.png" alt="brand logo">
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End brand logo section -->
 
-    <!-- Start shipping section -->
-    <section class="shipping__section2 shipping__style3 section--padding">
-        <div class="container">
-            <div class="shipping__section2--inner shipping__style3--inner d-flex justify-content-between">
-                <div class="shipping__items2 d-flex align-items-center">
-                    <div class="shipping__items2--icon">
-                        <img src="<?php echo HOST; ?>/assets/img/other/shipping1.png" alt="">
-                    </div>
-                    <div class="shipping__items2--content">
-                        <h2 class="shipping__items2--content__title h3">Shipping</h2>
-                        <p class="shipping__items2--content__desc">Fast Delivery</p>
-                    </div>
-                </div>
-                <div class="shipping__items2 d-flex align-items-center">
-                    <div class="shipping__items2--icon">
-                        <img src="<?php echo HOST; ?>/assets/img/other/shipping2.png" alt="">
-                    </div>
-                    <div class="shipping__items2--content">
-                        <h2 class="shipping__items2--content__title h3">Payment</h2>
-                        <p class="shipping__items2--content__desc">Secure Payments</p>
-                    </div>
-                </div>
-                <div class="shipping__items2 d-flex align-items-center">
-                    <div class="shipping__items2--icon">
-                        <img src="<?php echo HOST; ?>/assets/img/other/shipping3.png" alt="">
-                    </div>
-                    <div class="shipping__items2--content">
-                        <h2 class="shipping__items2--content__title h3">Quality</h2>
-                        <p class="shipping__items2--content__desc">Quality Assurance</p>
-                    </div>
-                </div>
-                <div class="shipping__items2 d-flex align-items-center">
-                    <div class="shipping__items2--icon">
-                        <img src="<?php echo HOST; ?>/assets/img/other/shipping4.png" alt="">
-                    </div>
-                    <div class="shipping__items2--content">
-                        <h2 class="shipping__items2--content__title h3">Support</h2>
-                        <p class="shipping__items2--content__desc">24/7 Support</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End shipping section -->
+    <!-- Include Benefits Section -->
+    <?php include ROOT . '/includes/benefits.php'; ?>
 
 </main>
 
