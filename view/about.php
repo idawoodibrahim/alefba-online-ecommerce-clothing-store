@@ -14,13 +14,7 @@ include ROOT . '/includes/menu.php';
             <div class="row row-cols-1">
                 <div class="col">
                     <div class="breadcrumb__content text-center">
-                        <h1 class="breadcrumb__content--title text-white mb-25">About Us & Our Collaborators</h1>
-                        <ul class="breadcrumb__content--menu d-flex justify-content-center">
-                            <li class="breadcrumb__content--menu__items"><a class="text-white"
-                                    href="<?php echo HOST; ?>">Home</a></li>
-                            <li class="breadcrumb__content--menu__items"><span class="text-white">About Us</span>
-                            </li>
-                        </ul>
+                        <h1 class="breadcrumb__content--title text-white mb-25">About Us</h1>
                     </div>
                 </div>
             </div>
@@ -357,29 +351,8 @@ include ROOT . '/includes/menu.php';
     </section> -->
     <!-- End testimonial section -->
 
-    <!-- Start brand logo section -->
-    <div class="brand__logo--section bg__white section--padding pt-5 pb-2">
-        <div class="container-fluid">
-            <div class="row row-cols-1">
-                <div class="col">
-                    <div class="d-flex justify-content-center align-items-center mb-5">
-                        <h2 class="text__secondary text-center border-radius-5 mt-5 p-3">OUR PARTNERS</h2>
-                    </div>
-                    <div class="brand__logo--section__inner d-flex justify-content-center align-items-center">
-                        <div class="brand__logo--items">
-                            <img class="brand__logo--items__thumbnail--img display-block p-0"
-                                src="<?php echo HOST; ?>/assets/img/logo/cenlion-logo.png" alt="brand logo">
-                        </div>
-                        <!-- <div class="brand__logo--items">
-                            <img class="brand__logo--items__thumbnail--img display-block"
-                                src="<?php echo HOST; ?>/assets/img/logo/brand-logo2.png" alt="brand logo">
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End brand logo section -->
+    <!-- Display Partners Section -->
+    <?php include ROOT . '/includes/partners.php'; ?>
 
     <!-- Start team members section -->
     <section class="team__section section--padding">
@@ -455,7 +428,7 @@ include ROOT . '/includes/menu.php';
                             </div>
                             <div class="team__content">
                                 <h3 class="team__content--title">Fahim Refah</h3>
-                                <span class="team__content--subtitle">Manager</span>
+                                <span class="team__content--subtitle">Helper</span>
                             </div>
                         </div>
                     </div>
@@ -522,7 +495,8 @@ include ROOT . '/includes/menu.php';
                         <h2 class="about__content--maintitle mb-25">We do not buy from the open market & traders.
                         </h2>
                         <p class="about__content--desc mb-20">At Alefba, we believe in quality and integrity. That's why
-                            we source our materials directly <strong>from trusted manufacturers</strong> rather than the
+                            we source our materials directly <strong>from trusted manufacturers and partners</strong>
+                            rather than the
                             open market or
                             traders.</p>
                         <p class="about__content--desc mb-25">
@@ -533,14 +507,13 @@ include ROOT . '/includes/menu.php';
                             fair trade and eco-friendly initiatives.
                             <br>
                             <br>
-                            Experience the difference with Alefba – where quality, style, and sustainability come
+                            Experience the difference with Alefba - where quality, style, and sustainability come
                             together.
                         </p>
                         <div class="about__author position__relative d-flex align-items-center">
                             <div class="about__author--left">
                                 <h4 class="about__author--name">Abdullah ZAHIN</h4>
-                                <h4 class="about__author--name">Fahim REFAH</h4>
-                                <span class="about__author--rank">Co-Fornders</span>
+                                <span class="about__author--rank">Founder</span>
                             </div>
                             <!-- <img class="about__author--signature display-block"
                                 src="<?php echo HOST; ?>/assets/img/icon/signature.png" alt="signature"> -->
@@ -552,23 +525,13 @@ include ROOT . '/includes/menu.php';
     </section>
     <!-- End about section -->
 
-    <!-- Include Benefits Section -->
-    <?php include ROOT . '/includes/benefits.php'; ?>
+    <!-- Display Benefits & CTA Section -->
+    <?php 
+        include ROOT . '/includes/benefits.php'; 
+        include ROOT . '/includes/any_questions.php';
+    ?>
 
-    <!-- Start Any Questions section -->
-    <div class="brand__logo--section bg__secondary section--padding">
-        <div class="container-fluid">
-            <div class="row row-cols-1">
-                <div class="col">
-                    <h2 class="text-white text-center mt-2">Any More Questions? <a
-                            href="<?php echo HOST; ?>/view/contact.php" class="border-radius-5 text__primary p-3"
-                            style="background-color: beige;">Let's Talk</a>
-                    </h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Any Questions section -->
+
 </main>
 
 <!-- Include Footer -->

@@ -171,7 +171,8 @@
                                 <a class="header__menu--link " href="#">Novelty</a>
                             </li>
                             <li class="header__menu--items style2">
-                                <a class="header__menu--link " href="<?php echo HOST; ?>/view/about.php">Collaboration
+                                <a class="header__menu--link" href="
+                                    <?php echo HOST; ?>/view/collaboration.php">Collaboration
                                 </a>
                             </li>
                             <li class="header__menu--items style2 d-none d-xl-block">
@@ -300,7 +301,8 @@
                                 </ul>
                             </li> -->
                             <li class="header__menu--items">
-                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/about.php">Collaboration
+                                <a class="header__menu--link"
+                                    href="<?php echo HOST; ?>/view/collaboration.php">Collaboration
                                 </a>
                             </li>
                             <li class="header__menu--items">
@@ -345,7 +347,7 @@
                         <a class="offcanvas__menu_item" href="#">Novelty</a>
                     </li>
                     <li class="offcanvas__menu_li"><a class="offcanvas__menu_item"
-                            href="<?php echo HOST; ?>/view/about.php">Collaboration</a></li>
+                            href="<?php echo HOST; ?>/view/collaboration.php">Collaboration</a></li>
                     <li class="offcanvas__menu_li"><a class="offcanvas__menu_item"
                             href="<?php echo HOST; ?>/view/shop">Marketplace</a></li>
                     <li class="offcanvas__menu_li"><a class="offcanvas__menu_item"

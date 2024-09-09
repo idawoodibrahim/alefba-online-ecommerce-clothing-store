@@ -85,11 +85,20 @@
                 </div> -->
 
                 <div class="footer__social mb-5">
+                    <div class="main__logo mb-20">
+                        <h1 class="main__logo--title"><a class="main__logo--link" href="<?php echo HOST; ?>">
+                                <img class="main__logo--img" src="<?php echo HOST; ?>/assets/img/logo/nav-log.png"
+                                    alt="logo-img">
+                            </a>
+                        </h1>
+                    </div>
                     <ul>
-                        <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text" href="#">ALEFBA
+                        <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text"
+                                href="<?php echo HOST; ?>/view/gift-cards.php">ALEFBA
                                 gift cards</a>
                         </li>
-                        <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text" href="#">Student
+                        <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text"
+                                href="<?php echo HOST; ?>/view/student-discount.php">Student
                                 discount </a>
                         </li>
                     </ul>
@@ -273,7 +282,8 @@
                         </button>
                     </h2>
                     <ul class="footer__widget--menu footer__widget--inner">
-                        <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text" href="#">Open a
+                        <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text"
+                                href="<?php echo HOST; ?>/view/open-a-store.php">Open a
                                 Store</a>
                         </li>
                         <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text" href="#">Selling
@@ -282,7 +292,7 @@
                     </ul>
                 </div>
 
-                <!-- <div class="footer__widget">
+                <div class="footer__widget">
                     <h2 class="footer__widget--title text-ofwhite h3">Affiliate
                         <button class="footer__widget--button" aria-label="footer widget button">
                             <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
@@ -293,15 +303,15 @@
                         </button>
                     </h2>
                     <ul class="footer__widget--menu footer__widget--inner">
-                        <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text" href="#">Become an
+                        <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text"
+                                href="<?php echo HOST; ?>/view/collaboration.php">Become an
                                 Affiliate Partner</a>
                         </li>
                     </ul>
-                </div> -->
+                </div>
             </div>
-            <div class="footer__widget footer__widget--width">
-                <h2 class="footer__widget--title text-ofwhite h3">Affiliate
-                    <!-- Contact Info -->
+            <!-- <div class="footer__widget footer__widget--width">
+                <h2 class="footer__widget--title text-ofwhite h3"> Contact Info
                     <button class="footer__widget--button" aria-label="footer widget button">
                         <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
                             width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
@@ -311,10 +321,7 @@
                     </button>
                 </h2>
                 <ul class="footer__widget--menu footer__widget--inner">
-                    <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text" href="#">Become an
-                            Affiliate Partner</a>
-                    </li>
-                    <!-- <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                    <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
                             href="mailto:abdullahkhanzahin@gmail.com">📩 abdullahkhanzahin@gmail.com</a></li>
                     <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
                             href="mailto:fahimkhanrefah@gmail.com">📩 fahimkhanrefah@gmail.com</a></li>
@@ -325,7 +332,36 @@
                             📍 50 Bd la Fontaine, 67200 Strasbourg</a></li>
                     <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
                             href="https://maps.app.goo.gl/2erRCeLzHxgWqdno6"><strong>Office address</strong> <br>
-                            📍 14 Rue de la Ganzau, 67100 Strasbourg</a></li> -->
+                            📍 14 Rue de la Ganzau, 67100 Strasbourg</a></li>
+                </ul>
+            </div> -->
+
+            <div class="footer__widget footer__widget--width">
+                <h2 class="footer__widget--title text-ofwhite h3"> About
+                    <button class="footer__widget--button" aria-label="footer widget button">
+                        <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
+                            width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
+                            <path d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z"
+                                transform="translate(-6 -8.59)" fill="currentColor"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <ul class="footer__widget--menu footer__widget--inner">
+                    <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text"
+                            href="<?php echo HOST; ?>/view/recruitment.php">Recruitment</a>
+                    </li>
+                    <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text"
+                            href="<?php echo HOST; ?>/view/about.php">About ALEFBA</a>
+                    </li>
+                    <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text"
+                            href="<?php echo HOST; ?>/view/investors.php">Investors</a>
+                    </li>
+                    <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text"
+                            href="<?php echo HOST; ?>/view/payment-methods.php">Payment Methods</a>
+                    </li>
+                    <li class="footer__widget--menu__list"> <a class="footer__widget--menu__text"
+                            href="<?php echo HOST; ?>/view/our-initiatives.php">Our Initiatives</a>
+                    </li>
                 </ul>
             </div>
 
