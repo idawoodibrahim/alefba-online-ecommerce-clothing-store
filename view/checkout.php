@@ -12,7 +12,7 @@ include ROOT . '/includes/menu.php';
         <div class="checkout__page--inner d-flex">
             <div class="main checkout__mian">
                 <header class="main__header checkout__mian--header mb-30">
-                    <h1 class="main__logo--title"><a class="logo logo__left mb-20" href="<?php echo HOST; ?>"><img src="<?php echo HOST; ?>/assets/img/logo/nav-log.png" alt="logo"></a></h1>
+                    <h1 class="main__logo--title"><a class="logo logo__left mb-20" href="<?php echo APP_URL; ?>"><img src="<?php echo APP_URL; ?>/assets/img/logo/nav-log.png" alt="logo"></a></h1>
                     <details class="order__summary--mobile__version">
                         <summary class="order__summary--toggle border-radius-5">
                             <span class="order__summary--toggle__inner">
@@ -38,11 +38,11 @@ include ROOT . '/includes/menu.php';
                                             <td class=" summary__table--list">
                                                 <div class="product__image two  d-flex align-items-center">
                                                     <div class="product__thumbnail border-radius-5">
-                                                        <a href="<?php echo HOST; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo HOST; ?>/assets/img/product/small-product7.png" alt="cart-product"></a>
+                                                        <a href="<?php echo APP_URL; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo APP_URL; ?>/assets/img/product/small-product7.png" alt="cart-product"></a>
                                                         <span class="product__thumbnail--quantity">1</span>
                                                     </div>
                                                     <div class="product__description">
-                                                        <h3 class="product__description--name h4"><a href="<?php echo HOST; ?>/view/product-details.php">Fresh-whole-fish</a></h3>
+                                                        <h3 class="product__description--name h4"><a href="<?php echo APP_URL; ?>/view/product-details.php">Fresh-whole-fish</a></h3>
                                                         <span class="product__description--variant">COLOR: Blue</span>
                                                     </div>
                                                 </div>
@@ -55,11 +55,11 @@ include ROOT . '/includes/menu.php';
                                             <td class=" summary__table--list">
                                                 <div class="cart__product d-flex align-items-center">
                                                     <div class="product__thumbnail border-radius-5">
-                                                        <a href="<?php echo HOST; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo HOST; ?>/assets/img/product/small-product2.png" alt="cart-product"></a>
+                                                        <a href="<?php echo APP_URL; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo APP_URL; ?>/assets/img/product/small-product2.png" alt="cart-product"></a>
                                                         <span class="product__thumbnail--quantity">1</span>
                                                     </div>
                                                     <div class="product__description">
-                                                        <h3 class="product__description--name h4"><a href="<?php echo HOST; ?>/view/product-details.php">Vegetable-healthy</a></h3>
+                                                        <h3 class="product__description--name h4"><a href="<?php echo APP_URL; ?>/view/product-details.php">Vegetable-healthy</a></h3>
                                                         <span class="product__description--variant">COLOR: Green</span>
                                                     </div>
                                                 </div>
@@ -72,11 +72,11 @@ include ROOT . '/includes/menu.php';
                                             <td class=" summary__table--list">
                                                 <div class="cart__product d-flex align-items-center">
                                                     <div class="product__thumbnail border-radius-5">
-                                                        <a href="<?php echo HOST; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo HOST; ?>/assets/img/product/small-product4.png" alt="cart-product"></a>
+                                                        <a href="<?php echo APP_URL; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo APP_URL; ?>/assets/img/product/small-product4.png" alt="cart-product"></a>
                                                         <span class="product__thumbnail--quantity">1</span>
                                                     </div>
                                                     <div class="product__description">
-                                                        <h3 class="product__description--name h4"><a href="<?php echo HOST; ?>/view/product-details.php">Raw-onions-surface</a></h3>
+                                                        <h3 class="product__description--name h4"><a href="<?php echo APP_URL; ?>/view/product-details.php">Raw-onions-surface</a></h3>
                                                         <span class="product__description--variant">COLOR: White</span>
                                                     </div>
                                                 </div>
@@ -152,7 +152,7 @@ include ROOT . '/includes/menu.php';
                                 <h2 class="section__header--title h3">Contact information</h2>
                                 <p class="layout__flex--item">
                                     Already have an account?
-                                    <a class="layout__flex--item__link" href="<?php echo HOST; ?>/view/login.php">Log in</a>
+                                    <a class="layout__flex--item__link" href="<?php echo APP_URL; ?>/view/login.php">Log in</a>
                                 </p>
                             </div>
                             <div class="customer__information">
@@ -248,13 +248,13 @@ include ROOT . '/includes/menu.php';
                             </div>
                         </div>
                         <div class="checkout__content--step__footer d-flex align-items-center">
-                            <a class="continue__shipping--btn primary__btn border-radius-5" href="<?php echo HOST; ?>/view/checkout-2.php">Continue To Shipping</a>
+                            <a class="continue__shipping--btn primary__btn border-radius-5" href="<?php echo APP_URL; ?>/view/checkout-2.php">Continue To Shipping</a>
                             <a class="previous__link--content" href="cart.php">Return to cart</a>
                         </div>
                     </form>
                 </main><br><br>
                 <!-- <footer class="main__footer checkout__footer">
-                        <p class="copyright__content">Copyright © 2022 <a class="copyright__content--link text__primary" href="<?php echo HOST; ?>">Suruchi</a> . All Rights Reserved.Design By Suruchi</p>
+                        <p class="copyright__content">Copyright © 2022 <a class="copyright__content--link text__primary" href="<?php echo APP_URL; ?>">Suruchi</a> . All Rights Reserved.Design By Suruchi</p>
                     </footer> -->
             </div>
             <aside class="checkout__sidebar sidebar">
@@ -265,11 +265,11 @@ include ROOT . '/includes/menu.php';
                                 <td class="cart__table--body__list">
                                     <div class="product__image two  d-flex align-items-center">
                                         <div class="product__thumbnail border-radius-5">
-                                            <a href="<?php echo HOST; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo HOST; ?>/assets/img/product/small-product7.png" alt="cart-product"></a>
+                                            <a href="<?php echo APP_URL; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo APP_URL; ?>/assets/img/product/small-product7.png" alt="cart-product"></a>
                                             <span class="product__thumbnail--quantity">1</span>
                                         </div>
                                         <div class="product__description">
-                                            <h3 class="product__description--name h4"><a href="<?php echo HOST; ?>/view/product-details.php">Fresh-whole-fish</a></h3>
+                                            <h3 class="product__description--name h4"><a href="<?php echo APP_URL; ?>/view/product-details.php">Fresh-whole-fish</a></h3>
                                             <span class="product__description--variant">COLOR: Blue</span>
                                         </div>
                                     </div>
@@ -282,11 +282,11 @@ include ROOT . '/includes/menu.php';
                                 <td class="cart__table--body__list">
                                     <div class="cart__product d-flex align-items-center">
                                         <div class="product__thumbnail border-radius-5">
-                                            <a href="<?php echo HOST; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo HOST; ?>/assets/img/product/small-product2.png" alt="cart-product"></a>
+                                            <a href="<?php echo APP_URL; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo APP_URL; ?>/assets/img/product/small-product2.png" alt="cart-product"></a>
                                             <span class="product__thumbnail--quantity">1</span>
                                         </div>
                                         <div class="product__description">
-                                            <h3 class="product__description--name h4"><a href="<?php echo HOST; ?>/view/product-details.php">Vegetable-healthy</a></h3>
+                                            <h3 class="product__description--name h4"><a href="<?php echo APP_URL; ?>/view/product-details.php">Vegetable-healthy</a></h3>
                                             <span class="product__description--variant">COLOR: Green</span>
                                         </div>
                                     </div>
@@ -299,11 +299,11 @@ include ROOT . '/includes/menu.php';
                                 <td class="cart__table--body__list">
                                     <div class="cart__product d-flex align-items-center">
                                         <div class="product__thumbnail border-radius-5">
-                                            <a href="<?php echo HOST; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo HOST; ?>/assets/img/product/small-product4.png" alt="cart-product"></a>
+                                            <a href="<?php echo APP_URL; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo APP_URL; ?>/assets/img/product/small-product4.png" alt="cart-product"></a>
                                             <span class="product__thumbnail--quantity">1</span>
                                         </div>
                                         <div class="product__description">
-                                            <h3 class="product__description--name h4"><a href="<?php echo HOST; ?>/view/product-details.php">Raw-onions-surface</a></h3>
+                                            <h3 class="product__description--name h4"><a href="<?php echo APP_URL; ?>/view/product-details.php">Raw-onions-surface</a></h3>
                                             <span class="product__description--variant">COLOR: White</span>
                                         </div>
                                     </div>

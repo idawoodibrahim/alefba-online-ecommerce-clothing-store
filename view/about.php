@@ -72,7 +72,7 @@ include ROOT . '/includes/menu.php';
                         <div class="testimonial__items text-center">
                             <div class="testimonial__items--thumbnail">
                                 <img class="testimonial__items--thumbnail__img border-radius-50"
-                                    src="<?php echo HOST; ?>/assets/img/other/testimonial-thumb1.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/other/testimonial-thumb1.png"
                                     alt="testimonial-img">
                             </div>
                             <div class="testimonial__items--content">
@@ -141,7 +141,7 @@ include ROOT . '/includes/menu.php';
                         <div class="testimonial__items text-center">
                             <div class="testimonial__items--thumbnail">
                                 <img class="testimonial__items--thumbnail__img border-radius-50"
-                                    src="<?php echo HOST; ?>/assets/img/other/testimonial-thumb2.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/other/testimonial-thumb2.png"
                                     alt="testimonial-img">
                             </div>
                             <div class="testimonial__items--content">
@@ -210,7 +210,7 @@ include ROOT . '/includes/menu.php';
                         <div class="testimonial__items text-center">
                             <div class="testimonial__items--thumbnail">
                                 <img class="testimonial__items--thumbnail__img border-radius-50"
-                                    src="<?php echo HOST; ?>/assets/img/other/testimonial-thumb3.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/other/testimonial-thumb3.png"
                                     src="assets/img/other/testimonial-thumb3.png" alt="testimonial-img">
                             </div>
                             <div class="testimonial__items--content">
@@ -279,7 +279,7 @@ include ROOT . '/includes/menu.php';
                         <div class="testimonial__items text-center">
                             <div class="testimonial__items--thumbnail">
                                 <img class="testimonial__items--thumbnail__img border-radius-50"
-                                    src="<?php echo HOST; ?>/assets/img/other/testimonial-thumb1.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/other/testimonial-thumb1.png"
                                     alt="testimonial-img">
                             </div>
                             <div class="testimonial__items--content">
@@ -366,7 +366,7 @@ include ROOT . '/includes/menu.php';
                         <div class="team__items text-center">
                             <div class="team__thumb">
                                 <img class="team__thumb--img border-radius-50"
-                                    src="<?php echo HOST; ?>/assets/img/other/team1.png" alt="">
+                                    src="<?php echo APP_URL; ?>/assets/img/other/team1.png" alt="">
                             </div>
                             <div class="team__content">
                                 <h3 class="team__content--title">Abdullah Zahin</h3>
@@ -424,7 +424,7 @@ include ROOT . '/includes/menu.php';
                         <div class="team__items text-center">
                             <div class="team__thumb">
                                 <img class="team__thumb--img border-radius-50"
-                                    src="<?php echo HOST; ?>/assets/img/other/team2.png" alt="">
+                                    src="<?php echo APP_URL; ?>/assets/img/other/team2.png" alt="">
                             </div>
                             <div class="team__content">
                                 <h3 class="team__content--title">Fahim Refah</h3>
@@ -446,11 +446,11 @@ include ROOT . '/includes/menu.php';
                     <div class="about__thumb d-flex">
                         <div class="about__thumb--items">
                             <img class="about__thumb--img border-radius-5 display-block"
-                                src="<?php echo HOST; ?>/assets/img/other/about-thumb-list1.png" alt="about-thumb">
+                                src="<?php echo APP_URL; ?>/assets/img/other/about-thumb-list1.png" alt="about-thumb">
                         </div>
                         <div class="about__thumb--items position__relative">
                             <img class="about__thumb--img border-radius-5 display-block"
-                                src="<?php echo HOST; ?>/assets/img/other/about-thumb-list2.png" alt="about-thumb">
+                                src="<?php echo APP_URL; ?>/assets/img/other/about-thumb-list2.png" alt="about-thumb">
                             <!-- <div class="banner__bideo--play about__thumb--play">
                                 <a class="banner__bideo--play__icon about__thumb--play__icon glightbox"
                                     href="https://vimeo.com/115041822" data-gallery="video">
@@ -516,7 +516,7 @@ include ROOT . '/includes/menu.php';
                                 <span class="about__author--rank">Founder</span>
                             </div>
                             <!-- <img class="about__author--signature display-block"
-                                src="<?php echo HOST; ?>/assets/img/icon/signature.png" alt="signature"> -->
+                                src="<?php echo APP_URL; ?>/assets/img/icon/signature.png" alt="signature"> -->
                         </div>
                     </div>
                 </div>
@@ -526,9 +526,9 @@ include ROOT . '/includes/menu.php';
     <!-- End about section -->
 
     <!-- Display Benefits & CTA Section -->
-    <?php 
-        include ROOT . '/includes/benefits.php'; 
-        include ROOT . '/includes/any_questions.php';
+    <?php
+    include ROOT . '/includes/benefits.php';
+    include ROOT . '/includes/any_questions.php';
     ?>
 
 

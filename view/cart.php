@@ -16,7 +16,7 @@ include ROOT . '/includes/menu.php';
                     <div class="breadcrumb__content text-center">
                         <h1 class="breadcrumb__content--title text-white mb-25">Shopping Cart</h1>
                         <ul class="breadcrumb__content--menu d-flex justify-content-center">
-                            <li class="breadcrumb__content--menu__items"><a class="text-white" href="<?php echo HOST; ?>">Home</a></li>
+                            <li class="breadcrumb__content--menu__items"><a class="text-white" href="<?php echo APP_URL; ?>">Home</a></li>
                             <li class="breadcrumb__content--menu__items"><span class="text-white">Shopping Cart</span></li>
                         </ul>
                     </div>
@@ -54,10 +54,10 @@ include ROOT . '/includes/menu.php';
                                                         </svg>
                                                     </button>
                                                     <div class="cart__thumbnail">
-                                                        <a href="<?php echo HOST; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo HOST; ?>/assets/img/product/product1.png" alt="cart-product"></a>
+                                                        <a href="<?php echo APP_URL; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo APP_URL; ?>/assets/img/product/product1.png" alt="cart-product"></a>
                                                     </div>
                                                     <div class="cart__content">
-                                                        <h4 class="cart__content--title"><a href="<?php echo HOST; ?>/view/product-details.php">Fresh-whole-fish</a></h4>
+                                                        <h4 class="cart__content--title"><a href="<?php echo APP_URL; ?>/view/product-details.php">Fresh-whole-fish</a></h4>
                                                         <span class="cart__content--variant">COLOR: Blue</span>
                                                         <span class="cart__content--variant">WEIGHT: 2 Kg</span>
                                                     </div>
@@ -88,10 +88,10 @@ include ROOT . '/includes/menu.php';
                                                         </svg>
                                                     </button>
                                                     <div class="cart__thumbnail">
-                                                        <a href="<?php echo HOST; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo HOST; ?>/assets/img/product/product2.png" alt="cart-product"></a>
+                                                        <a href="<?php echo APP_URL; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo APP_URL; ?>/assets/img/product/product2.png" alt="cart-product"></a>
                                                     </div>
                                                     <div class="cart__content">
-                                                        <h4 class="cart__content--title"><a href="<?php echo HOST; ?>/view/product-details.php">Vegetable-healthy</a></h4>
+                                                        <h4 class="cart__content--title"><a href="<?php echo APP_URL; ?>/view/product-details.php">Vegetable-healthy</a></h4>
                                                         <span class="cart__content--variant">COLOR: Blue</span>
                                                         <span class="cart__content--variant">WEIGHT: 2 Kg</span>
                                                     </div>
@@ -122,10 +122,10 @@ include ROOT . '/includes/menu.php';
                                                         </svg>
                                                     </button>
                                                     <div class="cart__thumbnail">
-                                                        <a href="<?php echo HOST; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo HOST; ?>/assets/img/product/product3.png" alt="cart-product"></a>
+                                                        <a href="<?php echo APP_URL; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo APP_URL; ?>/assets/img/product/product3.png" alt="cart-product"></a>
                                                     </div>
                                                     <div class="cart__content">
-                                                        <h4 class="cart__content--title"><a href="<?php echo HOST; ?>/view/product-details.php">Raw-onions-surface</a></h4>
+                                                        <h4 class="cart__content--title"><a href="<?php echo APP_URL; ?>/view/product-details.php">Raw-onions-surface</a></h4>
                                                         <span class="cart__content--variant">COLOR: Blue</span>
                                                         <span class="cart__content--variant">WEIGHT: 2 Kg</span>
                                                     </div>
@@ -156,10 +156,10 @@ include ROOT . '/includes/menu.php';
                                                         </svg>
                                                     </button>
                                                     <div class="cart__thumbnail">
-                                                        <a href="<?php echo HOST; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo HOST; ?>/assets/img/product/product4.png" alt="cart-product"></a>
+                                                        <a href="<?php echo APP_URL; ?>/view/product-details.php"><img class="border-radius-5" src="<?php echo APP_URL; ?>/assets/img/product/product4.png" alt="cart-product"></a>
                                                     </div>
                                                     <div class="cart__content">
-                                                        <h4 class="cart__content--title"><a href="<?php echo HOST; ?>/view/product-details.php">Oversize Cotton Dress</a></h4>
+                                                        <h4 class="cart__content--title"><a href="<?php echo APP_URL; ?>/view/product-details.php">Oversize Cotton Dress</a></h4>
                                                         <span class="cart__content--variant">COLOR: Blue</span>
                                                         <span class="cart__content--variant">WEIGHT: 2 Kg</span>
                                                     </div>
@@ -184,7 +184,7 @@ include ROOT . '/includes/menu.php';
                                     </tbody>
                                 </table>
                                 <div class="continue__shopping d-flex justify-content-between">
-                                    <a class="continue__shopping--link" href="<?php echo HOST; ?>/view/shop.php">Continue shopping</a>
+                                    <a class="continue__shopping--link" href="<?php echo APP_URL; ?>/view/shop.php">Continue shopping</a>
                                     <button class="continue__shopping--clear" type="submit">Clear Cart</button>
                                 </div>
                             </div>
@@ -224,7 +224,7 @@ include ROOT . '/includes/menu.php';
                                     <p class="cart__summary--footer__desc">Shipping & taxes calculated at checkout</p>
                                     <ul class="d-flex justify-content-between">
                                         <li><button class="cart__summary--footer__btn primary__btn cart" type="submit">Update Cart</button></li>
-                                        <li><a class="cart__summary--footer__btn primary__btn checkout" href="<?php echo HOST; ?>/view/checkout.php">Check Out</a></li>
+                                        <li><a class="cart__summary--footer__btn primary__btn checkout" href="<?php echo APP_URL; ?>/view/checkout.php">Check Out</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -247,9 +247,9 @@ include ROOT . '/includes/menu.php';
                     <div class="swiper-slide">
                         <div class="product__items ">
                             <div class="product__items--thumbnail">
-                                <a class="product__items--link" href="<?php echo HOST; ?>/view/product-details.php">
-                                    <img class="product__items--img product__primary--img" src="<?php echo HOST; ?>/assets/img/product/product1.png" alt="product-img">
-                                    <img class="product__items--img product__secondary--img" src="<?php echo HOST; ?>/assets/img/product/product2.png" alt="product-img">
+                                <a class="product__items--link" href="<?php echo APP_URL; ?>/view/product-details.php">
+                                    <img class="product__items--img product__primary--img" src="<?php echo APP_URL; ?>/assets/img/product/product1.png" alt="product-img">
+                                    <img class="product__items--img product__secondary--img" src="<?php echo APP_URL; ?>/assets/img/product/product2.png" alt="product-img">
                                 </a>
                                 <div class="product__badge">
                                     <span class="product__badge--items sale">Sale</span>
@@ -257,7 +257,7 @@ include ROOT . '/includes/menu.php';
                             </div>
                             <div class="product__items--content">
                                 <span class="product__items--content__subtitle">Jacket, Women</span>
-                                <h3 class="product__items--content__title h4"><a href="<?php echo HOST; ?>/view/product-details.php">Oversize Cotton Dress</a></h3>
+                                <h3 class="product__items--content__title h4"><a href="<?php echo APP_URL; ?>/view/product-details.php">Oversize Cotton Dress</a></h3>
                                 <div class="product__items--price">
                                     <span class="current__price">€110</span>
                                     <span class="price__divided"></span>
@@ -312,11 +312,11 @@ include ROOT . '/includes/menu.php';
                                                     </g>
                                                 </g>
                                             </svg>
-                                            <span class="add__to--cart__text"> + Add to cart</span>
+                                            <span class="add__to--cart__text"> Add to cart</span>
                                         </a>
                                     </li>
                                     <li class="product__items--action__list">
-                                        <a class="product__items--action__btn" href="<?php echo HOST; ?>/view/wishlist.php">
+                                        <a class="product__items--action__btn" href="<?php echo APP_URL; ?>/view/wishlist.php">
                                             <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="25.51" height="23.443" viewBox="0 0 512 512">
                                                 <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path>
                                             </svg>
@@ -340,9 +340,9 @@ include ROOT . '/includes/menu.php';
                     <div class="swiper-slide">
                         <div class="product__items ">
                             <div class="product__items--thumbnail">
-                                <a class="product__items--link" href="<?php echo HOST; ?>/view/product-details.php">
-                                    <img class="product__items--img product__primary--img" src="<?php echo HOST; ?>/assets/img/product/product3.png" alt="product-img">
-                                    <img class="product__items--img product__secondary--img" src="<?php echo HOST; ?>/assets/img/product/product4.png" alt="product-img">
+                                <a class="product__items--link" href="<?php echo APP_URL; ?>/view/product-details.php">
+                                    <img class="product__items--img product__primary--img" src="<?php echo APP_URL; ?>/assets/img/product/product3.png" alt="product-img">
+                                    <img class="product__items--img product__secondary--img" src="<?php echo APP_URL; ?>/assets/img/product/product4.png" alt="product-img">
                                 </a>
                                 <div class="product__badge">
                                     <span class="product__badge--items sale">Sale</span>
@@ -350,7 +350,7 @@ include ROOT . '/includes/menu.php';
                             </div>
                             <div class="product__items--content">
                                 <span class="product__items--content__subtitle">Jacket, Women</span>
-                                <h3 class="product__items--content__title h4"><a href="<?php echo HOST; ?>/view/product-details.php">Boxy Denim Jacket</a></h3>
+                                <h3 class="product__items--content__title h4"><a href="<?php echo APP_URL; ?>/view/product-details.php">Boxy Denim Jacket</a></h3>
                                 <div class="product__items--price">
                                     <span class="current__price">€120</span>
                                     <span class="price__divided"></span>
@@ -405,11 +405,11 @@ include ROOT . '/includes/menu.php';
                                                     </g>
                                                 </g>
                                             </svg>
-                                            <span class="add__to--cart__text"> + Add to cart</span>
+                                            <span class="add__to--cart__text"> Add to cart</span>
                                         </a>
                                     </li>
                                     <li class="product__items--action__list">
-                                        <a class="product__items--action__btn" href="<?php echo HOST; ?>/view/wishlist.php">
+                                        <a class="product__items--action__btn" href="<?php echo APP_URL; ?>/view/wishlist.php">
                                             <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="25.51" height="23.443" viewBox="0 0 512 512">
                                                 <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path>
                                             </svg>
@@ -433,9 +433,9 @@ include ROOT . '/includes/menu.php';
                     <div class="swiper-slide">
                         <div class="product__items ">
                             <div class="product__items--thumbnail">
-                                <a class="product__items--link" href="<?php echo HOST; ?>/view/product-details.php">
-                                    <img class="product__items--img product__primary--img" src="<?php echo HOST; ?>/assets/img/product/product5.png" alt="product-img">
-                                    <img class="product__items--img product__secondary--img" src="<?php echo HOST; ?>/assets/img/product/product11.png" alt="product-img">
+                                <a class="product__items--link" href="<?php echo APP_URL; ?>/view/product-details.php">
+                                    <img class="product__items--img product__primary--img" src="<?php echo APP_URL; ?>/assets/img/product/product5.png" alt="product-img">
+                                    <img class="product__items--img product__secondary--img" src="<?php echo APP_URL; ?>/assets/img/product/product11.png" alt="product-img">
                                 </a>
                                 <div class="product__badge">
                                     <span class="product__badge--items sale">Sale</span>
@@ -443,7 +443,7 @@ include ROOT . '/includes/menu.php';
                             </div>
                             <div class="product__items--content">
                                 <span class="product__items--content__subtitle">Jacket, Women</span>
-                                <h4 class="product__items--content__title"><a href="<?php echo HOST; ?>/view/product-details.php">Quilted Shoulder Bag</a></h4>
+                                <h4 class="product__items--content__title"><a href="<?php echo APP_URL; ?>/view/product-details.php">Quilted Shoulder Bag</a></h4>
                                 <div class="product__items--price">
                                     <span class="current__price">€115</span>
                                     <span class="price__divided"></span>
@@ -498,11 +498,11 @@ include ROOT . '/includes/menu.php';
                                                     </g>
                                                 </g>
                                             </svg>
-                                            <span class="add__to--cart__text"> + Add to cart</span>
+                                            <span class="add__to--cart__text"> Add to cart</span>
                                         </a>
                                     </li>
                                     <li class="product__items--action__list">
-                                        <a class="product__items--action__btn" href="<?php echo HOST; ?>/view/wishlist.php">
+                                        <a class="product__items--action__btn" href="<?php echo APP_URL; ?>/view/wishlist.php">
                                             <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="25.51" height="23.443" viewBox="0 0 512 512">
                                                 <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path>
                                             </svg>
@@ -526,9 +526,9 @@ include ROOT . '/includes/menu.php';
                     <div class="swiper-slide">
                         <div class="product__items ">
                             <div class="product__items--thumbnail">
-                                <a class="product__items--link" href="<?php echo HOST; ?>/view/product-details.php">
-                                    <img class="product__items--img product__primary--img" src="<?php echo HOST; ?>/assets/img/product/product8.png" alt="product-img">
-                                    <img class="product__items--img product__secondary--img" src="<?php echo HOST; ?>/assets/img/product/product15.png" alt="product-img">
+                                <a class="product__items--link" href="<?php echo APP_URL; ?>/view/product-details.php">
+                                    <img class="product__items--img product__primary--img" src="<?php echo APP_URL; ?>/assets/img/product/product8.png" alt="product-img">
+                                    <img class="product__items--img product__secondary--img" src="<?php echo APP_URL; ?>/assets/img/product/product15.png" alt="product-img">
                                 </a>
                                 <div class="product__badge">
                                     <span class="product__badge--items sale">Sale</span>
@@ -536,7 +536,7 @@ include ROOT . '/includes/menu.php';
                             </div>
                             <div class="product__items--content">
                                 <span class="product__items--content__subtitle">Jacket, Women</span>
-                                <h4 class="product__items--content__title"><a href="<?php echo HOST; ?>/view/product-details.php">Square Shoulder Bag</a></h4>
+                                <h4 class="product__items--content__title"><a href="<?php echo APP_URL; ?>/view/product-details.php">Square Shoulder Bag</a></h4>
                                 <div class="product__items--price">
                                     <span class="current__price">€117</span>
                                     <span class="price__divided"></span>
@@ -591,11 +591,11 @@ include ROOT . '/includes/menu.php';
                                                     </g>
                                                 </g>
                                             </svg>
-                                            <span class="add__to--cart__text"> + Add to cart</span>
+                                            <span class="add__to--cart__text"> Add to cart</span>
                                         </a>
                                     </li>
                                     <li class="product__items--action__list">
-                                        <a class="product__items--action__btn" href="<?php echo HOST; ?>/view/wishlist.php">
+                                        <a class="product__items--action__btn" href="<?php echo APP_URL; ?>/view/wishlist.php">
                                             <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="25.51" height="23.443" viewBox="0 0 512 512">
                                                 <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path>
                                             </svg>
@@ -619,9 +619,9 @@ include ROOT . '/includes/menu.php';
                     <div class="swiper-slide">
                         <div class="product__items ">
                             <div class="product__items--thumbnail">
-                                <a class="product__items--link" href="<?php echo HOST; ?>/view/product-details.php">
-                                    <img class="product__items--img product__primary--img" src="<?php echo HOST; ?>/assets/img/product/product12.png" alt="product-img">
-                                    <img class="product__items--img product__secondary--img" src="<?php echo HOST; ?>/assets/img/product/product13.png" alt="product-img">
+                                <a class="product__items--link" href="<?php echo APP_URL; ?>/view/product-details.php">
+                                    <img class="product__items--img product__primary--img" src="<?php echo APP_URL; ?>/assets/img/product/product12.png" alt="product-img">
+                                    <img class="product__items--img product__secondary--img" src="<?php echo APP_URL; ?>/assets/img/product/product13.png" alt="product-img">
                                 </a>
                                 <div class="product__badge">
                                     <span class="product__badge--items sale">Sale</span>
@@ -629,7 +629,7 @@ include ROOT . '/includes/menu.php';
                             </div>
                             <div class="product__items--content">
                                 <span class="product__items--content__subtitle">Jacket, Women</span>
-                                <h4 class="product__items--content__title"><a href="<?php echo HOST; ?>/view/product-details.php">Wool-blend Jacket</a></h4>
+                                <h4 class="product__items--content__title"><a href="<?php echo APP_URL; ?>/view/product-details.php">Wool-blend Jacket</a></h4>
                                 <div class="product__items--price">
                                     <span class="current__price">€144</span>
                                     <span class="price__divided"></span>
@@ -684,11 +684,11 @@ include ROOT . '/includes/menu.php';
                                                     </g>
                                                 </g>
                                             </svg>
-                                            <span class="add__to--cart__text"> + Add to cart</span>
+                                            <span class="add__to--cart__text"> Add to cart</span>
                                         </a>
                                     </li>
                                     <li class="product__items--action__list">
-                                        <a class="product__items--action__btn" href="<?php echo HOST; ?>/view/wishlist.php">
+                                        <a class="product__items--action__btn" href="<?php echo APP_URL; ?>/view/wishlist.php">
                                             <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="25.51" height="23.443" viewBox="0 0 512 512">
                                                 <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path>
                                             </svg>
@@ -712,9 +712,9 @@ include ROOT . '/includes/menu.php';
                     <div class="swiper-slide">
                         <div class="product__items ">
                             <div class="product__items--thumbnail">
-                                <a class="product__items--link" href="<?php echo HOST; ?>/view/product-details.php">
-                                    <img class="product__items--img product__primary--img" src="<?php echo HOST; ?>/assets/img/product/product14.png" alt="product-img">
-                                    <img class="product__items--img product__secondary--img" src="<?php echo HOST; ?>/assets/img/product/product15.png" alt="product-img">
+                                <a class="product__items--link" href="<?php echo APP_URL; ?>/view/product-details.php">
+                                    <img class="product__items--img product__primary--img" src="<?php echo APP_URL; ?>/assets/img/product/product14.png" alt="product-img">
+                                    <img class="product__items--img product__secondary--img" src="<?php echo APP_URL; ?>/assets/img/product/product15.png" alt="product-img">
                                 </a>
                                 <div class="product__badge">
                                     <span class="product__badge--items sale">Sale</span>
@@ -722,7 +722,7 @@ include ROOT . '/includes/menu.php';
                             </div>
                             <div class="product__items--content">
                                 <span class="product__items--content__subtitle">Jacket, Women</span>
-                                <h4 class="product__items--content__title"><a href="<?php echo HOST; ?>/view/product-details.php">Western denim shirt</a></h4>
+                                <h4 class="product__items--content__title"><a href="<?php echo APP_URL; ?>/view/product-details.php">Western denim shirt</a></h4>
                                 <div class="product__items--price">
                                     <span class="current__price">€128</span>
                                     <span class="price__divided"></span>
@@ -778,11 +778,11 @@ include ROOT . '/includes/menu.php';
                                                     </g>
                                                 </g>
                                             </svg>
-                                            <span class="add__to--cart__text"> + Add to cart</span>
+                                            <span class="add__to--cart__text"> Add to cart</span>
                                         </a>
                                     </li>
                                     <li class="product__items--action__list">
-                                        <a class="product__items--action__btn" href="<?php echo HOST; ?>/view/wishlist.php">
+                                        <a class="product__items--action__btn" href="<?php echo APP_URL; ?>/view/wishlist.php">
                                             <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="25.51" height="23.443" viewBox="0 0 512 512">
                                                 <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path>
                                             </svg>
@@ -806,9 +806,9 @@ include ROOT . '/includes/menu.php';
                     <div class="swiper-slide">
                         <div class="product__items ">
                             <div class="product__items--thumbnail">
-                                <a class="product__items--link" href="<?php echo HOST; ?>/view/product-details.php">
-                                    <img class="product__items--img product__primary--img" src="<?php echo HOST; ?>/assets/img/product/product11.png" alt="product-img">
-                                    <img class="product__items--img product__secondary--img" src="<?php echo HOST; ?>/assets/img/product/product8.png" alt="product-img">
+                                <a class="product__items--link" href="<?php echo APP_URL; ?>/view/product-details.php">
+                                    <img class="product__items--img product__primary--img" src="<?php echo APP_URL; ?>/assets/img/product/product11.png" alt="product-img">
+                                    <img class="product__items--img product__secondary--img" src="<?php echo APP_URL; ?>/assets/img/product/product8.png" alt="product-img">
                                 </a>
                                 <div class="product__badge">
                                     <span class="product__badge--items sale">Sale</span>
@@ -816,7 +816,7 @@ include ROOT . '/includes/menu.php';
                             </div>
                             <div class="product__items--content">
                                 <span class="product__items--content__subtitle">Jacket, Women</span>
-                                <h4 class="product__items--content__title"><a href="<?php echo HOST; ?>/view/product-details.php">Aware organic cotton</a></h4>
+                                <h4 class="product__items--content__title"><a href="<?php echo APP_URL; ?>/view/product-details.php">Aware organic cotton</a></h4>
                                 <div class="product__items--price">
                                     <span class="current__price">€135</span>
                                     <span class="price__divided"></span>
@@ -871,11 +871,11 @@ include ROOT . '/includes/menu.php';
                                                     </g>
                                                 </g>
                                             </svg>
-                                            <span class="add__to--cart__text"> + Add to cart</span>
+                                            <span class="add__to--cart__text"> Add to cart</span>
                                         </a>
                                     </li>
                                     <li class="product__items--action__list">
-                                        <a class="product__items--action__btn" href="<?php echo HOST; ?>/view/wishlist.php">
+                                        <a class="product__items--action__btn" href="<?php echo APP_URL; ?>/view/wishlist.php">
                                             <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="25.51" height="23.443" viewBox="0 0 512 512">
                                                 <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path>
                                             </svg>
@@ -911,19 +911,19 @@ include ROOT . '/includes/menu.php';
                 <div class="col">
                     <div class="brand__logo--section__inner d-flex justify-content-center align-items-center">
                         <div class="brand__logo--items">
-                            <img class="brand__logo--items__thumbnail--img display-block" src="<?php echo HOST; ?>/assets/img/logo/brand-logo1.png" alt="brand logo">
+                            <img class="brand__logo--items__thumbnail--img display-block" src="<?php echo APP_URL; ?>/assets/img/logo/brand-logo1.png" alt="brand logo">
                         </div>
                         <div class="brand__logo--items">
-                            <img class="brand__logo--items__thumbnail--img display-block" src="<?php echo HOST; ?>/assets/img/logo/brand-logo2.png" alt="brand logo">
+                            <img class="brand__logo--items__thumbnail--img display-block" src="<?php echo APP_URL; ?>/assets/img/logo/brand-logo2.png" alt="brand logo">
                         </div>
                         <div class="brand__logo--items">
-                            <img class="brand__logo--items__thumbnail--img display-block" src="<?php echo HOST; ?>/assets/img/logo/brand-logo3.png" alt="brand logo">
+                            <img class="brand__logo--items__thumbnail--img display-block" src="<?php echo APP_URL; ?>/assets/img/logo/brand-logo3.png" alt="brand logo">
                         </div>
                         <div class="brand__logo--items">
-                            <img class="brand__logo--items__thumbnail--img display-block" src="<?php echo HOST; ?>/assets/img/logo/brand-logo4.png" alt="brand logo">
+                            <img class="brand__logo--items__thumbnail--img display-block" src="<?php echo APP_URL; ?>/assets/img/logo/brand-logo4.png" alt="brand logo">
                         </div>
                         <div class="brand__logo--items">
-                            <img class="brand__logo--items__thumbnail--img display-block" src="<?php echo HOST; ?>/assets/img/logo/brand-logo5.png" alt="brand logo">
+                            <img class="brand__logo--items__thumbnail--img display-block" src="<?php echo APP_URL; ?>/assets/img/logo/brand-logo5.png" alt="brand logo">
                         </div>
                     </div>
                 </div>
@@ -938,7 +938,7 @@ include ROOT . '/includes/menu.php';
             <div class="shipping__section2--inner shipping__style3--inner d-flex justify-content-between">
                 <div class="shipping__items2 d-flex align-items-center">
                     <div class="shipping__items2--icon">
-                        <img src="<?php echo HOST; ?>/assets/img/other/shipping1.png" alt="">
+                        <img src="<?php echo APP_URL; ?>/assets/img/other/shipping1.png" alt="">
                     </div>
                     <div class="shipping__items2--content">
                         <h2 class="shipping__items2--content__title h3">Shipping</h2>
@@ -947,7 +947,7 @@ include ROOT . '/includes/menu.php';
                 </div>
                 <div class="shipping__items2 d-flex align-items-center">
                     <div class="shipping__items2--icon">
-                        <img src="<?php echo HOST; ?>/assets/img/other/shipping2.png" alt="">
+                        <img src="<?php echo APP_URL; ?>/assets/img/other/shipping2.png" alt="">
                     </div>
                     <div class="shipping__items2--content">
                         <h2 class="shipping__items2--content__title h3">Payment</h2>
@@ -956,7 +956,7 @@ include ROOT . '/includes/menu.php';
                 </div>
                 <div class="shipping__items2 d-flex align-items-center">
                     <div class="shipping__items2--icon">
-                        <img src="<?php echo HOST; ?>/assets/img/other/shipping3.png" alt="">
+                        <img src="<?php echo APP_URL; ?>/assets/img/other/shipping3.png" alt="">
                     </div>
                     <div class="shipping__items2--content">
                         <h2 class="shipping__items2--content__title h3">Return</h2>
@@ -965,7 +965,7 @@ include ROOT . '/includes/menu.php';
                 </div>
                 <div class="shipping__items2 d-flex align-items-center">
                     <div class="shipping__items2--icon">
-                        <img src="<?php echo HOST; ?>/assets/img/other/shipping4.png" alt="">
+                        <img src="<?php echo APP_URL; ?>/assets/img/other/shipping4.png" alt="">
                     </div>
                     <div class="shipping__items2--content">
                         <h2 class="shipping__items2--content__title h3">Support</h2>
@@ -995,9 +995,9 @@ include ROOT . '/includes/menu.php';
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="product__media--preview__items">
-                                        <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="<?php echo HOST; ?>/assets/img/product/big-product1.jpg"><img class="product__media--preview__items--img" src="<?php echo HOST; ?>/assets/img/product/big-product1.jpg" alt="product-media-img"></a>
+                                        <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="<?php echo APP_URL; ?>/assets/img/product/big-product1.jpg"><img class="product__media--preview__items--img" src="<?php echo APP_URL; ?>/assets/img/product/big-product1.jpg" alt="product-media-img"></a>
                                         <div class="product__media--view__icon">
-                                            <a class="product__media--view__icon--link glightbox" href="<?php echo HOST; ?>/assets/img/product/big-product1.jpg" data-gallery="product-media-preview">
+                                            <a class="product__media--view__icon--link glightbox" href="<?php echo APP_URL; ?>/assets/img/product/big-product1.jpg" data-gallery="product-media-preview">
                                                 <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512">
                                                     <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
                                                     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
@@ -1008,9 +1008,9 @@ include ROOT . '/includes/menu.php';
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="product__media--preview__items">
-                                        <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="<?php echo HOST; ?>/assets/img/product/big-product2.jpg"><img class="product__media--preview__items--img" src="<?php echo HOST; ?>/assets/img/product/big-product2.jpg" alt="product-media-img"></a>
+                                        <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="<?php echo APP_URL; ?>/assets/img/product/big-product2.jpg"><img class="product__media--preview__items--img" src="<?php echo APP_URL; ?>/assets/img/product/big-product2.jpg" alt="product-media-img"></a>
                                         <div class="product__media--view__icon">
-                                            <a class="product__media--view__icon--link glightbox" href="<?php echo HOST; ?>/assets/img/product/big-product2.jpg" data-gallery="product-media-preview">
+                                            <a class="product__media--view__icon--link glightbox" href="<?php echo APP_URL; ?>/assets/img/product/big-product2.jpg" data-gallery="product-media-preview">
                                                 <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512">
                                                     <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
                                                     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
@@ -1021,9 +1021,9 @@ include ROOT . '/includes/menu.php';
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="product__media--preview__items">
-                                        <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="<?php echo HOST; ?>/assets/img/product/big-product3.jpg"><img class="product__media--preview__items--img" src="<?php echo HOST; ?>/assets/img/product/big-product3.jpg" alt="product-media-img"></a>
+                                        <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="<?php echo APP_URL; ?>/assets/img/product/big-product3.jpg"><img class="product__media--preview__items--img" src="<?php echo APP_URL; ?>/assets/img/product/big-product3.jpg" alt="product-media-img"></a>
                                         <div class="product__media--view__icon">
-                                            <a class="product__media--view__icon--link glightbox" href="<?php echo HOST; ?>/assets/img/product/big-product3.jpg" data-gallery="product-media-preview">
+                                            <a class="product__media--view__icon--link glightbox" href="<?php echo APP_URL; ?>/assets/img/product/big-product3.jpg" data-gallery="product-media-preview">
                                                 <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512">
                                                     <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
                                                     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
@@ -1034,9 +1034,9 @@ include ROOT . '/includes/menu.php';
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="product__media--preview__items">
-                                        <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="<?php echo HOST; ?>/assets/img/product/big-product4.jpg"><img class="product__media--preview__items--img" src="<?php echo HOST; ?>/assets/img/product/big-product4.jpg" alt="product-media-img"></a>
+                                        <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="<?php echo APP_URL; ?>/assets/img/product/big-product4.jpg"><img class="product__media--preview__items--img" src="<?php echo APP_URL; ?>/assets/img/product/big-product4.jpg" alt="product-media-img"></a>
                                         <div class="product__media--view__icon">
-                                            <a class="product__media--view__icon--link glightbox" href="<?php echo HOST; ?>/assets/img/product/big-product4.jpg" data-gallery="product-media-preview">
+                                            <a class="product__media--view__icon--link glightbox" href="<?php echo APP_URL; ?>/assets/img/product/big-product4.jpg" data-gallery="product-media-preview">
                                                 <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512">
                                                     <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
                                                     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
@@ -1047,9 +1047,9 @@ include ROOT . '/includes/menu.php';
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="product__media--preview__items">
-                                        <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="<?php echo HOST; ?>/assets/img/product/big-product5.jpg"><img class="product__media--preview__items--img" src="<?php echo HOST; ?>/assets/img/product/big-product5.jpg" alt="product-media-img"></a>
+                                        <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="<?php echo APP_URL; ?>/assets/img/product/big-product5.jpg"><img class="product__media--preview__items--img" src="<?php echo APP_URL; ?>/assets/img/product/big-product5.jpg" alt="product-media-img"></a>
                                         <div class="product__media--view__icon">
-                                            <a class="product__media--view__icon--link glightbox" href="<?php echo HOST; ?>/assets/img/product/big-product5.jpg" data-gallery="product-media-preview">
+                                            <a class="product__media--view__icon--link glightbox" href="<?php echo APP_URL; ?>/assets/img/product/big-product5.jpg" data-gallery="product-media-preview">
                                                 <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512">
                                                     <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
                                                     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
@@ -1060,9 +1060,9 @@ include ROOT . '/includes/menu.php';
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="product__media--preview__items">
-                                        <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="<?php echo HOST; ?>/assets/img/product/big-product6.jpg"><img class="product__media--preview__items--img" src="<?php echo HOST; ?>/assets/img/product/big-product6.jpg" alt="product-media-img"></a>
+                                        <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="<?php echo APP_URL; ?>/assets/img/product/big-product6.jpg"><img class="product__media--preview__items--img" src="<?php echo APP_URL; ?>/assets/img/product/big-product6.jpg" alt="product-media-img"></a>
                                         <div class="product__media--view__icon">
-                                            <a class="product__media--view__icon--link glightbox" href="<?php echo HOST; ?>/assets/img/product/big-product6.jpg" data-gallery="product-media-preview">
+                                            <a class="product__media--view__icon--link glightbox" href="<?php echo APP_URL; ?>/assets/img/product/big-product6.jpg" data-gallery="product-media-preview">
                                                 <svg class="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512">
                                                     <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
                                                     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
@@ -1077,32 +1077,32 @@ include ROOT . '/includes/menu.php';
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="product__media--nav__items">
-                                        <img class="product__media--nav__items--img" src="<?php echo HOST; ?>/assets/img/product/small-product7.png" alt="product-nav-img">
+                                        <img class="product__media--nav__items--img" src="<?php echo APP_URL; ?>/assets/img/product/small-product7.png" alt="product-nav-img">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="product__media--nav__items">
-                                        <img class="product__media--nav__items--img" src="<?php echo HOST; ?>/assets/img/product/small-product8.png" alt="product-nav-img">
+                                        <img class="product__media--nav__items--img" src="<?php echo APP_URL; ?>/assets/img/product/small-product8.png" alt="product-nav-img">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="product__media--nav__items">
-                                        <img class="product__media--nav__items--img" src="<?php echo HOST; ?>/assets/img/product/small-product9.png" alt="product-nav-img">
+                                        <img class="product__media--nav__items--img" src="<?php echo APP_URL; ?>/assets/img/product/small-product9.png" alt="product-nav-img">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="product__media--nav__items">
-                                        <img class="product__media--nav__items--img" src="<?php echo HOST; ?>/assets/img/product/small-product10.png" alt="product-nav-img">
+                                        <img class="product__media--nav__items--img" src="<?php echo APP_URL; ?>/assets/img/product/small-product10.png" alt="product-nav-img">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="product__media--nav__items">
-                                        <img class="product__media--nav__items--img" src="<?php echo HOST; ?>/assets/img/product/small-product11.png" alt="product-nav-img">
+                                        <img class="product__media--nav__items--img" src="<?php echo APP_URL; ?>/assets/img/product/small-product11.png" alt="product-nav-img">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="product__media--nav__items">
-                                        <img class="product__media--nav__items--img" src="<?php echo HOST; ?>/assets/img/product/small-product12.png" alt="product-nav-img">
+                                        <img class="product__media--nav__items--img" src="<?php echo APP_URL; ?>/assets/img/product/small-product12.png" alt="product-nav-img">
                                     </div>
                                 </div>
                             </div>
@@ -1166,13 +1166,13 @@ include ROOT . '/includes/menu.php';
                                     <fieldset class="variant__input--fieldset">
                                         <legend class="product__variant--title mb-8">Color :</legend>
                                         <input id="color-red1" name="color" type="radio" checked>
-                                        <label class="variant__color--value red" for="color-red1" title="Red"><img class="variant__color--value__img" src="<?php echo HOST; ?>/assets/img/product/product1.png" alt="variant-color-img"></label>
+                                        <label class="variant__color--value red" for="color-red1" title="Red"><img class="variant__color--value__img" src="<?php echo APP_URL; ?>/assets/img/product/product1.png" alt="variant-color-img"></label>
                                         <input id="color-red2" name="color" type="radio">
-                                        <label class="variant__color--value red" for="color-red2" title="Black"><img class="variant__color--value__img" src="<?php echo HOST; ?>/assets/img/product/product2.png" alt="variant-color-img"></label>
+                                        <label class="variant__color--value red" for="color-red2" title="Black"><img class="variant__color--value__img" src="<?php echo APP_URL; ?>/assets/img/product/product2.png" alt="variant-color-img"></label>
                                         <input id="color-red3" name="color" type="radio">
-                                        <label class="variant__color--value red" for="color-red3" title="Pink"><img class="variant__color--value__img" src="<?php echo HOST; ?>/assets/img/product/product3.png" alt="variant-color-img"></label>
+                                        <label class="variant__color--value red" for="color-red3" title="Pink"><img class="variant__color--value__img" src="<?php echo APP_URL; ?>/assets/img/product/product3.png" alt="variant-color-img"></label>
                                         <input id="color-red4" name="color" type="radio">
-                                        <label class="variant__color--value red" for="color-red4" title="Orange"><img class="variant__color--value__img" src="<?php echo HOST; ?>/assets/img/product/product4.png" alt="variant-color-img"></label>
+                                        <label class="variant__color--value red" for="color-red4" title="Orange"><img class="variant__color--value__img" src="<?php echo APP_URL; ?>/assets/img/product/product4.png" alt="variant-color-img"></label>
                                     </fieldset>
                                 </div>
                                 <div class="product__variant--list mb-15">
@@ -1197,7 +1197,7 @@ include ROOT . '/includes/menu.php';
                                     <button class="primary__btn quickview__cart--btn" type="submit">Add To Cart</button>
                                 </div>
                                 <div class="quickview__variant--list variant__wishlist mb-15">
-                                    <a class="variant__wishlist--icon" href="<?php echo HOST; ?>/view/wishlist.php" title="Add to wishlist">
+                                    <a class="variant__wishlist--icon" href="<?php echo APP_URL; ?>/view/wishlist.php" title="Add to wishlist">
                                         <svg class="quickview__variant--wishlist__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
                                         </svg>

@@ -4,15 +4,15 @@
 
 
 
-// Global variables ROOT & HOST for Live Session
+// Global variables ROOT & APP_URL for Live Session
 // define('ROOT', $_SERVER['DOCUMENT_ROOT'] . '');
-// const HOST = 'https://alefba.fr';
+// const APP_URL = 'https://alefba.fr';
 
 
 
-// Global variables ROOT & HOST for Local Session
+// Global variables ROOT & APP_URL for Local Session
 define('ROOT', $_SERVER['DOCUMENT_ROOT'] . '/alefba');
-const HOST = 'http://localhost/alefba';
+const APP_URL = 'http://localhost/alefba';
 
 
 

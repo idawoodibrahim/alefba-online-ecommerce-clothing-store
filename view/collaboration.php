@@ -31,8 +31,7 @@ include ROOT . '/includes/menu.php';
             <div class="text-center">
                 <h3>Hi,</h3>
                 <p>You wish to Collaborate with ALEFBA, express it clearly and openly, we will answer you soon. You can
-                    make
-                    your quote requests at: <span><a href="mailto:info@alefba.fr">info@alefba.fr</a></span>
+                    make your quote requests at: <span><a href="mailto:info@alefba.fr">info@alefba.fr</a></span>
                 </p>
                 <p> See You Soon<br /> <strong>ALEFBA TEAM</strong> </p>
             </div>

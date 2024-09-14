@@ -2,16 +2,15 @@
 <header class="header__section">
     <div class="header__topbar bg__secondary">
         <div class="container-fluid">
-            <div class="header__topbar--inner d-flex align-items-center justify-content-between">
+            <div class="header__topbar--inner d-flex align-items-center justify-content-center">
                 <div class="header__shipping">
-                    <ul class="header__shipping--wrapper d-flex">
-                        <li class="header__shipping--text text-white">FREE RETURNS & EXCHANGES</li>
-                        <li class="header__shipping--text text-white d-sm-2-none"><img
-                                class="header__shipping--text__icon" src="<?php echo HOST; ?>/assets/img/icon/bus.png"
-                                alt="bus-icon">
+                    <ul class="header__shipping--wrapper d-flex align-items-center justify-content-center">
+                        <li class="header__shipping--text text-white d-sm-2-none">
                             FREE SHIPPING ON ORDERS OVER €90</li>
+                        <li class="header__shipping--text text-white">FREE RETURNS & EXCHANGES</li>
+
                         <!-- <li class="header__shipping--text text-white d-sm-2-none"><img
-                                class="header__shipping--text__icon" src="<?php echo HOST; ?>/assets/img/icon/email.png"
+                                class="header__shipping--text__icon" src="<?php echo APP_URL; ?>/assets/img/icon/email.png"
                                 alt="email-icon">
                             <a class="header__shipping--text__link" href="mailto:info@alefba.fr">info@alefba.fr</a>
                         </li> -->
@@ -21,7 +20,7 @@
                     <ul class="d-flex align-items-center">
                         <li class="language__currency--list">
                             <a class="language__switcher text-white" href="#">
-                                <img class="language__switcher--icon__img" src="<?php echo HOST; ?>/assets/img/icon/language-icon.png" alt="currency">
+                                <img class="language__switcher--icon__img" src="<?php echo APP_URL; ?>/assets/img/icon/language-icon.png" alt="currency">
                                 <span>English</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05" viewBox="0 0 9.797 6.05">
                                     <path d="M14.646,8.59,10.9,12.329,7.151,8.59,6,9.741l4.9,4.9,4.9-4.9Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
@@ -37,7 +36,7 @@
                         </li>
                         <li class="language__currency--list">
                             <a class="account__currency--link text-white" href="#">
-                                <img src="<?php echo HOST; ?>/assets/img/icon/usd-icon.png" alt="currency">
+                                <img src="<?php echo APP_URL; ?>/assets/img/icon/usd-icon.png" alt="currency">
                                 <span>$ US Dollar</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05" viewBox="0 0 9.797 6.05">
                                     <path d="M14.646,8.59,10.9,12.329,7.151,8.59,6,9.741l4.9,4.9,4.9-4.9Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7" />
@@ -71,9 +70,9 @@
                     </a>
                 </div>
                 <div class="main__logo">
-                    <h1 class="main__logo--title"><a class="main__logo--link" href="<?php echo HOST; ?>"><img
-                                class="main__logo--img" src="<?php echo HOST; ?>/assets/img/logo/nav-logo.png"
-                                alt="logo-img"></a></h1>
+                    <h1 class="main__logo--title"><a class="main__logo--link" href="<?php echo APP_URL; ?>"><img
+                                class="main__logo--img" src="<?php echo APP_URL; ?>/assets/img/logo/nav-logo.png"
+                                alt="logo-img" width="75" height="60"></a></h1>
                 </div>
 
                 <!-- SEARCH BOX  -->
@@ -109,7 +108,7 @@
                 <div class="header__account header__sticky--none">
                     <ul class="d-flex">
                         <li class="header__account--items">
-                            <a class="header__account--btn" href="<?php echo HOST; ?>/view/my-account.php">
+                            <a class="header__account--btn" href="<?php echo APP_URL; ?>/view/login.php">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="26.51" height="23.443"
                                     viewBox="0 0 512 512">
                                     <path
@@ -124,7 +123,7 @@
                             </a>
                         </li>
                         <li class="header__account--items d-none d-lg-block">
-                            <a class="header__account--btn" href="<?php echo HOST; ?>/view/wishlist.php">
+                            <a class="header__account--btn" href="<?php echo APP_URL; ?>/view/wishlist.php">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28.51" height="23.443"
                                     viewBox="0 0 512 512">
                                     <path
@@ -156,15 +155,15 @@
                     <nav class="header__menu--navigation">
                         <ul class="d-flex">
                             <li class="header__menu--items style2">
-                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/shop/men">Men
+                                <a class="header__menu--link" href="<?php echo APP_URL; ?>/view/shop/men">Men
                                 </a>
                             </li>
                             <li class="header__menu--items style2">
-                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/shop/women">Women
+                                <a class="header__menu--link" href="<?php echo APP_URL; ?>/view/shop/women">Women
                                 </a>
                             </li>
                             <li class="header__menu--items style2">
-                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/shop/children">Children
+                                <a class="header__menu--link" href="<?php echo APP_URL; ?>/view/shop/children">Children
                                 </a>
                             </li>
                             <li class="header__menu--items style2">
@@ -172,11 +171,11 @@
                             </li>
                             <li class="header__menu--items style2">
                                 <a class="header__menu--link" href="
-                                    <?php echo HOST; ?>/view/collaboration.php">Collaboration
+                                    <?php echo APP_URL; ?>/view/collaboration.php">Collaboration
                                 </a>
                             </li>
                             <li class="header__menu--items style2 d-none d-xl-block">
-                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/shop">Marketplace
+                                <a class="header__menu--link" href="<?php echo APP_URL; ?>/view/shop">Marketplace
                                     <!-- <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
                                         height="7.41" viewBox="0 0 12 7.41">
                                         <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z"
@@ -184,20 +183,21 @@
                                     </svg> -->
                                 </a>
                                 <!-- <ul class="header__sub--menu">
-                                    <li class="header__sub--menu__items"><a href="<?php echo HOST; ?>/view/shop/men"
+                                    <li class="header__sub--menu__items"><a href="<?php echo APP_URL; ?>/view/shop/men"
                                             class="header__sub--menu__link">Men</a></li>
-                                    <li class="header__sub--menu__items"><a href="<?php echo HOST; ?>/view/shop/women"
+                                    <li class="header__sub--menu__items"><a href="<?php echo APP_URL; ?>/view/shop/women"
                                             class="header__sub--menu__link">Women</a></li>
                                     <li class="header__sub--menu__items"><a
-                                            href="<?php echo HOST; ?>/view/shop/children"
+                                            href="<?php echo APP_URL; ?>/view/shop/children"
                                             class="header__sub--menu__link">Children</a></li>
                                 </ul> -->
                             </li>
                             <li class="header__menu--items style2">
-                                <a class="header__menu--link " href="<?php echo HOST; ?>/view/contact.php">Promos </a>
+                                <a class="header__menu--link " href="<?php echo APP_URL; ?>/view/contact.php">Promos
+                                </a>
                             </li>
                             <!-- <li class="header__menu--items style2">
-                                <a class="header__menu--link " href="<?php echo HOST; ?>/view/contact.php">Contact </a>
+                                <a class="header__menu--link " href="<?php echo APP_URL; ?>/view/contact.php">Contact </a>
                             </li> -->
 
                         </ul>
@@ -219,7 +219,7 @@
                             </a>
                         </li>
                         <li class="header__account--items header__account2--items">
-                            <a class="header__account--btn" href="<?php echo HOST; ?>/view/my-account.php">
+                            <a class="header__account--btn" href="<?php echo APP_URL; ?>/view/login.php">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="26.51" height="23.443"
                                     viewBox="0 0 512 512">
                                     <path
@@ -234,7 +234,7 @@
                             </a>
                         </li>
                         <li class="header__account--items header__account2--items d-none d-lg-block">
-                            <a class="header__account--btn" href="<?php echo HOST; ?>/view/wishlist.php">
+                            <a class="header__account--btn" href="<?php echo APP_URL; ?>/view/wishlist.php">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28.51" height="23.443"
                                     viewBox="0 0 512 512">
                                     <path
@@ -271,19 +271,20 @@
                     <nav class="header__menu--navigation">
                         <ul class="d-flex">
                             <li class="header__menu--items">
-                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/shop/men">Men</a>
+                                <a class="header__menu--link" href="<?php echo APP_URL; ?>/view/shop/men">Men</a>
                             </li>
                             <li class="header__menu--items">
-                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/shop/women">Women</a>
+                                <a class="header__menu--link" href="<?php echo APP_URL; ?>/view/shop/women">Women</a>
                             </li>
                             <li class="header__menu--items">
-                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/shop/children">Children</a>
+                                <a class="header__menu--link"
+                                    href="<?php echo APP_URL; ?>/view/shop/children">Children</a>
                             </li>
                             <li class="header__menu--items">
                                 <a class="header__menu--link" href="#">Novelty</a>
                             </li>
                             <!-- <li class="header__menu--items d-none d-xl-block">
-                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/shop.php">Categories <svg
+                                <a class="header__menu--link" href="<?php echo APP_URL; ?>/view/shop.php">Categories <svg
                                         class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
                                         height="7.41" viewBox="0 0 12 7.41">
                                         <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z"
@@ -291,32 +292,32 @@
                                     </svg>
                                 </a>
                                 <ul class="header__sub--menu">
-                                    <li class="header__sub--menu__items"><a href="<?php echo HOST; ?>/view/shop/men"
+                                    <li class="header__sub--menu__items"><a href="<?php echo APP_URL; ?>/view/shop/men"
                                             class="header__sub--menu__link">Men</a></li>
-                                    <li class="header__sub--menu__items"><a href="<?php echo HOST; ?>/view/shop/women"
+                                    <li class="header__sub--menu__items"><a href="<?php echo APP_URL; ?>/view/shop/women"
                                             class="header__sub--menu__link">Women</a></li>
                                     <li class="header__sub--menu__items"><a
-                                            href="<?php echo HOST; ?>/view/shop/children"
+                                            href="<?php echo APP_URL; ?>/view/shop/children"
                                             class="header__sub--menu__link">Children</a></li>
                                 </ul>
                             </li> -->
                             <li class="header__menu--items">
                                 <a class="header__menu--link"
-                                    href="<?php echo HOST; ?>/view/collaboration.php">Collaboration
+                                    href="<?php echo APP_URL; ?>/view/collaboration.php">Collaboration
                                 </a>
                             </li>
                             <li class="header__menu--items">
-                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/shop">Marketplace
+                                <a class="header__menu--link" href="<?php echo APP_URL; ?>/view/shop">Marketplace
                                 </a>
                             </li>
                             <li class="header__menu--items">
-                                <a class="header__menu--link" href="<?php echo HOST; ?>/view/contact.php">Promos </a>
+                                <a class="header__menu--link" href="<?php echo APP_URL; ?>/view/contact.php">Promos </a>
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <p class="header__discount--text"><img class="header__discount--icon__img"
-                        src="<?php echo HOST; ?>/assets/img/icon/lamp.png" alt="lamp-img"> Special up to 40% Off all
+                        src="<?php echo APP_URL; ?>/assets/img/icon/lamp.png" alt="lamp-img"> Special up to 40% Off all
                     item</p>
             </div>
         </div>
@@ -326,38 +327,38 @@
     <div class="offcanvas__header">
         <div class="offcanvas__inner">
             <div class="offcanvas__logo">
-                <a class="offcanvas__logo_link" href="<?php echo HOST; ?>">
-                    <img src="<?php echo HOST; ?>/assets/img/logo/nav-log.png" alt="Grocee Logo" width="158"
-                        height="36">
+                <a class="offcanvas__logo_link" href="<?php echo APP_URL; ?>">
+                    <img src="<?php echo APP_URL; ?>/assets/img/logo/nav-logo.png" alt="Grocee Logo" width="75"
+                        height="60">
                 </a>
                 <button class="offcanvas__close--btn" data-offcanvas>close</button>
             </div>
             <nav class="offcanvas__menu">
                 <ul class="offcanvas__menu_ul">
                     <li class="offcanvas__menu_li">
-                        <a class="offcanvas__menu_item" href="<?php echo HOST; ?>/view/shop/men">Men</a>
+                        <a class="offcanvas__menu_item" href="<?php echo APP_URL; ?>/view/shop/men">Men</a>
                     </li>
                     <li class="offcanvas__menu_li">
-                        <a class="offcanvas__menu_item" href="<?php echo HOST; ?>/view/shop/women">Women</a>
+                        <a class="offcanvas__menu_item" href="<?php echo APP_URL; ?>/view/shop/women">Women</a>
                     </li>
                     <li class="offcanvas__menu_li">
-                        <a class="offcanvas__menu_item" href="<?php echo HOST; ?>/view/shop/children">Children</a>
+                        <a class="offcanvas__menu_item" href="<?php echo APP_URL; ?>/view/shop/children">Children</a>
                     </li>
                     <li class="offcanvas__menu_li">
                         <a class="offcanvas__menu_item" href="#">Novelty</a>
                     </li>
                     <li class="offcanvas__menu_li"><a class="offcanvas__menu_item"
-                            href="<?php echo HOST; ?>/view/collaboration.php">Collaboration</a></li>
+                            href="<?php echo APP_URL; ?>/view/collaboration.php">Collaboration</a></li>
                     <li class="offcanvas__menu_li"><a class="offcanvas__menu_item"
-                            href="<?php echo HOST; ?>/view/shop">Marketplace</a></li>
+                            href="<?php echo APP_URL; ?>/view/shop">Marketplace</a></li>
                     <li class="offcanvas__menu_li"><a class="offcanvas__menu_item"
-                            href="<?php echo HOST; ?>/view/contact.php">Promos</a></li>
+                            href="<?php echo APP_URL; ?>/view/contact.php">Promos</a></li>
                     <!-- <li class="offcanvas__menu_li"><a class="offcanvas__menu_item"
-                            href="<?php echo HOST; ?>/view/contact.php">Contact</a> -->
+                            href="<?php echo APP_URL; ?>/view/contact.php">Contact</a> -->
                     </li>
                 </ul>
                 <div class="offcanvas__account--items">
-                    <a class="offcanvas__account--items__btn d-flex align-items-center" href="<?php echo HOST; ?>">
+                    <a class="offcanvas__account--items__btn d-flex align-items-center" href="<?php echo APP_URL; ?>">
                         <span class="offcanvas__account--items__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20.51" height="19.443" viewBox="0 0 512 512">
                                 <path
@@ -377,7 +378,7 @@
                         <li class="language__currency--list">
                             <a class="offcanvas__language--switcher" href="#">
                                 <img class="language__switcher--icon__img"
-                                    src="<?php echo HOST; ?>/assets/img/icon/language-icon.png" alt="currency">
+                                    src="<?php echo APP_URL; ?>/assets/img/icon/language-icon.png" alt="currency">
                                 <span>English</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05"
                                     viewBox="0 0 9.797 6.05">
@@ -395,7 +396,7 @@
                         </li>
                         <li class="language__currency--list">
                             <a class="offcanvas__account--currency__menu" href="#">
-                                <img src="<?php echo HOST; ?>/assets/img/icon/usd-icon.png" alt="currency">
+                                <img src="<?php echo APP_URL; ?>/assets/img/icon/usd-icon.png" alt="currency">
                                 <span>$ US Dollar</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05"
                                     viewBox="0 0 9.797 6.05">
@@ -423,7 +424,7 @@
     <div class="offcanvas__stikcy--toolbar">
         <ul class="d-flex justify-content-between">
             <li class="offcanvas__stikcy--toolbar__list">
-                <a class="offcanvas__stikcy--toolbar__btn" href="<?php echo HOST; ?>">
+                <a class="offcanvas__stikcy--toolbar__btn" href="<?php echo APP_URL; ?>">
                     <span class="offcanvas__stikcy--toolbar__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="21.51" height="21.443"
                             viewBox="0 0 22 17">
@@ -436,7 +437,7 @@
                 </a>
             </li>
             <li class="offcanvas__stikcy--toolbar__list">
-                <a class="offcanvas__stikcy--toolbar__btn" href="<?php echo HOST; ?>/view/shop">
+                <a class="offcanvas__stikcy--toolbar__btn" href="<?php echo APP_URL; ?>/view/shop">
                     <span class="offcanvas__stikcy--toolbar__icon">
                         <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="18.51" height="17.443"
                             viewBox="0 0 448 512">
@@ -476,7 +477,7 @@
                 </a>
             </li>
             <!-- <li class="offcanvas__stikcy--toolbar__list">
-                <a class="offcanvas__stikcy--toolbar__btn" href="<?php echo HOST; ?>/view/wishlist.php">
+                <a class="offcanvas__stikcy--toolbar__btn" href="<?php echo APP_URL; ?>/view/wishlist.php">
                     <span class="offcanvas__stikcy--toolbar__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18.541" height="15.557"
                             viewBox="0 0 18.541 15.557">
@@ -510,11 +511,11 @@
         <div class="minicart__product">
             <div class="minicart__product--items d-flex">
                 <div class="minicart__thumb">
-                    <a href="<?php echo HOST; ?>/view/product-details.php"><img
-                            src="<?php echo HOST; ?>/assets/img/product/product1.png" alt="prduct-img"></a>
+                    <a href="<?php echo APP_URL; ?>/view/product-details.php"><img
+                            src="<?php echo APP_URL; ?>/assets/img/product/product1.png" alt="prduct-img"></a>
                 </div>
                 <div class="minicart__text">
-                    <h3 class="minicart__subtitle h4"><a href="<?php echo HOST; ?>/view/product-details.php">Oversize
+                    <h3 class="minicart__subtitle h4"><a href="<?php echo APP_URL; ?>/view/product-details.php">Oversize
                             Cotton Dress</a></h3>
                     <span class="color__variant"><b>Color:</b> Beige</span>
                     <div class="minicart__price">
@@ -536,11 +537,12 @@
             </div>
             <div class="minicart__product--items d-flex">
                 <div class="minicart__thumb">
-                    <a href="<?php echo HOST; ?>/view/product-details.php"><img
-                            src="<?php echo HOST; ?>/assets/img/product/product2.png" alt="prduct-img"></a>
+                    <a href="<?php echo APP_URL; ?>/view/product-details.php"><img
+                            src="<?php echo APP_URL; ?>/assets/img/product/product2.png" alt="prduct-img"></a>
                 </div>
                 <div class="minicart__text">
-                    <h3 class="minicart__subtitle h4"><a href="<?php echo HOST; ?>/view/product-details.php">Boxy Denim
+                    <h3 class="minicart__subtitle h4"><a href="<?php echo APP_URL; ?>/view/product-details.php">Boxy
+                            Denim
                             Jacket</a></h3>
                     <span class="color__variant"><b>Color:</b> Green</span>
                     <div class="minicart__price">
@@ -575,12 +577,12 @@
         <div class="minicart__conditions text-center">
             <input class="minicart__conditions--input" id="accept" type="checkbox">
             <label class="minicart__conditions--label" for="accept">I agree with the <a
-                    class="minicart__conditions--link" href="<?php echo HOST; ?>/view/privacy-policy.php">Privacy and
+                    class="minicart__conditions--link" href="<?php echo APP_URL; ?>/view/privacy-policy.php">Privacy and
                     Policy</a></label>
         </div>
         <div class="minicart__button d-flex justify-content-center">
             <a class="primary__btn minicart__button--link" href="cart.php">View cart</a>
-            <a class="primary__btn minicart__button--link" href="<?php echo HOST; ?>/view/checkout.php">Checkout</a>
+            <a class="primary__btn minicart__button--link" href="<?php echo APP_URL; ?>/view/checkout.php">Checkout</a>
         </div>
     </div>
     <!-- End offCanvas minicart -->

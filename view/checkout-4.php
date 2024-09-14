@@ -16,7 +16,7 @@ include ROOT . '/includes/menu.php';
                     <div class="breadcrumb__content text-center">
                         <h1 class="breadcrumb__content--title text-white mb-25">Account</h1>
                         <ul class="breadcrumb__content--menu d-flex justify-content-center">
-                            <li class="breadcrumb__content--menu__items"><a class="text-white" href="<?php echo HOST; ?>">Home</a></li>
+                            <li class="breadcrumb__content--menu__items"><a class="text-white" href="<?php echo APP_URL; ?>">Home</a></li>
                             <li class="breadcrumb__content--menu__items"><span class="text-white">Account</span></li>
                         </ul>
                     </div>
@@ -262,7 +262,7 @@ include ROOT . '/includes/menu.php';
                         <div class="account__details">
                             <h4 class="account__details--title">Account details</h4>
                             <p class="account__details--desc">Admin <br> Dhaka <br> Dhaka 12119 <br> Bangladesh</p>
-                            <a class="account__details--link" href="<?php echo HOST; ?>/view/my-account-2.php">View Addresses (1)</a>
+                            <a class="account__details--link" href="<?php echo APP_URL; ?>/view/my-account-2.php">View Addresses (1)</a>
                         </div>
                     </div>
                 </div>
@@ -277,7 +277,7 @@ include ROOT . '/includes/menu.php';
             <div class="shipping__section2--inner shipping__style3--inner d-flex justify-content-between">
                 <div class="shipping__items2 d-flex align-items-center">
                     <div class="shipping__items2--icon">
-                        <img src="<?php echo HOST; ?>/assets/img/other/shipping1.png" alt="">
+                        <img src="<?php echo APP_URL; ?>/assets/img/other/shipping1.png" alt="">
                     </div>
                     <div class="shipping__items2--content">
                         <h2 class="shipping__items2--content__title h3">Shipping</h2>
@@ -286,7 +286,7 @@ include ROOT . '/includes/menu.php';
                 </div>
                 <div class="shipping__items2 d-flex align-items-center">
                     <div class="shipping__items2--icon">
-                        <img src="<?php echo HOST; ?>/assets/img/other/shipping2.png" alt="">
+                        <img src="<?php echo APP_URL; ?>/assets/img/other/shipping2.png" alt="">
                     </div>
                     <div class="shipping__items2--content">
                         <h2 class="shipping__items2--content__title h3">Payment</h2>
@@ -295,7 +295,7 @@ include ROOT . '/includes/menu.php';
                 </div>
                 <div class="shipping__items2 d-flex align-items-center">
                     <div class="shipping__items2--icon">
-                        <img src="<?php echo HOST; ?>/assets/img/other/shipping3.png" alt="">
+                        <img src="<?php echo APP_URL; ?>/assets/img/other/shipping3.png" alt="">
                     </div>
                     <div class="shipping__items2--content">
                         <h2 class="shipping__items2--content__title h3">Return</h2>
@@ -304,7 +304,7 @@ include ROOT . '/includes/menu.php';
                 </div>
                 <div class="shipping__items2 d-flex align-items-center">
                     <div class="shipping__items2--icon">
-                        <img src="<?php echo HOST; ?>/assets/img/other/shipping4.png" alt="">
+                        <img src="<?php echo APP_URL; ?>/assets/img/other/shipping4.png" alt="">
                     </div>
                     <div class="shipping__items2--content">
                         <h2 class="shipping__items2--content__title h3">Support</h2>

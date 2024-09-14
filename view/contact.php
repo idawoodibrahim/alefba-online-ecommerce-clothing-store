@@ -203,7 +203,7 @@ include ROOT . '/includes/menu.php';
     <!-- End contact map area -->
 
 
-    <!-- Include Benefits Section -->
+    <!-- Display Benefits Section -->
     <?php include ROOT . '/includes/benefits.php'; ?>
 
 </main>

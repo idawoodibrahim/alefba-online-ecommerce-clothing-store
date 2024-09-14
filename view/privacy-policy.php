@@ -17,7 +17,7 @@ include ROOT . '/includes/menu.php';
                         <h1 class="breadcrumb__content--title text-white mb-25">Privacy Policy</h1>
                         <ul class="breadcrumb__content--menu d-flex justify-content-center">
                             <li class="breadcrumb__content--menu__items"><a class="text-white"
-                                    href="<?php echo HOST; ?>">Home</a></li>
+                                    href="<?php echo APP_URL; ?>">Home</a></li>
                             <li class="breadcrumb__content--menu__items"><span class="text-white">Privacy
                                     Policy</span></li>
                         </ul>

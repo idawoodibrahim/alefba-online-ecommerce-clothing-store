@@ -37,7 +37,7 @@ include ROOT . '/includes/menu.php';
             </div>
 
             <div class="d-flex align-content-center justify-content-center text-center pt-5">
-                <img class="display-block" src="<?php echo HOST; ?>/assets/img/other/payment-visa-card.png"
+                <img class="display-block" src="<?php echo APP_URL; ?>/assets/img/other/payment-visa-card.png"
                     alt="visa-card">
             </div>
         </div>
@@ -48,9 +48,9 @@ include ROOT . '/includes/menu.php';
 
 
     <!-- Display Benefits & CTA Section -->
-    <?php 
-        include ROOT . '/includes/benefits.php';
-        include ROOT . '/includes/any_questions.php';
+    <?php
+    include ROOT . '/includes/benefits.php';
+    include ROOT . '/includes/any_questions.php';
     ?>
 
 </main>

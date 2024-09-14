@@ -9,11 +9,11 @@
                 <div class="brand__logo--section__inner d-flex justify-content-center align-items-center">
                     <div class="brand__logo--items">
                         <img class="brand__logo--items__thumbnail--img display-block p-0"
-                            src="<?php echo HOST; ?>/assets/img/logo/cenlion-logo.png" alt="brand logo">
+                            src="<?php echo APP_URL; ?>/assets/img/logo/cenlion-logo.png" alt="brand logo">
                     </div>
                     <!-- <div class="brand__logo--items">
                             <img class="brand__logo--items__thumbnail--img display-block"
-                                src="<?php echo HOST; ?>/assets/img/logo/brand-logo2.png" alt="brand logo">
+                                src="<?php echo APP_URL; ?>/assets/img/logo/brand-logo2.png" alt="brand logo">
                         </div> -->
                 </div>
             </div>

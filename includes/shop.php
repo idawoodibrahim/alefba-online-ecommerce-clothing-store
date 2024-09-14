@@ -13,7 +13,7 @@
                 <li class="widget__categories--menu__list">
                     <label class="widget__categories--menu__label d-flex align-items-center">
                         <img class="widget__categories--menu__img"
-                            src="<?php echo HOST; ?>/assets/img/product/small-product1.png" alt="categories-img">
+                            src="<?php echo APP_URL; ?>/assets/img/product/small-product1.png" alt="categories-img">
                         <span class="widget__categories--menu__text">Denim Jacket</span>
                         <svg class="widget__categories--menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
                             width="12.355" height="8.394">
@@ -24,36 +24,36 @@
                     <ul class="widget__categories--sub__menu">
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product2.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product2.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Jacket, Women</span>
                             </a>
                         </li>
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product3.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product3.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Woolend Jacket</span>
                             </a>
                         </li>
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product4.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product4.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Western denim</span>
                             </a>
                         </li>
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product5.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product5.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Mini Dresss</span>
                             </a>
@@ -63,7 +63,7 @@
                 <li class="widget__categories--menu__list">
                     <label class="widget__categories--menu__label d-flex align-items-center">
                         <img class="widget__categories--menu__img"
-                            src="<?php echo HOST; ?>/assets/img/product/small-product2.png" alt="categories-img">
+                            src="<?php echo APP_URL; ?>/assets/img/product/small-product2.png" alt="categories-img">
                         <span class="widget__categories--menu__text">Oversize Cotton</span>
                         <svg class="widget__categories--menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
                             width="12.355" height="8.394">
@@ -74,36 +74,36 @@
                     <ul class="widget__categories--sub__menu">
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product2.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product2.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Jacket, Women</span>
                             </a>
                         </li>
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product3.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product3.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Woolend Jacket</span>
                             </a>
                         </li>
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product4.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product4.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Western denim</span>
                             </a>
                         </li>
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product5.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product5.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Mini Dresss</span>
                             </a>
@@ -113,7 +113,7 @@
                 <li class="widget__categories--menu__list">
                     <label class="widget__categories--menu__label d-flex align-items-center">
                         <img class="widget__categories--menu__img"
-                            src="<?php echo HOST; ?>/assets/img/product/small-product3.png" alt="categories-img">
+                            src="<?php echo APP_URL; ?>/assets/img/product/small-product3.png" alt="categories-img">
                         <span class="widget__categories--menu__text">Dairy & chesse</span>
                         <svg class="widget__categories--menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
                             width="12.355" height="8.394">
@@ -124,36 +124,36 @@
                     <ul class="widget__categories--sub__menu">
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product2.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product2.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Jacket, Women</span>
                             </a>
                         </li>
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product3.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product3.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Woolend Jacket</span>
                             </a>
                         </li>
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product4.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product4.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Western denim</span>
                             </a>
                         </li>
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product5.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product5.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Mini Dresss</span>
                             </a>
@@ -163,7 +163,7 @@
                 <li class="widget__categories--menu__list">
                     <label class="widget__categories--menu__label d-flex align-items-center">
                         <img class="widget__categories--menu__img"
-                            src="<?php echo HOST; ?>/assets/img/product/small-product4.png" alt="categories-img">
+                            src="<?php echo APP_URL; ?>/assets/img/product/small-product4.png" alt="categories-img">
                         <span class="widget__categories--menu__text">Shoulder Bag</span>
                         <svg class="widget__categories--menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
                             width="12.355" height="8.394">
@@ -174,36 +174,36 @@
                     <ul class="widget__categories--sub__menu">
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product2.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product2.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Jacket, Women</span>
                             </a>
                         </li>
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product3.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product3.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Woolend Jacket</span>
                             </a>
                         </li>
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product4.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product4.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Western denim</span>
                             </a>
                         </li>
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product5.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product5.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Mini Dresss</span>
                             </a>
@@ -213,7 +213,7 @@
                 <li class="widget__categories--menu__list">
                     <label class="widget__categories--menu__label d-flex align-items-center">
                         <img class="widget__categories--menu__img"
-                            src="<?php echo HOST; ?>/assets/img/product/small-product5.png" alt="categories-img">
+                            src="<?php echo APP_URL; ?>/assets/img/product/small-product5.png" alt="categories-img">
                         <span class="widget__categories--menu__text">Denim Jacket</span>
                         <svg class="widget__categories--menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
                             width="12.355" height="8.394">
@@ -224,36 +224,36 @@
                     <ul class="widget__categories--sub__menu">
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product2.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product2.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Jacket, Women</span>
                             </a>
                         </li>
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product3.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product3.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Woolend Jacket</span>
                             </a>
                         </li>
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product4.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product4.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Western denim</span>
                             </a>
                         </li>
                         <li class="widget__categories--sub__menu--list">
                             <a class="widget__categories--sub__menu--link d-flex align-items-center"
-                                href="<?php echo HOST; ?>/view/shop.php">
+                                href="<?php echo APP_URL; ?>/view/shop.php">
                                 <img class="widget__categories--sub__menu--img"
-                                    src="<?php echo HOST; ?>/assets/img/product/small-product5.png"
+                                    src="<?php echo APP_URL; ?>/assets/img/product/small-product5.png"
                                     alt="categories-img">
                                 <span class="widget__categories--sub__menu--text">Mini Dresss</span>
                             </a>
@@ -328,16 +328,16 @@
             <div class="product__grid--inner">
                 <div class="product__items product__items--grid d-flex align-items-center">
                     <div class="product__items--grid__thumbnail position__relative">
-                        <a class="product__items--link" href="<?php echo HOST; ?>/view/product-details.php">
+                        <a class="product__items--link" href="<?php echo APP_URL; ?>/view/product-details.php">
                             <img class="product__items--img product__primary--img"
-                                src="<?php echo HOST; ?>/assets/img/product/small-product1.png" alt="product-img">
+                                src="<?php echo APP_URL; ?>/assets/img/product/small-product1.png" alt="product-img">
                             <img class="product__items--img product__secondary--img"
-                                src="<?php echo HOST; ?>/assets/img/product/small-product2.png" alt="product-img">
+                                src="<?php echo APP_URL; ?>/assets/img/product/small-product2.png" alt="product-img">
                         </a>
                     </div>
                     <div class="product__items--grid__content">
                         <h3 class="product__items--content__title h4"><a
-                                href="<?php echo HOST; ?>/view/product-details.php">Women Fish Cut Cloth</a></h3>
+                                href="<?php echo APP_URL; ?>/view/product-details.php">Women Fish Cut Cloth</a></h3>
                         <div class="product__items--price">
                             <span class="current__price">€110</span>
                             <span class="price__divided"></span>
@@ -400,16 +400,16 @@
                 </div>
                 <div class="product__items product__items--grid d-flex align-items-center">
                     <div class="product__items--grid__thumbnail position__relative">
-                        <a class="product__items--link" href="<?php echo HOST; ?>/view/product-details.php">
+                        <a class="product__items--link" href="<?php echo APP_URL; ?>/view/product-details.php">
                             <img class="product__items--img product__primary--img"
-                                src="<?php echo HOST; ?>/assets/img/product/small-product3.png" alt="product-img">
+                                src="<?php echo APP_URL; ?>/assets/img/product/small-product3.png" alt="product-img">
                             <img class="product__items--img product__secondary--img"
-                                src="<?php echo HOST; ?>/assets/img/product/small-product4.png" alt="product-img">
+                                src="<?php echo APP_URL; ?>/assets/img/product/small-product4.png" alt="product-img">
                         </a>
                     </div>
                     <div class="product__items--grid__content">
                         <h3 class="product__items--content__title h4"><a
-                                href="<?php echo HOST; ?>/view/product-details.php">Gorgeous Granite Clock</a></h3>
+                                href="<?php echo APP_URL; ?>/view/product-details.php">Gorgeous Granite Clock</a></h3>
                         <div class="product__items--price">
                             <span class="current__price">€140</span>
                             <span class="price__divided"></span>
@@ -472,16 +472,16 @@
                 </div>
                 <div class="product__items product__items--grid d-flex align-items-center">
                     <div class="product__items--grid__thumbnail position__relative">
-                        <a class="product__items--link" href="<?php echo HOST; ?>/view/product-details.php">
+                        <a class="product__items--link" href="<?php echo APP_URL; ?>/view/product-details.php">
                             <img class="product__items--img product__primary--img"
-                                src="<?php echo HOST; ?>/assets/img/product/small-product5.png" alt="product-img">
+                                src="<?php echo APP_URL; ?>/assets/img/product/small-product5.png" alt="product-img">
                             <img class="product__items--img product__secondary--img"
-                                src="<?php echo HOST; ?>/assets/img/product/small-product6.png" alt="product-img">
+                                src="<?php echo APP_URL; ?>/assets/img/product/small-product6.png" alt="product-img">
                         </a>
                     </div>
                     <div class="product__items--grid__content">
                         <h3 class="product__items--content__title h4"><a
-                                href="<?php echo HOST; ?>/view/product-details.php">Durable Steel Knife</a></h3>
+                                href="<?php echo APP_URL; ?>/view/product-details.php">Durable Steel Knife</a></h3>
                         <div class="product__items--price">
                             <span class="current__price">€160</span>
                             <span class="price__divided"></span>
@@ -548,21 +548,21 @@
             <h2 class="widget__title h3">Brands</h2>
             <ul class="widget__tagcloud">
                 <li class="widget__tagcloud--list"><a class="widget__tagcloud--link"
-                        href="<?php echo HOST; ?>/view/shop.php">Jacket</a></li>
+                        href="<?php echo APP_URL; ?>/view/shop.php">Jacket</a></li>
                 <li class="widget__tagcloud--list"><a class="widget__tagcloud--link"
-                        href="<?php echo HOST; ?>/view/shop.php">Women</a></li>
+                        href="<?php echo APP_URL; ?>/view/shop.php">Women</a></li>
                 <li class="widget__tagcloud--list"><a class="widget__tagcloud--link"
-                        href="<?php echo HOST; ?>/view/shop.php">Oversize</a></li>
+                        href="<?php echo APP_URL; ?>/view/shop.php">Oversize</a></li>
                 <li class="widget__tagcloud--list"><a class="widget__tagcloud--link"
-                        href="<?php echo HOST; ?>/view/shop.php">Cotton </a></li>
+                        href="<?php echo APP_URL; ?>/view/shop.php">Cotton </a></li>
                 <li class="widget__tagcloud--list"><a class="widget__tagcloud--link"
-                        href="<?php echo HOST; ?>/view/shop.php">Shoulder </a></li>
+                        href="<?php echo APP_URL; ?>/view/shop.php">Shoulder </a></li>
                 <li class="widget__tagcloud--list"><a class="widget__tagcloud--link"
-                        href="<?php echo HOST; ?>/view/shop.php">Winter</a></li>
+                        href="<?php echo APP_URL; ?>/view/shop.php">Winter</a></li>
                 <li class="widget__tagcloud--list"><a class="widget__tagcloud--link"
-                        href="<?php echo HOST; ?>/view/shop.php">Accessories</a></li>
+                        href="<?php echo APP_URL; ?>/view/shop.php">Accessories</a></li>
                 <li class="widget__tagcloud--list"><a class="widget__tagcloud--link"
-                        href="<?php echo HOST; ?>/view/shop.php">Dress </a></li>
+                        href="<?php echo APP_URL; ?>/view/shop.php">Dress </a></li>
             </ul>
         </div>
     </div>
@@ -687,102 +687,102 @@
                             <div id="product_grid" class="tab_pane active show">
                                 <div class="product__section--inner product__grid--inner">
                                     <div class="row row-cols-lg-4 row-cols-md-3 row-cols-2 mb--n30">
-                                        <?php 
-                                            // Re-run the SQL query
-                                            $result = $conn->query($sql);
-                                            while($row = $result->fetch_assoc()): 
+                                        <?php
+                                        // Re-run the SQL query
+                                        $result = $conn->query($sql);
+                                        while ($row = $result->fetch_assoc()):
                                         ?>
-                                        <div class="col mb-30">
-                                            <div class="product__items ">
-                                                <div class="product__items--thumbnail">
-                                                    <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
-                                                        <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST . $row['product_primary_img']; ?>"
-                                                            alt="product-img">
-                                                        <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST . $row['product_secondary_img']; ?>"
-                                                            alt="product-img">
-                                                    </a>
-                                                    <div class="product__badge">
-                                                        <span
-                                                            class="product__badge--items sale"><?php echo $row['badge']; ?></span>
+                                            <div class="col mb-30">
+                                                <div class="product__items ">
+                                                    <div class="product__items--thumbnail">
+                                                        <a class="product__items--link"
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">
+                                                            <img class="product__items--img product__primary--img"
+                                                                src="<?php echo APP_URL . $row['product_primary_img']; ?>"
+                                                                alt="product-img">
+                                                            <img class="product__items--img product__secondary--img"
+                                                                src="<?php echo APP_URL . $row['product_secondary_img']; ?>"
+                                                                alt="product-img">
+                                                        </a>
+                                                        <div class="product__badge">
+                                                            <span
+                                                                class="product__badge--items sale"><?php echo $row['badge']; ?></span>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="product__items--content">
-                                                    <span
-                                                        class="product__items--content__subtitle"><?php echo $row['tags']; ?></span>
-                                                    <h3 class="product__items--content__title h4"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php"><?php echo $row['name']; ?></a>
-                                                    </h3>
-                                                    <div class="product__items--price">
+                                                    <div class="product__items--content">
                                                         <span
-                                                            class="current__price">€<?php echo $row['sale_price']; ?></span>
-                                                        <span class="price__divided"></span>
-                                                        <span
-                                                            class="old__price">€<?php echo $row['original_price']; ?></span>
+                                                            class="product__items--content__subtitle"><?php echo $row['tags']; ?></span>
+                                                        <h3 class="product__items--content__title h4"><a
+                                                                href="<?php echo APP_URL; ?>/view/product-details.php"><?php echo $row['name']; ?></a>
+                                                        </h3>
+                                                        <div class="product__items--price">
+                                                            <span
+                                                                class="current__price">€<?php echo $row['sale_price']; ?></span>
+                                                            <span class="price__divided"></span>
+                                                            <span
+                                                                class="old__price">€<?php echo $row['original_price']; ?></span>
+                                                        </div>
+                                                        <ul class="rating product__rating d-flex">
+                                                            <?php
+                                                            $total_stars = 5; // Set the number of stars you want to display
+                                                            for ($i = 0; $i < $total_stars; $i++) { ?>
+                                                                <li class="rating__list">
+                                                                    <span class="rating__list--icon">
+                                                                        <svg class="rating__list--icon__svg"
+                                                                            xmlns="http://www.w3.org/2000/svg" width="14.105"
+                                                                            height="14.732" viewBox="0 0 10.105 9.732">
+                                                                            <path data-name="star - Copy"
+                                                                                d="M9.837,3.5,6.73,3.039,5.338.179a.335.335,0,0,0-.571,0L3.375,3.039.268,3.5a.3.3,0,0,0-.178.514L2.347,6.242,1.813,9.4a.314.314,0,0,0,.464.316L5.052,8.232,7.827,9.712A.314.314,0,0,0,8.292,9.4L7.758,6.242l2.257-2.231A.3.3,0,0,0,9.837,3.5Z"
+                                                                                transform="translate(0 -0.018)"
+                                                                                fill="currentColor">
+                                                                            </path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </li>
+                                                            <?php
+                                                            }
+                                                            ?>
+                                                        </ul>
+                                                        <ul class="product__items--action d-flex">
+                                                            <li class="product__items--action__list">
+                                                                <a class="product__items--action__btn add__to--cart"
+                                                                    href="cart.php">
+                                                                    <span class="add__to--cart__text"> Add to
+                                                                        cart</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="product__items--action__list">
+                                                                <a class="product__items--action__btn"
+                                                                    href="<?php echo APP_URL; ?>/view/wishlist.php">
+                                                                    <svg class="product__items--action__btn--svg"
+                                                                        xmlns="http://www.w3.org/2000/svg" width="25.51"
+                                                                        height="23.443" viewBox="0 0 512 512">
+                                                                        <path
+                                                                            d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                                            stroke-width="32">
+                                                                        </path>
+                                                                    </svg>
+                                                                    <span class="visually-hidden">Wishlist</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
                                                     </div>
-                                                    <ul class="rating product__rating d-flex">
-                                                        <?php
-                                                $total_stars = 5; // Set the number of stars you want to display
-                                                for ($i = 0; $i < $total_stars; $i++) { ?>
-                                                        <li class="rating__list">
-                                                            <span class="rating__list--icon">
-                                                                <svg class="rating__list--icon__svg"
-                                                                    xmlns="http://www.w3.org/2000/svg" width="14.105"
-                                                                    height="14.732" viewBox="0 0 10.105 9.732">
-                                                                    <path data-name="star - Copy"
-                                                                        d="M9.837,3.5,6.73,3.039,5.338.179a.335.335,0,0,0-.571,0L3.375,3.039.268,3.5a.3.3,0,0,0-.178.514L2.347,6.242,1.813,9.4a.314.314,0,0,0,.464.316L5.052,8.232,7.827,9.712A.314.314,0,0,0,8.292,9.4L7.758,6.242l2.257-2.231A.3.3,0,0,0,9.837,3.5Z"
-                                                                        transform="translate(0 -0.018)"
-                                                                        fill="currentColor">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </li>
-                                                        <?php
-                                                    }
-                                                    ?>
-                                                    </ul>
-                                                    <ul class="product__items--action d-flex">
-                                                        <li class="product__items--action__list">
-                                                            <a class="product__items--action__btn add__to--cart"
-                                                                href="cart.php">
-                                                                <span class="add__to--cart__text"> + Add to
-                                                                    cart</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="product__items--action__list">
-                                                            <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
-                                                                <svg class="product__items--action__btn--svg"
-                                                                    xmlns="http://www.w3.org/2000/svg" width="25.51"
-                                                                    height="23.443" viewBox="0 0 512 512">
-                                                                    <path
-                                                                        d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
-                                                                        fill="none" stroke="currentColor"
-                                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                                        stroke-width="32">
-                                                                    </path>
-                                                                </svg>
-                                                                <span class="visually-hidden">Wishlist</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
                                                 </div>
                                             </div>
-                                        </div>
                                         <?php endwhile; ?>
 
                                         <!-- <div class="col mb-30">
                                             <div class="product__items ">
                                                 <div class="product__items--thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product3.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product3.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product4.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product4.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -793,7 +793,7 @@
                                                     <span class="product__items--content__subtitle">Jacket,
                                                         Women</span>
                                                     <h3 class="product__items--content__title h4"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Boxy
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Boxy
                                                             Denim Jacket</a></h3>
                                                     <div class="product__items--price">
                                                         <span class="current__price">€120</span>
@@ -886,13 +886,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -933,12 +933,12 @@
                                             <div class="product__items">
                                                 <div class="product__items--thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product5.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product5.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product6.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product6.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -949,7 +949,7 @@
                                                     <span class="product__items--content__subtitle">Jacket,
                                                         Women</span>
                                                     <h4 class="product__items--content__title"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Quilted
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Quilted
                                                             Shoulder Bag</a></h4>
                                                     <div class="product__items--price">
                                                         <span class="current__price">€115</span>
@@ -1042,13 +1042,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -1089,12 +1089,12 @@
                                             <div class="product__items">
                                                 <div class="product__items--thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product7.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product7.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product8.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product8.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -1105,7 +1105,7 @@
                                                     <span class="product__items--content__subtitle">Jacket,
                                                         Women</span>
                                                     <h4 class="product__items--content__title"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Square
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Square
                                                             Shoulder Bag</a></h4>
                                                     <div class="product__items--price">
                                                         <span class="current__price">€125</span>
@@ -1198,13 +1198,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -1245,12 +1245,12 @@
                                             <div class="product__items">
                                                 <div class="product__items--thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product9.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product9.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product10.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product10.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -1261,7 +1261,7 @@
                                                     <span class="product__items--content__subtitle">Jacket,
                                                         Women</span>
                                                     <h4 class="product__items--content__title"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Light
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Light
                                                             Denim Jacket</a></h4>
                                                     <div class="product__items--price">
                                                         <span class="current__price">€125</span>
@@ -1354,13 +1354,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -1401,12 +1401,12 @@
                                             <div class="product__items">
                                                 <div class="product__items--thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product11.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product11.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product12.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product12.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -1417,7 +1417,7 @@
                                                     <span class="product__items--content__subtitle">Jacket,
                                                         Women</span>
                                                     <h3 class="product__items--content__title h4"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Oversize
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Oversize
                                                             Cotton Dress</a></h3>
                                                     <div class="product__items--price">
                                                         <span class="current__price">€128</span>
@@ -1510,13 +1510,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -1557,12 +1557,12 @@
                                             <div class="product__items">
                                                 <div class="product__items--thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product13.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product13.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product14.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product14.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -1573,7 +1573,7 @@
                                                     <span class="product__items--content__subtitle">Jacket,
                                                         Women</span>
                                                     <h4 class="product__items--content__title"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Aware
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Aware
                                                             organic cotton</a></h4>
                                                     <div class="product__items--price">
                                                         <span class="current__price">€127</span>
@@ -1666,13 +1666,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -1713,12 +1713,12 @@
                                             <div class="product__items">
                                                 <div class="product__items--thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product14.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product14.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product15.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product15.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -1729,7 +1729,7 @@
                                                     <span class="product__items--content__subtitle">Jacket,
                                                         Women</span>
                                                     <h4 class="product__items--content__title"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Western
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Western
                                                             denim shirt</a></h4>
                                                     <div class="product__items--price">
                                                         <span class="current__price">€115</span>
@@ -1822,13 +1822,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -1869,12 +1869,12 @@
                                             <div class="product__items">
                                                 <div class="product__items--thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product2.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product2.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product1.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product1.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -1885,7 +1885,7 @@
                                                     <span class="product__items--content__subtitle">Jacket,
                                                         Women</span>
                                                     <h3 class="product__items--content__title h4"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Boxy
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Boxy
                                                             Denim Jacket</a></h3>
                                                     <div class="product__items--price">
                                                         <span class="current__price">€110</span>
@@ -1978,13 +1978,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -2025,12 +2025,12 @@
                                             <div class="product__items">
                                                 <div class="product__items--thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product3.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product3.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product4.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product4.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -2041,7 +2041,7 @@
                                                     <span class="product__items--content__subtitle">Jacket,
                                                         Women</span>
                                                     <h4 class="product__items--content__title"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">High
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">High
                                                             Ankle Jeans</a></h4>
                                                     <div class="product__items--price">
                                                         <span class="current__price">€135</span>
@@ -2134,13 +2134,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -2181,12 +2181,12 @@
                                             <div class="product__items">
                                                 <div class="product__items--thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product6.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product6.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product5.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product5.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -2197,7 +2197,7 @@
                                                     <span class="product__items--content__subtitle">Jacket,
                                                         Women</span>
                                                     <h4 class="product__items--content__title"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Aware
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Aware
                                                             organic cotton</a></h4>
                                                     <div class="product__items--price">
                                                         <span class="current__price">€140</span>
@@ -2290,13 +2290,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -2337,12 +2337,12 @@
                                             <div class="product__items">
                                                 <div class="product__items--thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product8.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product8.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product7.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product7.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -2353,7 +2353,7 @@
                                                     <span class="product__items--content__subtitle">Jacket,
                                                         Women</span>
                                                     <h4 class="product__items--content__title"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">OSmock
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">OSmock
                                                             Mini Dresss</a></h4>
                                                     <div class="product__items--price">
                                                         <span class="current__price">€110</span>
@@ -2446,13 +2446,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -2493,12 +2493,12 @@
                                             <div class="product__items">
                                                 <div class="product__items--thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product10.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product10.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product11.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product11.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -2509,7 +2509,7 @@
                                                     <span class="product__items--content__subtitle">Jacket,
                                                         Women</span>
                                                     <h3 class="product__items--content__title h4"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Oversize
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Oversize
                                                             Cotton Dress</a></h3>
                                                     <div class="product__items--price">
                                                         <span class="current__price">€110</span>
@@ -2602,13 +2602,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -2649,12 +2649,12 @@
                                             <div class="product__items">
                                                 <div class="product__items--thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product15.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product15.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product14.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product14.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -2665,7 +2665,7 @@
                                                     <span class="product__items--content__subtitle">Jacket,
                                                         Women</span>
                                                     <h4 class="product__items--content__title"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Aware
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Aware
                                                             organic cotton</a></h4>
                                                     <div class="product__items--price">
                                                         <span class="current__price">€130</span>
@@ -2758,13 +2758,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -2805,12 +2805,12 @@
                                             <div class="product__items">
                                                 <div class="product__items--thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product13.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product13.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product12.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product12.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -2821,7 +2821,7 @@
                                                     <span class="product__items--content__subtitle">Jacket,
                                                         Women</span>
                                                     <h4 class="product__items--content__title"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Quilted
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Quilted
                                                             Shoulder Bag</a></h4>
                                                     <div class="product__items--price">
                                                         <span class="current__price">€150</span>
@@ -2914,13 +2914,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -2961,12 +2961,12 @@
                                             <div class="product__items">
                                                 <div class="product__items--thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product11.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product11.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product10.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product10.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -2977,7 +2977,7 @@
                                                     <span class="product__items--content__subtitle">Jacket,
                                                         Women</span>
                                                     <h3 class="product__items--content__title h4"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Oversize
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Oversize
                                                             Cotton Dress</a></h3>
                                                     <div class="product__items--price">
                                                         <span class="current__price">€110</span>
@@ -3070,13 +3070,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -3122,103 +3122,103 @@
                                         <?php
                                         // Re-run the SQL query
                                         $result = $conn->query($sql);
-                                        while($row = $result->fetch_assoc()): 
-                                    ?>
-                                        <div class="col mb-30">
-                                            <div class="product__items product__list--items d-flex">
-                                                <div class="product__items--thumbnail product__list--items__thumbnail">
-                                                    <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
-                                                        <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST . $row['product_primary_img']; ?>"
-                                                            alt="product-img">
-                                                        <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST . $row['product_secondary_img']; ?>"
-                                                            alt="product-img">
-                                                    </a>
-                                                    <div class="product__badge">
-                                                        <span
-                                                            class="product__badge--items sale"><?php echo $row['badge']; ?></span>
+                                        while ($row = $result->fetch_assoc()):
+                                        ?>
+                                            <div class="col mb-30">
+                                                <div class="product__items product__list--items d-flex">
+                                                    <div class="product__items--thumbnail product__list--items__thumbnail">
+                                                        <a class="product__items--link"
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">
+                                                            <img class="product__items--img product__primary--img"
+                                                                src="<?php echo APP_URL . $row['product_primary_img']; ?>"
+                                                                alt="product-img">
+                                                            <img class="product__items--img product__secondary--img"
+                                                                src="<?php echo APP_URL . $row['product_secondary_img']; ?>"
+                                                                alt="product-img">
+                                                        </a>
+                                                        <div class="product__badge">
+                                                            <span
+                                                                class="product__badge--items sale"><?php echo $row['badge']; ?></span>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="product__list--items__content">
-                                                    <span
-                                                        class="product__items--content__subtitle mb-5"><?php echo $row['tags']; ?></span>
-                                                    <h3 class="product__list--items__content--title h4 mb-10"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php"><?php echo $row['name']; ?></a>
-                                                    </h3>
-                                                    <div class="product__list--items__price mb-10">
+                                                    <div class="product__list--items__content">
                                                         <span
-                                                            class="current__price">€<?php echo $row['sale_price']; ?></span>
-                                                        <span class="price__divided"></span>
-                                                        <span
-                                                            class="old__price">€<?php echo $row['original_price']; ?></span>
-                                                    </div>
-                                                    <ul class="rating product__rating d-flex">
-                                                        <?php
-                                                        $total_stars = 5; // Set the number of stars you want to display
-                                                        for ($i = 0; $i < $total_stars; $i++) { ?>
-                                                        <li class="rating__list">
-                                                            <span class="rating__list--icon">
-                                                                <svg class="rating__list--icon__svg"
-                                                                    xmlns="http://www.w3.org/2000/svg" width="14.105"
-                                                                    height="14.732" viewBox="0 0 10.105 9.732">
-                                                                    <path data-name="star - Copy"
-                                                                        d="M9.837,3.5,6.73,3.039,5.338.179a.335.335,0,0,0-.571,0L3.375,3.039.268,3.5a.3.3,0,0,0-.178.514L2.347,6.242,1.813,9.4a.314.314,0,0,0,.464.316L5.052,8.232,7.827,9.712A.314.314,0,0,0,8.292,9.4L7.758,6.242l2.257-2.231A.3.3,0,0,0,9.837,3.5Z"
-                                                                        transform="translate(0 -0.018)"
-                                                                        fill="currentColor">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </li>
-                                                        <?php
-                                                    }
-                                                    ?>
-                                                    </ul>
-                                                    <!-- Product Details -->
-                                                    <p class="product__list--items__content--desc mb-15">
-                                                        <?php echo $row['details']; ?></p>
-                                                    <ul class="product__items--action d-flex">
-                                                        <li class="product__items--action__list">
-                                                            <a class="product__items--action__btn add__to--cart"
-                                                                href="cart.php">
-                                                                <span class="add__to--cart__text"> + Add to
-                                                                    cart</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="product__items--action__list">
-                                                            <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
-                                                                <svg class="product__items--action__btn--svg"
-                                                                    xmlns="http://www.w3.org/2000/svg" width="25.51"
-                                                                    height="23.443" viewBox="0 0 512 512">
-                                                                    <path
-                                                                        d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
-                                                                        fill="none" stroke="currentColor"
-                                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                                        stroke-width="32">
-                                                                    </path>
-                                                                </svg>
-                                                                <span class="visually-hidden">Wishlist</span>
-                                                            </a>
-                                                        </li>
+                                                            class="product__items--content__subtitle mb-5"><?php echo $row['tags']; ?></span>
+                                                        <h3 class="product__list--items__content--title h4 mb-10"><a
+                                                                href="<?php echo APP_URL; ?>/view/product-details.php"><?php echo $row['name']; ?></a>
+                                                        </h3>
+                                                        <div class="product__list--items__price mb-10">
+                                                            <span
+                                                                class="current__price">€<?php echo $row['sale_price']; ?></span>
+                                                            <span class="price__divided"></span>
+                                                            <span
+                                                                class="old__price">€<?php echo $row['original_price']; ?></span>
+                                                        </div>
+                                                        <ul class="rating product__rating d-flex">
+                                                            <?php
+                                                            $total_stars = 5; // Set the number of stars you want to display
+                                                            for ($i = 0; $i < $total_stars; $i++) { ?>
+                                                                <li class="rating__list">
+                                                                    <span class="rating__list--icon">
+                                                                        <svg class="rating__list--icon__svg"
+                                                                            xmlns="http://www.w3.org/2000/svg" width="14.105"
+                                                                            height="14.732" viewBox="0 0 10.105 9.732">
+                                                                            <path data-name="star - Copy"
+                                                                                d="M9.837,3.5,6.73,3.039,5.338.179a.335.335,0,0,0-.571,0L3.375,3.039.268,3.5a.3.3,0,0,0-.178.514L2.347,6.242,1.813,9.4a.314.314,0,0,0,.464.316L5.052,8.232,7.827,9.712A.314.314,0,0,0,8.292,9.4L7.758,6.242l2.257-2.231A.3.3,0,0,0,9.837,3.5Z"
+                                                                                transform="translate(0 -0.018)"
+                                                                                fill="currentColor">
+                                                                            </path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </li>
+                                                            <?php
+                                                            }
+                                                            ?>
+                                                        </ul>
+                                                        <!-- Product Details -->
+                                                        <p class="product__list--items__content--desc mb-15">
+                                                            <?php echo $row['details']; ?></p>
+                                                        <ul class="product__items--action d-flex">
+                                                            <li class="product__items--action__list">
+                                                                <a class="product__items--action__btn add__to--cart"
+                                                                    href="cart.php">
+                                                                    <span class="add__to--cart__text"> Add to
+                                                                        cart</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="product__items--action__list">
+                                                                <a class="product__items--action__btn"
+                                                                    href="<?php echo APP_URL; ?>/view/wishlist.php">
+                                                                    <svg class="product__items--action__btn--svg"
+                                                                        xmlns="http://www.w3.org/2000/svg" width="25.51"
+                                                                        height="23.443" viewBox="0 0 512 512">
+                                                                        <path
+                                                                            d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                                            stroke-width="32">
+                                                                        </path>
+                                                                    </svg>
+                                                                    <span class="visually-hidden">Wishlist</span>
+                                                                </a>
+                                                            </li>
 
-                                                    </ul>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
                                         <?php endwhile; ?>
 
                                         <!-- <div class="col mb-30">
                                             <div class="product__items product__list--items d-flex">
                                                 <div class="product__items--thumbnail product__list--items__thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product1.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product1.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product2.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product2.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -3229,7 +3229,7 @@
                                                     <span class="product__items--content__subtitle mb-5">Jacket,
                                                         Women</span>
                                                     <h3 class="product__list--items__content--title h4 mb-10"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Boxy
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Boxy
                                                             Denim Jacket</a></h3>
                                                     <div class="product__list--items__price mb-10">
                                                         <span class="current__price">€120</span>
@@ -3329,13 +3329,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -3376,12 +3376,12 @@
                                             <div class="product__items product__list--items d-flex">
                                                 <div class="product__items--thumbnail product__list--items__thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product3.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product3.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product4.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product4.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -3392,7 +3392,7 @@
                                                     <span class="product__items--content__subtitle mb-5">Jacket,
                                                         Women</span>
                                                     <h3 class="product__list--items__content--title h4 mb-10"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Quilted
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Quilted
                                                             Shoulder Bag</a></h3>
                                                     <div class="product__list--items__price mb-10">
                                                         <span class="current__price">€115</span>
@@ -3492,13 +3492,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -3539,12 +3539,12 @@
                                             <div class="product__items product__list--items d-flex">
                                                 <div class="product__items--thumbnail product__list--items__thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product5.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product5.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product6.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product6.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -3555,7 +3555,7 @@
                                                     <span class="product__items--content__subtitle mb-5">Jacket,
                                                         Women</span>
                                                     <h3 class="product__list--items__content--title h4 mb-10"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Square
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Square
                                                             Shoulder Bag</a></h3>
                                                     <div class="product__list--items__price mb-10">
                                                         <span class="current__price">€114</span>
@@ -3655,13 +3655,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -3702,12 +3702,12 @@
                                             <div class="product__items product__list--items d-flex">
                                                 <div class="product__items--thumbnail product__list--items__thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product7.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product7.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product8.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product8.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -3718,7 +3718,7 @@
                                                     <span class="product__items--content__subtitle mb-5">Jacket,
                                                         Women</span>
                                                     <h3 class="product__list--items__content--title h4 mb-10"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">Light
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">Light
                                                             Denim Jackets</a></h3>
                                                     <div class="product__list--items__price mb-10">
                                                         <span class="current__price">€122</span>
@@ -3818,13 +3818,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -3865,12 +3865,12 @@
                                             <div class="product__items product__list--items d-flex">
                                                 <div class="product__items--thumbnail product__list--items__thumbnail">
                                                     <a class="product__items--link"
-                                                        href="<?php echo HOST; ?>/view/product-details.php">
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php">
                                                         <img class="product__items--img product__primary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product9.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product9.png"
                                                             alt="product-img">
                                                         <img class="product__items--img product__secondary--img"
-                                                            src="<?php echo HOST; ?>/assets/img/product/product10.png"
+                                                            src="<?php echo APP_URL; ?>/assets/img/product/product10.png"
                                                             alt="product-img">
                                                     </a>
                                                     <div class="product__badge">
@@ -3881,7 +3881,7 @@
                                                     <span class="product__items--content__subtitle mb-5">Jacket,
                                                         Women</span>
                                                     <h4 class="product__list--items__content--title mb-10"><a
-                                                            href="<?php echo HOST; ?>/view/product-details.php">OSmock
+                                                            href="<?php echo APP_URL; ?>/view/product-details.php">OSmock
                                                             Mini Dresss</a></h4>
                                                     <div class="product__list--items__price mb-10">
                                                         <span class="current__price">€125</span>
@@ -3981,13 +3981,13 @@
                                                                         </g>
                                                                     </g>
                                                                 </svg>
-                                                                <span class="add__to--cart__text"> + Add to
+                                                                <span class="add__to--cart__text"> Add to
                                                                     cart</span>
                                                             </a>
                                                         </li>
                                                         <li class="product__items--action__list">
                                                             <a class="product__items--action__btn"
-                                                                href="<?php echo HOST; ?>/view/wishlist.php">
+                                                                href="<?php echo APP_URL; ?>/view/wishlist.php">
                                                                 <svg class="product__items--action__btn--svg"
                                                                     xmlns="http://www.w3.org/2000/svg" width="25.51"
                                                                     height="23.443" viewBox="0 0 512 512">
@@ -4032,7 +4032,7 @@
                             <nav class="pagination justify-content-center">
                                 <ul class="pagination__wrapper d-flex align-items-center justify-content-center">
                                     <li class="pagination__list">
-                                        <a href="<?php echo HOST; ?>/view/shop.php"
+                                        <a href="<?php echo APP_URL; ?>/view/shop.php"
                                             class="pagination__item--arrow  link ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443"
                                                 viewBox="0 0 512 512">
@@ -4045,14 +4045,14 @@
                                     <li>
                                     <li class="pagination__list"><span
                                             class="pagination__item pagination__item--current">1</span></li>
-                                    <li class="pagination__list"><a href="<?php echo HOST; ?>/view/shop.php"
+                                    <li class="pagination__list"><a href="<?php echo APP_URL; ?>/view/shop.php"
                                             class="pagination__item link">2</a></li>
-                                    <li class="pagination__list"><a href="<?php echo HOST; ?>/view/shop.php"
+                                    <li class="pagination__list"><a href="<?php echo APP_URL; ?>/view/shop.php"
                                             class="pagination__item link">3</a></li>
-                                    <li class="pagination__list"><a href="<?php echo HOST; ?>/view/shop.php"
+                                    <li class="pagination__list"><a href="<?php echo APP_URL; ?>/view/shop.php"
                                             class="pagination__item link">4</a></li>
                                     <li class="pagination__list">
-                                        <a href="<?php echo HOST; ?>/view/shop.php"
+                                        <a href="<?php echo APP_URL; ?>/view/shop.php"
                                             class="pagination__item--arrow  link ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443"
                                                 viewBox="0 0 512 512">
@@ -4095,13 +4095,13 @@
                                     <div class="product__media--preview__items">
                                         <a class="product__media--preview__items--link glightbox"
                                             data-gallery="product-media-preview"
-                                            href="<?php echo HOST; ?>/assets/img/product/big-product1.jpg"><img
+                                            href="<?php echo APP_URL; ?>/assets/img/product/big-product1.jpg"><img
                                                 class="product__media--preview__items--img"
-                                                src="<?php echo HOST; ?>/assets/img/product/big-product1.jpg"
+                                                src="<?php echo APP_URL; ?>/assets/img/product/big-product1.jpg"
                                                 alt="product-media-img"></a>
                                         <div class="product__media--view__icon">
                                             <a class="product__media--view__icon--link glightbox"
-                                                href="<?php echo HOST; ?>/assets/img/product/big-product1.jpg"
+                                                href="<?php echo APP_URL; ?>/assets/img/product/big-product1.jpg"
                                                 data-gallery="product-media-preview">
                                                 <svg class="product__media--view__icon--svg"
                                                     xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443"
@@ -4122,13 +4122,13 @@
                                     <div class="product__media--preview__items">
                                         <a class="product__media--preview__items--link glightbox"
                                             data-gallery="product-media-preview"
-                                            href="<?php echo HOST; ?>/assets/img/product/big-product2.jpg"><img
+                                            href="<?php echo APP_URL; ?>/assets/img/product/big-product2.jpg"><img
                                                 class="product__media--preview__items--img"
-                                                src="<?php echo HOST; ?>/assets/img/product/big-product2.jpg"
+                                                src="<?php echo APP_URL; ?>/assets/img/product/big-product2.jpg"
                                                 alt="product-media-img"></a>
                                         <div class="product__media--view__icon">
                                             <a class="product__media--view__icon--link glightbox"
-                                                href="<?php echo HOST; ?>/assets/img/product/big-product2.jpg"
+                                                href="<?php echo APP_URL; ?>/assets/img/product/big-product2.jpg"
                                                 data-gallery="product-media-preview">
                                                 <svg class="product__media--view__icon--svg"
                                                     xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443"
@@ -4149,13 +4149,13 @@
                                     <div class="product__media--preview__items">
                                         <a class="product__media--preview__items--link glightbox"
                                             data-gallery="product-media-preview"
-                                            href="<?php echo HOST; ?>/assets/img/product/big-product3.jpg"><img
+                                            href="<?php echo APP_URL; ?>/assets/img/product/big-product3.jpg"><img
                                                 class="product__media--preview__items--img"
-                                                src="<?php echo HOST; ?>/assets/img/product/big-product3.jpg"
+                                                src="<?php echo APP_URL; ?>/assets/img/product/big-product3.jpg"
                                                 alt="product-media-img"></a>
                                         <div class="product__media--view__icon">
                                             <a class="product__media--view__icon--link glightbox"
-                                                href="<?php echo HOST; ?>/assets/img/product/big-product3.jpg"
+                                                href="<?php echo APP_URL; ?>/assets/img/product/big-product3.jpg"
                                                 data-gallery="product-media-preview">
                                                 <svg class="product__media--view__icon--svg"
                                                     xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443"
@@ -4176,13 +4176,13 @@
                                     <div class="product__media--preview__items">
                                         <a class="product__media--preview__items--link glightbox"
                                             data-gallery="product-media-preview"
-                                            href="<?php echo HOST; ?>/assets/img/product/big-product4.jpg"><img
+                                            href="<?php echo APP_URL; ?>/assets/img/product/big-product4.jpg"><img
                                                 class="product__media--preview__items--img"
-                                                src="<?php echo HOST; ?>/assets/img/product/big-product4.jpg"
+                                                src="<?php echo APP_URL; ?>/assets/img/product/big-product4.jpg"
                                                 alt="product-media-img"></a>
                                         <div class="product__media--view__icon">
                                             <a class="product__media--view__icon--link glightbox"
-                                                href="<?php echo HOST; ?>/assets/img/product/big-product4.jpg"
+                                                href="<?php echo APP_URL; ?>/assets/img/product/big-product4.jpg"
                                                 data-gallery="product-media-preview">
                                                 <svg class="product__media--view__icon--svg"
                                                     xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443"
@@ -4203,13 +4203,13 @@
                                     <div class="product__media--preview__items">
                                         <a class="product__media--preview__items--link glightbox"
                                             data-gallery="product-media-preview"
-                                            href="<?php echo HOST; ?>/assets/img/product/big-product5.jpg"><img
+                                            href="<?php echo APP_URL; ?>/assets/img/product/big-product5.jpg"><img
                                                 class="product__media--preview__items--img"
-                                                src="<?php echo HOST; ?>/assets/img/product/big-product5.jpg"
+                                                src="<?php echo APP_URL; ?>/assets/img/product/big-product5.jpg"
                                                 alt="product-media-img"></a>
                                         <div class="product__media--view__icon">
                                             <a class="product__media--view__icon--link glightbox"
-                                                href="<?php echo HOST; ?>/assets/img/product/big-product5.jpg"
+                                                href="<?php echo APP_URL; ?>/assets/img/product/big-product5.jpg"
                                                 data-gallery="product-media-preview">
                                                 <svg class="product__media--view__icon--svg"
                                                     xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443"
@@ -4230,13 +4230,13 @@
                                     <div class="product__media--preview__items">
                                         <a class="product__media--preview__items--link glightbox"
                                             data-gallery="product-media-preview"
-                                            href="<?php echo HOST; ?>/assets/img/product/big-product6.jpg"><img
+                                            href="<?php echo APP_URL; ?>/assets/img/product/big-product6.jpg"><img
                                                 class="product__media--preview__items--img"
-                                                src="<?php echo HOST; ?>/assets/img/product/big-product6.jpg"
+                                                src="<?php echo APP_URL; ?>/assets/img/product/big-product6.jpg"
                                                 alt="product-media-img"></a>
                                         <div class="product__media--view__icon">
                                             <a class="product__media--view__icon--link glightbox"
-                                                href="<?php echo HOST; ?>/assets/img/product/big-product6.jpg"
+                                                href="<?php echo APP_URL; ?>/assets/img/product/big-product6.jpg"
                                                 data-gallery="product-media-preview">
                                                 <svg class="product__media--view__icon--svg"
                                                     xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443"
@@ -4260,42 +4260,42 @@
                                 <div class="swiper-slide">
                                     <div class="product__media--nav__items">
                                         <img class="product__media--nav__items--img"
-                                            src="<?php echo HOST; ?>/assets/img/product/small-product7.png"
+                                            src="<?php echo APP_URL; ?>/assets/img/product/small-product7.png"
                                             alt="product-nav-img">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="product__media--nav__items">
                                         <img class="product__media--nav__items--img"
-                                            src="<?php echo HOST; ?>/assets/img/product/small-product8.png"
+                                            src="<?php echo APP_URL; ?>/assets/img/product/small-product8.png"
                                             alt="product-nav-img">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="product__media--nav__items">
                                         <img class="product__media--nav__items--img"
-                                            src="<?php echo HOST; ?>/assets/img/product/small-product9.png"
+                                            src="<?php echo APP_URL; ?>/assets/img/product/small-product9.png"
                                             alt="product-nav-img">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="product__media--nav__items">
                                         <img class="product__media--nav__items--img"
-                                            src="<?php echo HOST; ?>/assets/img/product/small-product10.png"
+                                            src="<?php echo APP_URL; ?>/assets/img/product/small-product10.png"
                                             alt="product-nav-img">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="product__media--nav__items">
                                         <img class="product__media--nav__items--img"
-                                            src="<?php echo HOST; ?>/assets/img/product/small-product11.png"
+                                            src="<?php echo APP_URL; ?>/assets/img/product/small-product11.png"
                                             alt="product-nav-img">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="product__media--nav__items">
                                         <img class="product__media--nav__items--img"
-                                            src="<?php echo HOST; ?>/assets/img/product/small-product12.png"
+                                            src="<?php echo APP_URL; ?>/assets/img/product/small-product12.png"
                                             alt="product-nav-img">
                                     </div>
                                 </div>
@@ -4379,22 +4379,22 @@
                                         <input id="color-red1" name="color" type="radio" checked>
                                         <label class="variant__color--value red" for="color-red1" title="Red"><img
                                                 class="variant__color--value__img"
-                                                src="<?php echo HOST; ?>/assets/img/product/product1.png"
+                                                src="<?php echo APP_URL; ?>/assets/img/product/product1.png"
                                                 alt="variant-color-img"></label>
                                         <input id="color-red2" name="color" type="radio">
                                         <label class="variant__color--value red" for="color-red2" title="Black"><img
                                                 class="variant__color--value__img"
-                                                src="<?php echo HOST; ?>/assets/img/product/product2.png"
+                                                src="<?php echo APP_URL; ?>/assets/img/product/product2.png"
                                                 alt="variant-color-img"></label>
                                         <input id="color-red3" name="color" type="radio">
                                         <label class="variant__color--value red" for="color-red3" title="Pink"><img
                                                 class="variant__color--value__img"
-                                                src="<?php echo HOST; ?>/assets/img/product/product3.png"
+                                                src="<?php echo APP_URL; ?>/assets/img/product/product3.png"
                                                 alt="variant-color-img"></label>
                                         <input id="color-red4" name="color" type="radio">
                                         <label class="variant__color--value red" for="color-red4" title="Orange"><img
                                                 class="variant__color--value__img"
-                                                src="<?php echo HOST; ?>/assets/img/product/product4.png"
+                                                src="<?php echo APP_URL; ?>/assets/img/product/product4.png"
                                                 alt="variant-color-img"></label>
                                     </fieldset>
                                 </div>
@@ -4426,7 +4426,7 @@
                                         Cart</button>
                                 </div>
                                 <div class="quickview__variant--list variant__wishlist mb-15">
-                                    <a class="variant__wishlist--icon" href="<?php echo HOST; ?>/view/wishlist.php"
+                                    <a class="variant__wishlist--icon" href="<?php echo APP_URL; ?>/view/wishlist.php"
                                         title="Add to wishlist">
                                         <svg class="quickview__variant--wishlist__svg"
                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

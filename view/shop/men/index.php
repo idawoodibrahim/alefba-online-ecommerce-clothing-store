@@ -2,7 +2,7 @@
 include ROOT . '/db/conn.php';
 
 // Fetch products from the database
-$sql = "SELECT * FROM product WHERE category = 'men'";
+$sql = "SELECT * FROM product WHERE category = 'men' AND display = 'yes'";
 
 $pageTitlePrefix = "Men";
 
