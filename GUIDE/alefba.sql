@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 14, 2024 at 12:50 PM
+-- Generation Time: Sep 19, 2024 at 08:05 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -103,17 +103,26 @@ INSERT INTO `product` (`id`, `category`, `name`, `tags`, `badge`, `stock_status`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Table structure for table `users`
 --
 
-CREATE TABLE `user` (
+CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `reg_date` datetime NOT NULL DEFAULT current_timestamp(),
   `username` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
-  `role` enum('SU','Admin','Manager','Dealer','User') NOT NULL DEFAULT 'User'
+  `role` enum('Admin','Manager','Customer','Partner') NOT NULL DEFAULT 'Customer'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `reg_date`, `username`, `email`, `password`, `role`) VALUES
+(1, '2024-09-18 13:12:32', 'test', 'test@example.com', '$2y$10$NFFvWM5hhoI8R1Az0zAKge2ITqdDvpULO/BvetAH7H9MRo99sq3qC', ''),
+(2, '2024-09-18 15:14:28', 'Test1', 'test1@example.com', '$2y$10$fbnIXDDE5ZJpO.JdN4fquO16CIPTMG2rZwUJkQJmt.9fK6SSmWwf6', 'Customer'),
+(3, '2024-09-19 09:48:45', 'dawigner', 'dawigner@tenzsoft.com', '$2y$10$V0pOeywBkngTxt2J1npIu.zd9xOIOrDe/tAzgVgPQs8Mo/0xLdtWq', 'Customer');
 
 -- --------------------------------------------------------
 
@@ -189,9 +198,9 @@ ALTER TABLE `product`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user`
+-- Indexes for table `users`
 --
-ALTER TABLE `user`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -211,10 +220,10 @@ ALTER TABLE `product`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT for table `users`
 --
-ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `wishlist`

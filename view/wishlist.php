@@ -2,7 +2,7 @@
 include ROOT . '/db/conn.php';
 
 // Fetch products from the database
-$sql = "SELECT * FROM product WHERE LIMIT 10 display = 'yes'";
+$sql = "SELECT * FROM product WHERE display = 'yes' LIMIT 10 ";
 // Fetch wishlist from the database
 $wishlistSql = "SELECT * FROM wishlist LIMIT 3";
 

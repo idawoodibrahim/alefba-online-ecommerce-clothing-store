@@ -108,7 +108,7 @@
                 <div class="header__account header__sticky--none">
                     <ul class="d-flex">
                         <li class="header__account--items">
-                            <a class="header__account--btn" href="<?php echo APP_URL; ?>/view/login.php">
+                            <a class="header__account--btn" href="<?php echo APP_URL; ?>/view/my-account.php">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="26.51" height="23.443"
                                     viewBox="0 0 512 512">
                                     <path
@@ -149,6 +149,18 @@
                                 <!-- <span class="items__count">02</span> -->
                             </a>
                         </li>
+                        <!-- <li class="header__account--items d-none d-lg-block">
+                            <a class="header__account--btn" href="<?php echo APP_URL; ?>/session/logout.php">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28.51" height="23.443"
+                                    viewBox="0 0 48 48">
+                                    <path
+                                        d="M 11.5 6 C 8.4802259 6 6 8.4802259 6 11.5 L 6 36.5 C 6 39.519774 8.4802259 42 11.5 42 L 29.5 42 C 32.519774 42 35 39.519774 35 36.5 A 1.50015 1.50015 0 1 0 32 36.5 C 32 37.898226 30.898226 39 29.5 39 L 11.5 39 C 10.101774 39 9 37.898226 9 36.5 L 9 11.5 C 9 10.101774 10.101774 9 11.5 9 L 29.5 9 C 30.898226 9 32 10.101774 32 11.5 A 1.50015 1.50015 0 1 0 35 11.5 C 35 8.4802259 32.519774 6 29.5 6 L 11.5 6 z M 33.484375 15.484375 A 1.50015 1.50015 0 0 0 32.439453 18.060547 L 36.878906 22.5 L 15.5 22.5 A 1.50015 1.50015 0 1 0 15.5 25.5 L 36.878906 25.5 L 32.439453 29.939453 A 1.50015 1.50015 0 1 0 34.560547 32.060547 L 41.560547 25.060547 A 1.50015 1.50015 0 0 0 41.560547 22.939453 L 34.560547 15.939453 A 1.50015 1.50015 0 0 0 33.484375 15.484375 z"
+                                        fill="currentColor" stroke="none">
+                                    </path>
+                                </svg>
+                                <span class="header__account--btn__text">logout</span>
+                            </a>
+                        </li> -->
                     </ul>
                 </div>
                 <div class="header__menu d-none header__sticky--block d-lg-block">
@@ -219,7 +231,7 @@
                             </a>
                         </li>
                         <li class="header__account--items header__account2--items">
-                            <a class="header__account--btn" href="<?php echo APP_URL; ?>/view/login.php">
+                            <a class="header__account--btn" href="<?php echo APP_URL; ?>/view/my-account.php">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="26.51" height="23.443"
                                     viewBox="0 0 512 512">
                                     <path
@@ -242,6 +254,7 @@
                                         fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="32"></path>
                                 </svg>
+                                <span class="visually-hidden">Wish list</span>
                                 <!-- <span class="items__count  wishlist style2">02</span> -->
                             </a>
                         </li>
@@ -255,9 +268,22 @@
                                         d="M12.11,44H35.89A4,4,0,0,0,40,39.6l-2.26-22A4.07,4.07,0,0,0,33.63,14H32V12a8,8,0,0,0-16,0v2H14.37a4.07,4.07,0,0,0-4.09,3.6L8,39.6A4,4,0,0,0,12.11,44ZM18,12a6,6,0,0,1,12,0v2H18Zm-5.73,5.81A2.07,2.07,0,0,1,14.37,16H16v2.89a1.5,1.5,0,1,0,2,0V16H30v2.89a1.5,1.5,0,1,0,2,0V16h1.63a2.07,2.07,0,0,1,2.1,1.81l2.26,22a1.89,1.89,0,0,1-.5,1.49,2.16,2.16,0,0,1-1.6.7H12.11a2.16,2.16,0,0,1-1.6-.7A1.93,1.93,0,0,1,10,40H34a1,1,0,0,0,0-2H10.2Z"
                                         fill="currentColor" />
                                 </svg>
+                                <span class="visually-hidden">My cart</span>
                                 <!-- <span class="items__count style2">02</span> -->
                             </a>
                         </li>
+                        <!-- <li class="header__account--items header__account2--items">
+                            <a class="header__account--btn" href="<?php echo APP_URL; ?>/view/logout.php">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28.51" height="23.443"
+                                    viewBox="0 0 48 48">
+                                    <path
+                                        d="M 11.5 6 C 8.4802259 6 6 8.4802259 6 11.5 L 6 36.5 C 6 39.519774 8.4802259 42 11.5 42 L 29.5 42 C 32.519774 42 35 39.519774 35 36.5 A 1.50015 1.50015 0 1 0 32 36.5 C 32 37.898226 30.898226 39 29.5 39 L 11.5 39 C 10.101774 39 9 37.898226 9 36.5 L 9 11.5 C 9 10.101774 10.101774 9 11.5 9 L 29.5 9 C 30.898226 9 32 10.101774 32 11.5 A 1.50015 1.50015 0 1 0 35 11.5 C 35 8.4802259 32.519774 6 29.5 6 L 11.5 6 z M 33.484375 15.484375 A 1.50015 1.50015 0 0 0 32.439453 18.060547 L 36.878906 22.5 L 15.5 22.5 A 1.50015 1.50015 0 1 0 15.5 25.5 L 36.878906 25.5 L 32.439453 29.939453 A 1.50015 1.50015 0 1 0 34.560547 32.060547 L 41.560547 25.060547 A 1.50015 1.50015 0 0 0 41.560547 22.939453 L 34.560547 15.939453 A 1.50015 1.50015 0 0 0 33.484375 15.484375 z"
+                                        fill="currentColor" stroke="none">
+                                    </path>
+                                </svg>
+                                <span class="visually-hidden">Logout</span>
+                            </a>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -358,7 +384,8 @@
                     </li>
                 </ul>
                 <div class="offcanvas__account--items">
-                    <a class="offcanvas__account--items__btn d-flex align-items-center" href="<?php echo APP_URL; ?>">
+                    <a class="offcanvas__account--items__btn d-flex align-items-center"
+                        href="<?php echo APP_URL; ?>/session/login.php">
                         <span class="offcanvas__account--items__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20.51" height="19.443" viewBox="0 0 512 512">
                                 <path
@@ -370,7 +397,7 @@
                                     fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
                             </svg>
                         </span>
-                        <span class="offcanvas__account--items__label">Login / Register</span>
+                        <span class="offcanvas__account--items__label">Login</span>
                     </a>
                 </div>
                 <!-- <div class="language__currency">

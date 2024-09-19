@@ -1,13 +1,15 @@
 <?php
-# Initialize the session
-session_start();
+# Initialize the session if not already started
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 
 # Unset all session variables
-$_SESSION = array();
+session_unset();  // This already unsets all session variables
 
 # Destroy the session
 session_destroy();
 
 # Redirect to login page
-echo "<script>" . "window.location.href='" . APP_URL . "/session/login.php';" . "</script>";
+header("Location: " . APP_URL . "/session/login.php");
 exit;
