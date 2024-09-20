@@ -1,4 +1,5 @@
 <?php
+include ROOT . '/session/session_check.php';
 include ROOT . '/db/conn.php';
 
 // Fetch products from the database

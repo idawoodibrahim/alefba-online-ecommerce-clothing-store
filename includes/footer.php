@@ -423,5 +423,70 @@
 <script src="<?php echo APP_URL; ?>/assets/js/plugins/swiper-bundle.min.js"></script>
 <script src="<?php echo APP_URL; ?>/assets/js/plugins/glightbox.min.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <!-- Customscript js -->
 <script src="<?php echo APP_URL; ?>/assets/js/script.js"></script>
+
+
+
+<script>
+// Function to toggle the input field type between password and text
+function togglePasswordVisibility(fieldId, icon) {
+    var passwordInput = document.getElementById(fieldId);
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+    } else {
+        passwordInput.type = "password";
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+    }
+}
+
+// Function to toggle wishlist for a product (Remove if exists, Add if Not)
+function toggleWishlist(productId, button) {
+    // Check if the user is logged in
+    if (!<?php echo json_encode($USER_LOGGED_IN); ?>) {
+        // Redirect to the login page if not logged in
+        window.location.href = '<?php echo APP_URL; ?>/session/login.php';
+        return; // Exit the function since user is not logged in
+    }
+
+    var $button = $(button); // Convert the button to a jQuery object
+
+    $.ajax({
+        url: '<?php echo APP_URL; ?>/handler/wishlist_handler.php',
+        method: 'POST',
+        data: {
+            product_id: productId
+        },
+        success: function(response) {
+            console.log(response); // Log the raw response
+
+            // Parse the response to make sure it's a valid JSON object
+            try {
+                var jsonResponse = JSON.parse(response);
+
+                // Now check the status within the parsed JSON
+                if (jsonResponse.status === 'success') {
+                    $button.addClass('wishlist-added'); // Change icon fill to red
+                    location.reload(); // Reload page after successfully adding
+                } else if (jsonResponse.status === 'removed') {
+                    $button.removeClass('wishlist-added'); // Reset the icon
+                    location.reload(); // Reload page after removing
+                } else {
+                    console.log('Unexpected status in the response:', jsonResponse);
+                }
+            } catch (e) {
+                console.error("Could not parse JSON response:", e, response);
+            }
+        },
+        error: function(xhr, status, error) {
+            console.log("IN ERROR");
+            console.error('AJAX Error:', error);
+        }
+    });
+}
+</script>

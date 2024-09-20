@@ -173,33 +173,46 @@ include ROOT . '/includes/menu.php';
                                     <p class="account__login--header__desc">Register here if you are a new customer</p>
                                 </div>
                                 <div class="account__login--inner">
-
-                                    <input class="account__login--input" placeholder="Username" type="text"
+                                    <!-- Username Input -->
+                                    <input class="account__login--input form-control" placeholder="Username" type="text"
                                         name="username" value="<?= $username; ?>">
+                                    <?php if (!empty($username_err)) : ?>
                                     <span class="text-danger"><?= $username_err; ?></span>
+                                    <?php endif; ?>
 
-                                    <input class="account__login--input" placeholder="Email Address" type="text"
-                                        name="email" value="<?= $email; ?>">
+                                    <!-- Email Input -->
+                                    <input class="account__login--input form-control" placeholder="Email Address"
+                                        type="text" name="email" value="<?= $email; ?>">
+                                    <?php if (!empty($email_err)) : ?>
                                     <span class="text-danger"><?= $email_err; ?></span>
+                                    <?php endif; ?>
 
-                                    <input class="account__login--input" placeholder="Password" type="password"
-                                        name="password">
+                                    <!-- Password Input with Show/Hide functionality -->
+                                    <div class="password-wrapper">
+                                        <input class="account__login--input form-control" placeholder="Password"
+                                            type="password" name="password" id="password">
+                                        <i class="toggle-password far fa-eye"
+                                            onclick="togglePasswordVisibility('password', this)"></i>
+                                    </div>
+                                    <?php if (!empty($password_err)) : ?>
                                     <span class="text-danger"><?= $password_err; ?></span>
+                                    <?php endif; ?>
 
-                                    <input class="account__login--input" placeholder="Confirm Password" type="password"
-                                        name="confirm_password">
+                                    <!-- Confirm Password Input with Show/Hide functionality -->
+                                    <div class="password-wrapper">
+                                        <input class="account__login--input form-control" placeholder="Confirm Password"
+                                            type="password" name="confirm_password" id="confirm_password">
+                                        <i class="toggle-password far fa-eye"
+                                            onclick="togglePasswordVisibility('confirm_password', this)"></i>
+                                    </div>
+                                    <?php if (!empty($confirm_password_err)) : ?>
                                     <span class="text-danger"><?= $confirm_password_err; ?></span>
+                                    <?php endif; ?>
 
                                     <div class="d-flex justify-content-end">
                                         <button class="account__login--btn primary__btn w-25" type="submit"
                                             name="submit">Register</button>
                                     </div>
-                                    <!-- <div class="account__login--remember position__relative">
-                                        <input class="checkout__checkbox--input" id="check2" type="checkbox">
-                                        <span class="checkout__checkbox--checkmark"></span>
-                                        <label class="checkout__checkbox--label login__remember--label" for="check2">
-                                            I have read and agree to the terms & conditions</label>
-                                    </div> -->
 
                                     <div class="account__login--divide">
                                         <span class="account__login--divide__text">OR</span>

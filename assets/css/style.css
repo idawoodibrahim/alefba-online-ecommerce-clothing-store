@@ -349,9 +349,9 @@ input[type="submit"] {
   line-height: var(--body-line-height);
 }
 
-input[type="number"] {
+/* input[type="number"] {
   -moz-appearance: textfield;
-}
+} */
 
 img {
   max-width: 100%;
@@ -1922,10 +1922,18 @@ body.overlay__active::before,
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
+.section--padding-extra {
+  padding-top: 15rem;
+  padding-bottom: 6rem;
+}
 
 @media only screen and (min-width: 768px) {
   .section--padding {
     padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .section--padding-extra {
+    padding-top: 15rem;
     padding-bottom: 7rem;
   }
 }
@@ -1935,11 +1943,19 @@ body.overlay__active::before,
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
+  .section--padding-extra {
+    padding-top: 16rem;
+    padding-bottom: 8rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .section--padding {
     padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+  .section--padding-extra {
+    padding-top: 18rem;
     padding-bottom: 9rem;
   }
 }
@@ -3879,21 +3895,21 @@ input[type="number"]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 767px) {
   .home1__slider--bg {
-  height: 50vh;
-  background-position: 100%;
-  /* Add a pseudo-element for the overlay */
-  position: relative;
+    height: 50vh;
+    background-position: 100%;
+    /* Add a pseudo-element for the overlay */
+    position: relative;
   }
 
   .home1__slider--bg::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.5); /* Light overlay */
-      z-index: 1; /* Ensure the overlay is on top */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Light overlay */
+    z-index: 1; /* Ensure the overlay is on top */
   }
 
   /* Ensure that any content inside remains above the overlay */
@@ -4457,6 +4473,11 @@ input[type="number"]::-webkit-outer-spin-button {
   background: var(--secondary-color);
   color: var(--white-color);
   border-color: var(--secondary-color);
+}
+.wishlist-btn:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+  border-color: var(--primary-color);
 }
 
 .product__items--content {
@@ -7592,9 +7613,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .variant__input--fieldset {
-  min-width: -webkit-fit-content;
+  /* min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
-  min-width: fit-content;
+  min-width: fit-content; */
   border: none;
   margin: 0;
   padding: 0;
@@ -13049,3 +13070,24 @@ details > summary::-webkit-details-marker {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+
+/* Wrapper to hold the input and the eye icon */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.account__login--input {
+  width: 100%;
+  padding-right: 40px; /* Add padding to make space for the icon */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+}

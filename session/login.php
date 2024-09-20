@@ -1,8 +1,6 @@
 <?php
 # Start the session if not already started
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
+ensureSessionStarted();
 
 # Initialize connection (move this higher up)
 global $conn;
@@ -77,17 +75,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             # Check if there is a redirect URL stored in the session
                             if (isset($_SESSION['redirect_url'])) {
                                 $redirect_url = $_SESSION['redirect_url'];
-                        
+
                                 # Clear the redirect URL from session
                                 unset($_SESSION['redirect_url']);
-                        
+
                                 # Redirect to the stored URL after the delay
                                 echo "window.location.href = '" . $redirect_url . "';";
                             } else {
-                                # If no redirect URL, send to default page (e.g., homepage)
-                                echo "window.location.href = '" . APP_URL . "/index.php';";
-                            }
-                        
+                                # If no redirect URL, send to default page (homepage)
+                                echo "window.location.href = '" . APP_URL . "';";
+                            }                        
                             echo "}, 00); // delay in ms for viewing console logs
                             </script>";
                             exit;
@@ -149,7 +146,6 @@ include ROOT . '/includes/menu.php';
                                     <p class="account__login--header__desc">Login if you are a returning customer.</p>
                                 </div>
                                 <div class="account__login--inner">
-
                                     <!-- Display common login error -->
                                     <?php if (!empty($login_err)) : ?>
                                     <div class="alert alert-danger"><?= $login_err; ?></div>
@@ -164,9 +160,13 @@ include ROOT . '/includes/menu.php';
                                     <span class="text-danger"><?= $user_login_err; ?></span>
                                     <?php endif; ?>
 
-                                    <!-- Password Input Field -->
-                                    <input class="account__login--input form-control" placeholder="Password"
-                                        type="password" name="user_password" id="password">
+                                    <!-- Password Input Field with Show/Hide functionality -->
+                                    <div class="password-wrapper">
+                                        <input class="account__login--input form-control" placeholder="Password"
+                                            type="password" name="user_password" id="password">
+                                        <i class="toggle-password far fa-eye"
+                                            onclick="togglePasswordVisibility('password', this)"></i>
+                                    </div>
                                     <!-- Display password error -->
                                     <?php if (!empty($user_password_err)) : ?>
                                     <span class="text-danger"><?= $user_password_err; ?></span>

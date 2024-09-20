@@ -1,8 +1,6 @@
 <?php
 # Initialize the session if not already started
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
+ensureSessionStarted();
 
 # Unset all session variables
 session_unset();  // This already unsets all session variables
