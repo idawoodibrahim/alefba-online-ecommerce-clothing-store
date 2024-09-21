@@ -53,13 +53,13 @@ include ROOT . '/includes/menu.php';
                                 <?php
                                 if (!$USER_LOGGED_IN) {
                                 ?>
-                                    <tr>
-                                        <td colspan="4" class="text-center">To see wishlist, please
-                                            <a href="<?php echo APP_URL; ?>/session/login.php">Login</a> or
-                                            <a href="<?php echo APP_URL; ?>/session/register.php">Register</a>
-                                        </td>
-                                    </tr>
-                                    <?php
+                                <tr>
+                                    <td colspan="4" class="text-center">To see wishlist, please
+                                        <a href="<?php echo APP_URL; ?>/session/login.php">Login</a> or
+                                        <a href="<?php echo APP_URL; ?>/session/register.php">Register</a>
+                                    </td>
+                                </tr>
+                                <?php
                                 } elseif ($USER_LOGGED_IN) {
                                     // Fetch wishlist items for the logged-in user
                                     $wishlistResult = $conn->query($wishlistSql);
@@ -73,50 +73,50 @@ include ROOT . '/includes/menu.php';
 
                                         $in_cart = $cart_result->num_rows > 0; // Boolean: true if the product is in the cart, otherwise false
                                     ?>
-                                        <tr class="cart__table--body__items">
-                                            <td class="cart__table--body__list">
-                                                <div class="cart__product d-flex align-items-center">
-                                                    <button class="cart__remove--btn wishlist-btn" aria-label="remove button"
-                                                        type="button" href="javascript:void(0)"
-                                                        onclick="toggleWishlist(<?php echo $wishlist['product_id']; ?>, this)">
-                                                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 24 24" width="16px" height="16px">
-                                                            <path
-                                                                d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z" />
-                                                        </svg>
-                                                    </button>
-                                                    <div class="cart__thumbnail">
-                                                        <a href="<?php echo APP_URL; ?>/view/product-details.php">
-                                                            <img class="border-radius-5"
-                                                                src="<?php echo APP_URL . $wishlist['product_primary_img']; ?>"
-                                                                alt="cart-product">
-                                                        </a>
-                                                    </div>
-                                                    <div class="cart__content">
-                                                        <h4 class="cart__content--title">
-                                                            <a
-                                                                href="<?php echo APP_URL; ?>/view/product-details.php"><?php echo $wishlist['name']; ?></a>
-                                                        </h4>
-                                                        <!-- <span class="cart__content--variant">SIZE: M</span> -->
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="cart__table--body__list">
-                                                <span class="cart__price">€<?php echo $wishlist['sale_price']; ?></span>
-                                            </td>
-                                            <td class="cart__table--body__list text-center">
-                                                <span
-                                                    class="in__stock text__secondary"><?php echo $wishlist['stock_status']; ?></span>
-                                            </td>
-                                            <td class="cart__table--body__list text-right">
-                                                <a class="wishlist__cart--btn primary__btn" href="javascript:void(0)"
-                                                    onclick="manageCart(<?php echo $wishlist['product_id']; ?>, this)"
-                                                    style="background-color: <?php echo $in_cart ? 'red' : ''; ?>; color: <?php echo $in_cart ? 'white' : ''; ?>"
-                                                    <?php echo $in_cart ? 'disabled' : ''; ?>>
-                                                    <?php echo $in_cart ? 'Already Added' : 'Add to Cart'; ?>
+                                <tr class="cart__table--body__items">
+                                    <td class="cart__table--body__list">
+                                        <div class="cart__product d-flex align-items-center">
+                                            <button class="cart__remove--btn wishlist-btn" aria-label="remove button"
+                                                type="button" href="javascript:void(0)"
+                                                onclick="toggleWishlist(<?php echo $wishlist['product_id']; ?>, this)">
+                                                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24" width="16px" height="16px">
+                                                    <path
+                                                        d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z" />
+                                                </svg>
+                                            </button>
+                                            <div class="cart__thumbnail">
+                                                <a href="<?php echo APP_URL; ?>/view/product-details.php">
+                                                    <img class="border-radius-5"
+                                                        src="<?php echo APP_URL . $wishlist['product_primary_img']; ?>"
+                                                        alt="cart-product">
                                                 </a>
-                                            </td>
-                                        </tr>
+                                            </div>
+                                            <div class="cart__content">
+                                                <h4 class="cart__content--title">
+                                                    <a
+                                                        href="<?php echo APP_URL; ?>/view/product-details.php"><?php echo $wishlist['name']; ?></a>
+                                                </h4>
+                                                <!-- <span class="cart__content--variant">SIZE: M</span> -->
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cart__table--body__list">
+                                        <span class="cart__price">€<?php echo $wishlist['sale_price']; ?></span>
+                                    </td>
+                                    <td class="cart__table--body__list text-center">
+                                        <span
+                                            class="in__stock text__secondary"><?php echo $wishlist['stock_status']; ?></span>
+                                    </td>
+                                    <td class="cart__table--body__list text-right">
+                                        <a class="wishlist__cart--btn primary__btn" href="javascript:void(0)"
+                                            onclick="manageCart(<?php echo $wishlist['product_id']; ?>, 'add', this)"
+                                            style="background-color: <?php echo $in_cart ? 'red' : ''; ?>; color: <?php echo $in_cart ? 'white' : ''; ?>"
+                                            <?php echo $in_cart ? 'disabled' : ''; ?>>
+                                            <?php echo $in_cart ? 'Already Added' : 'Add to Cart'; ?>
+                                        </a>
+                                    </td>
+                                </tr>
                                 <?php
                                     endwhile;
                                 }

@@ -1,3 +1,26 @@
+<?php
+include ROOT . '/db/conn.php';
+$wishlistCount = $cartCount = 0; // Default value
+
+if ($USER_LOGGED_IN) {
+    $wishlistCountSql = "SELECT COUNT(*) AS wishlist_count FROM wishlist WHERE user_id = $USER_ID";
+    $wishlistCountResult = $conn->query($wishlistCountSql);
+
+    if ($wishlistCountResult) {
+        $wishlistCountRow = $wishlistCountResult->fetch_assoc();
+        $wishlistCount = $wishlistCountRow['wishlist_count'];
+    }
+    
+    $cartCountSql = "SELECT COUNT(*) AS cart_count FROM cart WHERE user_id = $USER_ID";
+    $cartCountResult = $conn->query($cartCountSql);
+
+    if ($cartCountResult) {
+        $cartCountRow = $cartCountResult->fetch_assoc();
+        $cartCount = $cartCountRow['cart_count'];
+    }
+}
+?>
+
 <!-- Start header area -->
 <header class="header__section">
     <div class="header__topbar bg__secondary">
@@ -132,7 +155,7 @@
                                         stroke-width="32"></path>
                                 </svg>
                                 <span class="header__account--btn__text">Wish List</span>
-                                <!-- <span class="items__count wishlist">02</span> -->
+                                <span class="items__count wishlist"><?php echo $wishlistCount; ?></span>
                             </a>
                         </li>
                         <!-- <li class="header__account--items">
@@ -159,7 +182,7 @@
                                         fill="currentColor" />
                                 </svg>
                                 <span class="header__account--btn__text">My cart</span>
-                                <!-- <span class="items__count">02</span> -->
+                                <span class="items__count"><?php echo $cartCount; ?></span>
                             </a>
                         </li>
                         <!-- <li class="header__account--items d-none d-lg-block">
@@ -192,7 +215,8 @@
                                 </a>
                             </li>
                             <li class="header__menu--items style2">
-                                <a class="header__menu--link " href="#">Novelty</a>
+                                <a class="header__menu--link "
+                                    href="<?php echo APP_URL; ?>/view/soon.php?pTitle=Novelty">Novelty</a>
                             </li>
                             <li class="header__menu--items style2">
                                 <a class="header__menu--link" href="
@@ -268,7 +292,7 @@
                                         stroke-width="32"></path>
                                 </svg>
                                 <span class="visually-hidden">Wish list</span>
-                                <!-- <span class="items__count  wishlist style2">02</span> -->
+                                <span class="items__count wishlist style2"><?php echo $wishlistCount; ?></span>
                             </a>
                         </li>
                         <!-- <li class="header__account--items header__account2--items">
@@ -295,7 +319,7 @@
                                         fill="currentColor" />
                                 </svg>
                                 <span class="visually-hidden">My cart</span>
-                                <!-- <span class="items__count style2">02</span> -->
+                                <span class="items__count style2"><?php echo $cartCount; ?></span>
                             </a>
                         </li>
                         <!-- <li class="header__account--items header__account2--items">
@@ -333,7 +357,8 @@
                                     href="<?php echo APP_URL; ?>/view/shop/children">Children</a>
                             </li>
                             <li class="header__menu--items">
-                                <a class="header__menu--link" href="#">Novelty</a>
+                                <a class="header__menu--link"
+                                    href="<?php echo APP_URL; ?>/view/soon.php?pTitle=Novelty">Novelty</a>
                             </li>
                             <!-- <li class="header__menu--items d-none d-xl-block">
                                 <a class="header__menu--link" href="<?php echo APP_URL; ?>/view/shop.php">Categories <svg
@@ -397,7 +422,8 @@
                         <a class="offcanvas__menu_item" href="<?php echo APP_URL; ?>/view/shop/children">Children</a>
                     </li>
                     <li class="offcanvas__menu_li">
-                        <a class="offcanvas__menu_item" href="#">Novelty</a>
+                        <a class="offcanvas__menu_item"
+                            href="<?php echo APP_URL; ?>/view/soon.php?pTitle=Novelty">Novelty</a>
                     </li>
                     <li class="offcanvas__menu_li"><a class="offcanvas__menu_item"
                             href="<?php echo APP_URL; ?>/view/collaboration.php">Collaboration</a></li>
@@ -546,7 +572,7 @@
                         </svg>
                     </span>
                     <span class="offcanvas__stikcy--toolbar__label">Cart</span>
-                    <!-- <span class="items__count">3</span> -->
+                    <span class="items__count"><?php echo $cartCount; ?></span>
                 </a>
             </li>
             <!-- <li class="offcanvas__stikcy--toolbar__list">
