@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 20, 2024 at 02:36 PM
+-- Generation Time: Sep 21, 2024 at 11:10 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,6 +20,29 @@ SET time_zone = "+00:00";
 --
 -- Database: `alefba`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cart`
+--
+
+CREATE TABLE `cart` (
+  `id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `qty` int(3) NOT NULL DEFAULT 1,
+  `user_id` int(11) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`id`, `product_id`, `qty`, `user_id`, `created_at`, `updated_at`) VALUES
+(1, 1, 2, 3, '2024-09-20 12:53:09', '2024-09-21 08:02:15'),
+(3, 23, 3, 3, '2024-09-21 06:59:49', '2024-09-21 08:02:15');
 
 -- --------------------------------------------------------
 
@@ -148,7 +171,6 @@ INSERT INTO `wishlist` (`id`, `product_id`, `user_id`, `created_at`, `updated_at
 (13, 3, 3, '2024-09-20 06:40:19', '2024-09-20 06:40:19'),
 (17, 1, 2, '2024-09-20 07:50:13', '2024-09-20 07:50:13'),
 (18, 4, 2, '2024-09-20 07:50:14', '2024-09-20 07:50:14'),
-(24, 2, 3, '2024-09-20 12:20:58', '2024-09-20 12:20:58'),
 (26, 23, 3, '2024-09-20 12:31:43', '2024-09-20 12:31:43'),
 (27, 41, 3, '2024-09-20 12:32:04', '2024-09-20 12:32:04'),
 (29, 44, 3, '2024-09-20 12:32:28', '2024-09-20 12:32:28');
@@ -156,6 +178,14 @@ INSERT INTO `wishlist` (`id`, `product_id`, `user_id`, `created_at`, `updated_at
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `cart`
+--
+ALTER TABLE `cart`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `product_id` (`product_id`),
+  ADD KEY `user_id` (`user_id`);
 
 --
 -- Indexes for table `product`
@@ -182,6 +212,12 @@ ALTER TABLE `wishlist`
 --
 
 --
+-- AUTO_INCREMENT for table `cart`
+--
+ALTER TABLE `cart`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
@@ -197,7 +233,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `wishlist`
 --
 ALTER TABLE `wishlist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- Constraints for dumped tables

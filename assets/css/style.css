@@ -4506,7 +4506,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 575px) {
   .add__to--cart__text {
-    display: none;
+    /* display: none; */
   }
 }
 

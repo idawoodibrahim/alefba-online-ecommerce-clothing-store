@@ -410,7 +410,6 @@
 </footer>
 <!-- End footer section -->
 
-
 <!-- Scroll top bar -->
 <button id="scroll__top"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
@@ -445,6 +444,7 @@ function togglePasswordVisibility(fieldId, icon) {
     }
 }
 
+
 // Function to toggle wishlist for a product (Remove if exists, Add if Not)
 function toggleWishlist(productId, button) {
     // Check if the user is logged in
@@ -470,12 +470,8 @@ function toggleWishlist(productId, button) {
                 var jsonResponse = JSON.parse(response);
 
                 // Now check the status within the parsed JSON
-                if (jsonResponse.status === 'success') {
-                    $button.addClass('wishlist-added'); // Change icon fill to red
-                    location.reload(); // Reload page after successfully adding
-                } else if (jsonResponse.status === 'removed') {
-                    $button.removeClass('wishlist-added'); // Reset the icon
-                    location.reload(); // Reload page after removing
+                if (jsonResponse.status === 'added' || jsonResponse.status === 'removed') {
+                    location.reload(); // Reload page
                 } else {
                     console.log('Unexpected status in the response:', jsonResponse);
                 }
@@ -485,6 +481,43 @@ function toggleWishlist(productId, button) {
         },
         error: function(xhr, status, error) {
             console.log("IN ERROR");
+            console.error('AJAX Error:', error);
+        }
+    });
+}
+
+// Function to add/remove products from the cart
+function manageCart(productId, action, button) {
+    if (!<?php echo json_encode($USER_LOGGED_IN); ?>) {
+        window.location.href = '<?php echo APP_URL; ?>/session/login.php';
+        return;
+    }
+
+    var $button = $(button);
+
+    $.ajax({
+        url: '<?php echo APP_URL; ?>/handler/cart_handler.php',
+        method: 'POST',
+        data: {
+            product_id: productId,
+            action: action // This defines whether to 'add' or 'remove' the product
+        },
+        success: function(response) {
+            try {
+                var jsonResponse = JSON.parse(response);
+
+                if (jsonResponse.status === 'added' || jsonResponse.status === 'removed') {
+                    location.reload(); // Reload page if removed successfully
+                } else if (jsonResponse.status === 'exists') {
+                    alert(jsonResponse.message); // Notify the user if the item already exists
+                } else {
+                    console.log('Unexpected status:', jsonResponse);
+                }
+            } catch (e) {
+                console.error("Could not parse JSON response:", e, response);
+            }
+        },
+        error: function(xhr, status, error) {
             console.error('AJAX Error:', error);
         }
     });

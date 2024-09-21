@@ -11,7 +11,6 @@ include ROOT . '/includes/header.php';
 include ROOT . '/includes/menu.php';
 ?>
 
-
 <main class="main__content_wrapper">
     <!-- Start slider section -->
     <section class="hero__slider--section">
@@ -141,13 +140,19 @@ include ROOT . '/includes/menu.php';
                         <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 mb--n30">
                             <?php
                             while ($row = $result->fetch_assoc()):
-                                $in_wishlist = false;
-                                if ($USER_LOGGED_IN){
+                                $in_wishlist = $in_cart = false;
+                                if ($USER_LOGGED_IN) {
                                     // Check if the product is in the user's wishlist
                                     $wishlist_query = "SELECT * FROM wishlist WHERE user_id = $USER_ID AND product_id = " . $row['id'];
                                     $wishlist_result = $conn->query($wishlist_query);
 
                                     $in_wishlist = $wishlist_result->num_rows > 0; // Boolean: true if the product is in the wishlist, otherwise false
+
+                                    // Check if the product is in the user's cart
+                                    $cart_query = "SELECT * FROM cart WHERE user_id = $USER_ID AND product_id = " . $row['id'];
+                                    $cart_result = $conn->query($cart_query);
+
+                                    $in_cart = $cart_result->num_rows > 0; // Boolean: true if the product is in the cart, otherwise false
                                 }
                             ?>
 
@@ -198,8 +203,13 @@ include ROOT . '/includes/menu.php';
 
                                         <ul class="product__items--action d-flex">
                                             <li class="product__items--action__list">
-                                                <a class="product__items--action__btn add__to--cart" href="cart.php">
-                                                    <span class="add__to--cart__text"> Add to cart</span>
+                                                <a class="product__items--action__btn add__to--cart"
+                                                    href="javascript:void(0)"
+                                                    onclick="manageCart(<?php echo $row['id']; ?>, 'add', this)"
+                                                    style="background-color: <?php echo $in_cart ? 'red' : ''; ?>; color: <?php echo $in_cart ? 'white' : ''; ?>"
+                                                    <?php echo $in_cart ? 'disabled' : ''; ?>>
+                                                    <span
+                                                        class="add__to--cart__text"><?php echo $in_cart ? 'Already Added' : 'Add to Cart'; ?></span>
                                                 </a>
                                             </li>
                                             <li class="product__items--action__list">
@@ -222,9 +232,17 @@ include ROOT . '/includes/menu.php';
                                     </div>
                                 </div>
                             </div>
-
                             <?php endwhile; ?>
-
+                        </div>
+                        <div class="d-flex justify-content-center mt-5">
+                            <a class="primary__btn" href="<?php echo APP_URL; ?>/view/shop">View All
+                                <svg class="primary__btn--arrow__icon" xmlns="http://www.w3.org/2000/svg" width="20.2"
+                                    height="12.2" viewBox="0 0 6.2 6.2">
+                                    <path
+                                        d="M7.1,4l-.546.546L8.716,6.713H4v.775H8.716L6.554,9.654,7.1,10.2,9.233,8.067,10.2,7.1Z"
+                                        transform="translate(-4 -4)" fill="currentColor"></path>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -241,42 +259,6 @@ include ROOT . '/includes/footer.php';
 ?>
 
 <script>
-$(document).on('click', '.wishlist-btn', function() {
-    var productId = $(this).data('product-id');
-    var $button = $(this);
-
-    $.ajax({
-        url: '<?php echo APP_URL; ?>/handler/wishlist_handler.php',
-        method: 'POST',
-        data: {
-            product_id: productId
-        },
-        success: function(response) {
-            console.log(response); // Log the raw response
-
-            // Parse the response to make sure it's a valid JSON object
-            try {
-                var jsonResponse = JSON.parse(response);
-
-                // Now check the status within the parsed JSON
-                if (jsonResponse.status === 'success') {
-                    $button.addClass('wishlist-added'); // Change icon fill to red
-                    location.reload(); // Reload page after successfully adding
-                } else if (jsonResponse.status === 'removed') {
-                    $button.removeClass('wishlist-added'); // Reset the icon
-                    location.reload(); // Reload page after removing
-                } else {
-                    console.log('Unexpected status in the response:', jsonResponse);
-                }
-            } catch (e) {
-                console.error("Could not parse JSON response:", e, response);
-            }
-        },
-        error: function(xhr, status, error) {
-            console.error('AJAX Error:', error);
-        }
-    });
-});
 </script>
 
 </body>

@@ -31,7 +31,7 @@ if ($USER_LOGGED_IN) {
         $stmt->bind_param('ii', $USER_ID, $product_id);
         $stmt->execute();
 
-        $response['status'] = 'success';
+        $response['status'] = 'added';
     }
 } else {
     $response['status'] = 'error';

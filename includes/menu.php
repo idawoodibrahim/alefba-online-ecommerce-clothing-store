@@ -135,9 +135,22 @@
                                 <!-- <span class="items__count wishlist">02</span> -->
                             </a>
                         </li>
-                        <li class="header__account--items">
+                        <!-- <li class="header__account--items">
                             <a class="header__account--btn minicart__open--btn" href="javascript:void(0)"
                                 data-offcanvas>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26.51" height="23.443"
+                                    viewBox="0 0 48 48">
+                                    <title />
+                                    <path
+                                        d="M12.11,44H35.89A4,4,0,0,0,40,39.6l-2.26-22A4.07,4.07,0,0,0,33.63,14H32V12a8,8,0,0,0-16,0v2H14.37a4.07,4.07,0,0,0-4.09,3.6L8,39.6A4,4,0,0,0,12.11,44ZM18,12a6,6,0,0,1,12,0v2H18Zm-5.73,5.81A2.07,2.07,0,0,1,14.37,16H16v2.89a1.5,1.5,0,1,0,2,0V16H30v2.89a1.5,1.5,0,1,0,2,0V16h1.63a2.07,2.07,0,0,1,2.1,1.81l2.26,22a1.89,1.89,0,0,1-.5,1.49,2.16,2.16,0,0,1-1.6.7H12.11a2.16,2.16,0,0,1-1.6-.7A1.93,1.93,0,0,1,10,40H34a1,1,0,0,0,0-2H10.2Z"
+                                        fill="currentColor" />
+                                </svg>
+                                <span class="header__account--btn__text">My cart</span>
+                                <span class="items__count">02</span>
+                            </a>
+                        </li> -->
+                        <li class="header__account--items">
+                            <a class="header__account--btn" href="<?php echo APP_URL; ?>/view/cart.php">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="26.51" height="23.443"
                                     viewBox="0 0 48 48">
                                     <title />
@@ -258,9 +271,22 @@
                                 <!-- <span class="items__count  wishlist style2">02</span> -->
                             </a>
                         </li>
-                        <li class="header__account--items header__account2--items">
+                        <!-- <li class="header__account--items header__account2--items">
                             <a class="header__account--btn minicart__open--btn" href="javascript:void(0)"
                                 data-offcanvas>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26.51" height="23.443"
+                                    viewBox="0 0 48 48">
+                                    <title />
+                                    <path
+                                        d="M12.11,44H35.89A4,4,0,0,0,40,39.6l-2.26-22A4.07,4.07,0,0,0,33.63,14H32V12a8,8,0,0,0-16,0v2H14.37a4.07,4.07,0,0,0-4.09,3.6L8,39.6A4,4,0,0,0,12.11,44ZM18,12a6,6,0,0,1,12,0v2H18Zm-5.73,5.81A2.07,2.07,0,0,1,14.37,16H16v2.89a1.5,1.5,0,1,0,2,0V16H30v2.89a1.5,1.5,0,1,0,2,0V16h1.63a2.07,2.07,0,0,1,2.1,1.81l2.26,22a1.89,1.89,0,0,1-.5,1.49,2.16,2.16,0,0,1-1.6.7H12.11a2.16,2.16,0,0,1-1.6-.7A1.93,1.93,0,0,1,10,40H34a1,1,0,0,0,0-2H10.2Z"
+                                        fill="currentColor" />
+                                </svg>
+                                <span class="visually-hidden">My cart</span>
+                                <span class="items__count style2">02</span>
+                            </a>
+                        </li> -->
+                        <li class="header__account--items header__account2--items">
+                            <a class="header__account--btn" href="<?php echo APP_URL; ?>/view/cart.php">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="26.51" height="23.443"
                                     viewBox="0 0 48 48">
                                     <title />
@@ -384,6 +410,9 @@
                     </li>
                 </ul>
                 <div class="offcanvas__account--items">
+                    <?php
+                        if (!$USER_LOGGED_IN) {
+                    ?>
                     <a class="offcanvas__account--items__btn d-flex align-items-center"
                         href="<?php echo APP_URL; ?>/session/login.php">
                         <span class="offcanvas__account--items__icon">
@@ -399,6 +428,9 @@
                         </span>
                         <span class="offcanvas__account--items__label">Login</span>
                     </a>
+                    <?php
+                        }
+                    ?>
                 </div>
                 <!-- <div class="language__currency">
                     <ul class="d-flex align-items-center">
@@ -489,8 +521,22 @@
                     <span class="offcanvas__stikcy--toolbar__label">Search</span>
                 </a>
             </li>
-            <li class="offcanvas__stikcy--toolbar__list">
+            <!-- <li class="offcanvas__stikcy--toolbar__list">
                 <a class="offcanvas__stikcy--toolbar__btn minicart__open--btn" href="javascript:void(0)" data-offcanvas>
+                    <span class="offcanvas__stikcy--toolbar__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18.51" height="15.443"
+                            viewBox="0 0 18.51 15.443">
+                            <path
+                                d="M79.963,138.379l-13.358,0-.56-1.927a.871.871,0,0,0-.6-.592l-1.961-.529a.91.91,0,0,0-.226-.03.864.864,0,0,0-.226,1.7l1.491.4,3.026,10.919a1.277,1.277,0,1,0,1.844,1.144.358.358,0,0,0,0-.049h6.163c0,.017,0,.034,0,.049a1.277,1.277,0,1,0,1.434-1.267c-1.531-.247-7.783-.55-7.783-.55l-.205-.8h7.8a.9.9,0,0,0,.863-.651l1.688-5.943h.62a.936.936,0,1,0,0-1.872Zm-9.934,6.474H68.568c-.04,0-.1.008-.125-.085-.034-.118-.082-.283-.082-.283l-1.146-4.037a.061.061,0,0,1,.011-.057.064.064,0,0,1,.053-.025h1.777a.064.064,0,0,1,.063.051l.969,4.34,0,.013a.058.058,0,0,1,0,.019A.063.063,0,0,1,70.03,144.853Zm3.731-4.41-.789,4.359a.066.066,0,0,1-.063.051h-1.1a.064.064,0,0,1-.063-.051l-.789-4.357a.064.064,0,0,1,.013-.055.07.07,0,0,1,.051-.025H73.7a.06.06,0,0,1,.051.025A.064.064,0,0,1,73.76,140.443Zm3.737,0L76.26,144.8a.068.068,0,0,1-.063.049H74.684a.063.063,0,0,1-.051-.025.064.064,0,0,1-.013-.055l.973-4.357a.066.066,0,0,1,.063-.051h1.777a.071.071,0,0,1,.053.025A.076.076,0,0,1,77.5,140.448Z"
+                                transform="translate(-62.393 -135.3)" fill="currentColor" />
+                        </svg>
+                    </span>
+                    <span class="offcanvas__stikcy--toolbar__label">Cart</span>
+                    <span class="items__count">3</span>
+                </a>
+            </li> -->
+            <li class="offcanvas__stikcy--toolbar__list">
+                <a class="offcanvas__stikcy--toolbar__btn" href="<?php echo APP_URL; ?>/view/cart.php">
                     <span class="offcanvas__stikcy--toolbar__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18.51" height="15.443"
                             viewBox="0 0 18.51 15.443">
@@ -608,7 +654,7 @@
                     Policy</a></label>
         </div>
         <div class="minicart__button d-flex justify-content-center">
-            <a class="primary__btn minicart__button--link" href="cart.php">View cart</a>
+            <a class="primary__btn minicart__button--link" href="<?php echo APP_URL; ?>/view/cart.php">View cart</a>
             <a class="primary__btn minicart__button--link" href="<?php echo APP_URL; ?>/view/checkout.php">Checkout</a>
         </div>
     </div>
