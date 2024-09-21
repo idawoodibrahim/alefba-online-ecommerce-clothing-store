@@ -1,6 +1,5 @@
 <?php
 global $conn;
-
 # Include connection
 require_once ROOT . '/db/conn.php';
 
@@ -174,8 +173,15 @@ include ROOT . '/includes/menu.php';
                                 </div>
                                 <div class="account__login--inner">
                                     <!-- Username Input -->
-                                    <input class="account__login--input form-control" placeholder="Username" type="text"
+                                    <!-- <input class="account__login--input form-control" placeholder="Username" type="text"
                                         name="username" value="<?= $username; ?>">
+                                    <?php if (!empty($username_err)) : ?>
+                                    <span class="text-danger"><?= $username_err; ?></span>
+                                    <?php endif; ?> -->
+                                    <!-- Username Input -->
+                                    <input class="account__login--input form-control" placeholder="Username" type="text"
+                                        name="username"
+                                        value="<?= isset($_POST['username']) ? htmlspecialchars($_POST['username']) : ''; ?>">
                                     <?php if (!empty($username_err)) : ?>
                                     <span class="text-danger"><?= $username_err; ?></span>
                                     <?php endif; ?>

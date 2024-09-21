@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 21, 2024 at 11:10 AM
+-- Generation Time: Sep 21, 2024 at 12:23 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -35,14 +35,6 @@ CREATE TABLE `cart` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `cart`
---
-
-INSERT INTO `cart` (`id`, `product_id`, `qty`, `user_id`, `created_at`, `updated_at`) VALUES
-(1, 1, 2, 3, '2024-09-20 12:53:09', '2024-09-21 08:02:15'),
-(3, 23, 3, 3, '2024-09-21 06:59:49', '2024-09-21 08:02:15');
 
 -- --------------------------------------------------------
 
@@ -143,10 +135,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `reg_date`, `username`, `email`, `password`, `role`) VALUES
-(1, '2024-09-18 13:12:32', 'test', 'test@example.com', '$2y$10$NFFvWM5hhoI8R1Az0zAKge2ITqdDvpULO/BvetAH7H9MRo99sq3qC', ''),
-(2, '2024-09-18 15:14:28', 'Test1', 'test1@example.com', '$2y$10$fbnIXDDE5ZJpO.JdN4fquO16CIPTMG2rZwUJkQJmt.9fK6SSmWwf6', 'Customer'),
-(3, '2024-09-19 09:48:45', 'dawigner', 'dawigner@tenzsoft.com', '$2y$10$V0pOeywBkngTxt2J1npIu.zd9xOIOrDe/tAzgVgPQs8Mo/0xLdtWq', 'Customer'),
-(4, '2024-09-20 15:54:27', 'new', 'new@example.com', '$2y$10$ikB3bN1Yg9ut13ykpWUjUOpt.Ra/o5WV6rDpSF7oi/6zmCN2OONj2', 'Customer');
+(1, '2024-09-21 15:22:47', 'dawigner', 'dawigner@tenzsoft.com', '$2y$10$NTO0.KLi3TCu5qX1aI41hekK9pzbGSCKjJ7hKJ8Hm7T/29WckAcc6', 'Admin');
 
 -- --------------------------------------------------------
 
@@ -161,19 +150,6 @@ CREATE TABLE `wishlist` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `wishlist`
---
-
-INSERT INTO `wishlist` (`id`, `product_id`, `user_id`, `created_at`, `updated_at`) VALUES
-(9, 5, 3, '2024-09-20 06:25:16', '2024-09-20 06:25:16'),
-(13, 3, 3, '2024-09-20 06:40:19', '2024-09-20 06:40:19'),
-(17, 1, 2, '2024-09-20 07:50:13', '2024-09-20 07:50:13'),
-(18, 4, 2, '2024-09-20 07:50:14', '2024-09-20 07:50:14'),
-(26, 23, 3, '2024-09-20 12:31:43', '2024-09-20 12:31:43'),
-(27, 41, 3, '2024-09-20 12:32:04', '2024-09-20 12:32:04'),
-(29, 44, 3, '2024-09-20 12:32:28', '2024-09-20 12:32:28');
 
 --
 -- Indexes for dumped tables
@@ -215,7 +191,7 @@ ALTER TABLE `wishlist`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `product`
@@ -227,13 +203,13 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `wishlist`
 --
 ALTER TABLE `wishlist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables

@@ -11,9 +11,9 @@ $database = "alefba";
 
 // Database connection For Live Session
 // $servername = "localhost";
-// $username = "u624290640_u13tz";
-// $password = "Alefbadb123!@#";
-// $database = "u624290640_EFyFU";
+// $username = "u624290640_alefbauser";
+// $password = "AlefbaDb123!@#";
+// $database = "u624290640_alefbadb";
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 
